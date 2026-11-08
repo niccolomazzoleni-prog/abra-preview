@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8"/>
+<script>/* abra-consent-default: Consent Mode v2, negato finche' l'utente non sceglie (consent.js) */
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+(function(){var c=null;try{c=JSON.parse(localStorage.getItem('abra_consent')||'null');if(c&&(c.v!==1||Date.now()-c.ts>15552e6))c=null;}catch(e){}window.abraConsent=c;var g=function(v){return v?'granted':'denied';};gtag('consent','default',{ad_storage:g(c&&c.marketing),ad_user_data:g(c&&c.marketing),ad_personalization:g(c&&c.marketing),analytics_storage:g(c&&c.analytics),functionality_storage:'granted',security_storage:'granted',wait_for_update:500});gtag('set','ads_data_redaction',true);gtag('set','url_passthrough',true);})();</script>
+<script defer src="../consent.js"></script>
+<script defer src="../visite.js"></script>
+<!-- Google Tag Manager + Google tag (gtag.js): i comandi entrano subito in dataLayer, DOPO il consent default qui sopra;
+     gli script esterni (~350 KB) si scaricano solo dopo il load (idle) o alla prima interazione, per non rubare banda a CSS/font/hero su mobile. -->
+<script>(function(w,d){w.dataLayer=w.dataLayer||[];w.dataLayer.push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+  gtag('js',new Date());gtag('config','G-T4ZC7CM8RX');
+  var ev=['pointerdown','keydown','touchstart','scroll'],done=0;
+  function load(){if(done)return;done=1;ev.forEach(function(e){w.removeEventListener(e,load,true);});
+    ['https://www.googletagmanager.com/gtm.js?id=GTM-MNLWZSN7','https://www.googletagmanager.com/gtag/js?id=G-T4ZC7CM8RX'].forEach(function(u){var j=d.createElement('script');j.async=true;j.src=u;d.head.appendChild(j);});}
+  ev.forEach(function(e){w.addEventListener(e,load,{capture:true,passive:true});});
+  function idle(){w.requestIdleCallback?requestIdleCallback(load,{timeout:3000}):setTimeout(load,1500);}
+  if(d.readyState==='complete')idle();else w.addEventListener('load',idle);
+})(window,document);</script>
+<!-- End Google Tag Manager -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Unitree Go2 vs Go2 Pro ed EDU: differenze e scelta</title>
+<meta name="description" content="Unitree Go2 Air, Pro ed EDU a confronto con le specifiche ufficiali: velocità, batteria, 4G, SDK e ROS 2. Prezzi e criteri di scelta."/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://abrarobotics.com/blog/unitree-go2-vs-go2-pro.html"/>
+<link href="https://abrarobotics.com/blog/unitree-go2-vs-go2-pro.html" hreflang="it" rel="alternate"/>
+<link href="https://abrarobotics.com/en/blog/unitree-go2-vs-go2-pro.html" hreflang="en" rel="alternate"/>
+<link href="https://abrarobotics.com/de/blog/unitree-go2-vs-go2-pro.html" hreflang="de" rel="alternate"/>
+<link href="https://abrarobotics.com/fr/blog/unitree-go2-vs-go2-pro.html" hreflang="fr" rel="alternate"/>
+<link href="https://abrarobotics.com/es/blog/unitree-go2-vs-go2-pro.html" hreflang="es" rel="alternate"/>
+<link href="https://abrarobotics.com/pl/blog/unitree-go2-vs-go2-pro.html" hreflang="pl" rel="alternate"/>
+<link href="https://abrarobotics.com/nl/blog/unitree-go2-vs-go2-pro.html" hreflang="nl" rel="alternate"/>
+<link href="https://abrarobotics.com/cs/blog/unitree-go2-vs-go2-pro.html" hreflang="cs" rel="alternate"/>
+<link href="https://abrarobotics.com/sv/blog/unitree-go2-vs-go2-pro.html" hreflang="sv" rel="alternate"/>
+<link href="https://abrarobotics.com/da/blog/unitree-go2-vs-go2-pro.html" hreflang="da" rel="alternate"/>
+<link href="https://abrarobotics.com/no/blog/unitree-go2-vs-go2-pro.html" hreflang="nb" rel="alternate"/>
+<link href="https://abrarobotics.com/fi/blog/unitree-go2-vs-go2-pro.html" hreflang="fi" rel="alternate"/>
+<link href="https://abrarobotics.com/blog/unitree-go2-vs-go2-pro.html" hreflang="x-default" rel="alternate"/>
+<meta property="og:image" content="https://abrarobotics.com/images/official/unitree-go2-01.webp"/>
+<link href="../favicon.ico" rel="icon" sizes="any"/>
+<link href="../images/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32"/>
+<link href="../images/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16"/>
+<link href="../images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="../style.css" rel="stylesheet"/>
+<link href="blog.css" rel="stylesheet"/>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Unitree Go2 vs Go2 Pro ed EDU: differenze e scelta",
+  "description": "Unitree Go2 Air, Pro ed EDU a confronto con le specifiche ufficiali: velocità, batteria, 4G, SDK e ROS 2. Prezzi e criteri di scelta.",
+  "datePublished": "2026-07-13",
+  "dateModified": "2026-10-19",
+  "author": {
+    "@type": "Organization",
+    "name": "Abra Robotics",
+    "url": "https://abrarobotics.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Abra Robotics",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://abrarobotics.com/images/logo-icon.png"
+    }
+  },
+  "mainEntityOfPage": "https://abrarobotics.com/blog/unitree-go2-vs-go2-pro.html",
+  "image": "https://abrarobotics.com/images/official/unitree-go2-01.webp",
+  "inLanguage": "it"
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Qual è la differenza principale tra Go2 Air e Go2 Pro?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La Pro aggiunge 4G con GPS, funzioni vocali e inseguimento laterale ISS 2.0, arriva a 3,5 m/s invece di 2,5 e ha 12 mesi di garanzia invece di 6. Corpo, LiDAR 4D L2 e batteria da 8000 mAh sono gli stessi."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "La Go2 Pro si può programmare con SDK o ROS 2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Secondo la tabella ufficiale Unitree solo la Go2 EDU si programma con unitree_sdk2 e unitree_ros2."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quanto dura la batteria del Go2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unitree dichiara circa 1-2 ore per Air e Pro, con batteria da 8000 mAh, e circa 2-4 ore per la EDU, con batteria da 15000 mAh. L'autonomia reale dipende da carico, terreno e velocità."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Il Go2 è impermeabile?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unitree non dichiara un grado di protezione IP per il Go2. Per polvere e pioggia conviene valutare AS2 (IP54 nelle versioni Pro, X ed EDU), A2 (IP56) o B2 (IP67)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quanto costano Go2 Air, Pro ed EDU in Italia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nel listino Abra Robotics, IVA esclusa con spedizione e dazio inclusi: Go2 Air da 2.576 €, Go2 Pro da 3.981 €, Go2 EDU da 8.804 €. Ogni ordine si conferma con preventivo aggiornato."
+      }
+    }
+  ]
+}
+  </script>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="Abra Robotics"/>
+<meta property="og:title" content="Unitree Go2 vs Go2 Pro ed EDU: differenze e scelta"/>
+<meta property="og:description" content="Go2 Air, Pro ed EDU con le specifiche ufficiali Unitree: velocità, batteria, 4G, SDK e ROS 2, prezzi IVA esclusa e criteri di scelta."/>
+<meta property="og:url" content="https://abrarobotics.com/blog/unitree-go2-vs-go2-pro.html"/>
+<meta property="og:image" content="https://abrarobotics.com/images/official/unitree-go2-01.webp"/>
+<meta property="og:locale" content="it_IT"/>
+<meta name="twitter:card" content="summary_large_image"/>
+</head>
+<body>
+<nav class="navbar"><div class="container navbar-inner">
+<a class="logo" href="../index.html"><img alt="Abra Robotics" class="logo-img" src="../images/logo.webp"/></a>
+<div class="nav-links nav-post-links"><a href="../go2.html">Hub Go2</a><a href="../quadrupedi.html">Quadrupedi</a></div>
+</div></nav>
+<article class="article-wrap"><div class="container">
+<nav class="breadcrumb"><a href="../index.html">Home</a> / <a href="../blog.html">Blog</a> / Go2 vs Pro</nav>
+
+<figure class="article-cover">
+<img src="../images/official/unitree-go2-01.webp" alt="Unitree Go2 Pro, quadrupede con LiDAR 4D" loading="eager"/>
+</figure>
+
+<header class="article-header"><p class="label">Quadrupedi · Unitree · Aggiornato 19 ott 2026</p>
+<h1>Go2 vs Go2 Pro: quale quadrupede ti serve davvero</h1>
+<div class="article-meta"><time datetime="2026-07-13">13 luglio 2026</time><span>Abra Robotics</span></div>
+<div class="article-tldr"><strong>In breve:</strong> Go2 Air, Go2 Pro e Go2 EDU hanno lo stesso corpo (circa 15 kg) e lo stesso LiDAR 4D L2. La Pro aggiunge 4G con GPS, funzioni vocali, modalità di inseguimento e più velocità. Solo la EDU si programma con SDK e ROS 2, ha batteria da 15000 mAh e sensori di forza sui piedi. Prezzi IVA esclusa: Air da 2.576 €, Pro da 3.981 €, EDU da 8.804 €.</div>
+</header>
+
+<div class="article-content">
+<p>La domanda "Go2 o Go2 Pro?" di solito nasconde un'altra domanda: <strong>devo scrivere codice sul robot oppure mi basta usarlo con app e telecomando?</strong> Se la risposta è "codice", né la Air né la Pro sono adatte: serve la Go2 EDU. Se invece il robot va guidato, mostrato o usato per sopralluoghi con l'app, la scelta è tra Air e Pro e dipende soprattutto da connettività, velocità e garanzia.</p>
+<p>I dati che seguono vengono dalla <a href="https://www.unitree.com/go2" rel="noopener noreferrer" target="_blank">pagina ufficiale Unitree Go2</a>. I prezzi sono quelli del listino Abra Robotics, IVA esclusa, spedizione e dazio in Italia inclusi.</p>
+
+<h2>Go2 Air, Pro ed EDU: le differenze in una tabella</h2>
+<table>
+<thead><tr><th>Specifica (fonte Unitree)</th><th>Go2 Air</th><th>Go2 Pro</th><th>Go2 EDU</th></tr></thead>
+<tbody>
+<tr><td>Velocità</td><td>0-2,5 m/s</td><td>0-3,5 m/s</td><td>0-3,7 m/s (max circa 5 m/s)</td></tr>
+<tr><td>Carico utile</td><td>circa 7 kg (max circa 10 kg)</td><td>circa 8 kg (max circa 10 kg)</td><td>circa 8 kg (max circa 12 kg)</td></tr>
+<tr><td>Batteria</td><td>8000 mAh</td><td>8000 mAh</td><td>15000 mAh</td></tr>
+<tr><td>Autonomia dichiarata</td><td>circa 1-2 h</td><td>circa 1-2 h</td><td>circa 2-4 h</td></tr>
+<tr><td>Caricabatterie</td><td>standard 33,6 V 3,5 A</td><td>standard 33,6 V 3,5 A</td><td>rapido 33,6 V 9 A</td></tr>
+<tr><td>LiDAR 4D L2 e camera HD</td><td>Sì</td><td>Sì</td><td>Sì</td></tr>
+<tr><td>Camera di profondità</td><td>No</td><td>No</td><td>Sì</td></tr>
+<tr><td>Modulo 4G con GPS</td><td>No</td><td>Sì</td><td>Sì</td></tr>
+<tr><td>Inseguimento laterale ISS 2.0</td><td>No</td><td>Sì</td><td>Sì</td></tr>
+<tr><td>Funzioni vocali</td><td>No</td><td>Sì</td><td>Sì</td></tr>
+<tr><td>CPU 8 core di base</td><td>No</td><td>Sì</td><td>Sì</td></tr>
+<tr><td>Modulo di calcolo ad alte prestazioni</td><td>No</td><td>No</td><td>Opzionale (es. Orin, 40-100 TOPS)</td></tr>
+<tr><td>Sensori di forza sui piedi</td><td>No</td><td>No</td><td>Sì</td></tr>
+<tr><td>Programmazione con SDK e ROS 2</td><td>No</td><td>No</td><td>Sì</td></tr>
+<tr><td>Pendenza massima</td><td>30°</td><td>40°</td><td>40°</td></tr>
+<tr><td>Garanzia indicata da Unitree</td><td>6 mesi</td><td>12 mesi</td><td>12 mesi</td></tr>
+<tr><td>Prezzo Abra (IVA esclusa)</td><td>da 2.576 €</td><td>da 3.981 €</td><td>da 8.804 €</td></tr>
+</tbody>
+</table>
+<p>Unitree non dichiara un grado di protezione IP per nessuna versione del Go2.</p>
+
+<div class="product-strip" aria-label="Prodotti citati">
+<div class="product-strip-head"><span>Prodotti citati nell'articolo</span><a href="../go2.html">Tutte le versioni Go2</a></div>
+<div class="product-strip-grid">
+<article class="product-card">
+<a class="product-card-media" href="../prodotti/unitree-go2-air.html"><img alt="Unitree Go2 Air" loading="lazy" src="../images/prodotti/go2-air.webp"/></a>
+<div class="product-card-body">
+<h3><a href="../prodotti/unitree-go2-air.html">Unitree Go2 Air</a></h3>
+<p>Base: app e telecomando, senza SDK</p>
+<div class="product-card-price">2.576 € <small>IVA esclusa</small></div>
+<div class="product-card-actions"><a class="product-card-btn" href="../prodotti/unitree-go2-air.html">Vedi scheda</a><a class="product-card-link" href="../assessment.html">Preventivo</a></div>
+</div>
+</article>
+<article class="product-card">
+<a class="product-card-media" href="../prodotti/unitree-go2-pro.html"><img alt="Unitree Go2 Pro" loading="lazy" src="../images/prodotti/go2-pro.webp"/></a>
+<div class="product-card-body">
+<h3><a href="../prodotti/unitree-go2-pro.html">Unitree Go2 Pro</a></h3>
+<p>4G con GPS, 3,5 m/s, garanzia 12 mesi</p>
+<div class="product-card-price">3.981 € <small>IVA esclusa</small></div>
+<div class="product-card-actions"><a class="product-card-btn" href="../prodotti/unitree-go2-pro.html">Vedi scheda</a><a class="product-card-link" href="../assessment.html">Preventivo</a></div>
+</div>
+</article>
+<article class="product-card">
+<a class="product-card-media" href="../prodotti/unitree-go2-edu.html"><img alt="Unitree Go2 EDU" loading="lazy" src="../images/prodotti/go2-edu-std.webp"/></a>
+<div class="product-card-body">
+<h3><a href="../prodotti/unitree-go2-edu.html">Unitree Go2 EDU</a></h3>
+<p>SDK e ROS 2, batteria 15000 mAh</p>
+<div class="product-card-price">8.804 € <small>IVA esclusa</small></div>
+<div class="product-card-actions"><a class="product-card-btn" href="../prodotti/unitree-go2-edu.html">Vedi scheda</a><a class="product-card-link" href="../assessment.html">Preventivo</a></div>
+</div>
+</article>
+</div>
+</div>
+<h2>Cosa hanno in comune</h2>
+<p>Le tre versioni condividono il telaio: circa 15 kg con batteria, 70 × 31 × 40 cm in piedi, Wi-Fi 6 dual band e Bluetooth 5.2. Tutte montano il LiDAR 4D L2 con campo visivo emisferico di 360° × 96° e distanza minima di rilevamento di 0,05 m, più una camera HD grandangolare e la funzione di rilevamento ed evitamento ostacoli. Anche l'app è la stessa: trasmissione video in tempo reale e comandi da smartphone.</p>
+<p>In pratica, sul terreno Air e Pro si guidano allo stesso modo. Le differenze stanno in quanto veloce e quanto a lungo cammina il robot, in cosa riesce a fare da solo e in quanto puoi metterci le mani a livello software.</p>
+
+<h2>Go2 Air: quando basta</h2>
+<p>La <a href="../prodotti/unitree-go2-air.html">Go2 Air</a> è la versione d'ingresso, da 2.576 € IVA esclusa. Ha senso per eventi, fiere, showroom, didattica di base e per chi vuole capire come si comporta un quadrupede prima di investire di più. Limiti da conoscere: velocità fino a 2,5 m/s, pendenza massima 30°, nessun modulo 4G e garanzia Unitree di 6 mesi invece di 12. Non si programma con SDK.</p>
+
+<h2>Go2 Pro: cosa aggiunge</h2>
+<p>La <a href="../prodotti/unitree-go2-pro.html">Go2 Pro</a> costa da 3.981 € IVA esclusa e aggiunge:</p>
+<ul>
+<li><strong>Modulo 4G con GPS</strong>: collegamento al robot anche fuori dalla copertura Wi-Fi, utile per sopralluoghi all'aperto.</li>
+<li><strong>ISS 2.0</strong>: modalità in cui il robot segue l'operatore restando di lato.</li>
+<li><strong>Modulo di posizionamento vettoriale wireless</strong> e funzioni vocali.</li>
+<li><strong>CPU 8 core</strong> a bordo, velocità fino a 3,5 m/s, pendenza fino a 40°, garanzia di 12 mesi.</li>
+</ul>
+<p>Cosa non aggiunge: la programmazione con SDK. Sulla Pro non si installano programmi propri e non si integra il robot in uno stack ROS 2. Se in futuro vorrai collegarlo a un sistema di supervisione, a una pipeline di visione o a un software di report, la Pro non è la base giusta.</p>
+
+<h2>Go2 EDU: per chi sviluppa</h2>
+<p>La <a href="../prodotti/unitree-go2-edu.html">Go2 EDU</a> parte da 8.804 € IVA esclusa ed è l'unica delle tre che si programma con SDK e ROS 2. Ha inoltre batteria da 15000 mAh (autonomia dichiarata 2-4 h), caricabatterie rapido, camera di profondità, sensori di forza sui piedi e la possibilità di montare un modulo di calcolo ad alte prestazioni, ad esempio un NVIDIA Orin da 40-100 TOPS.</p>
+<p>Lato software, Unitree pubblica <a href="https://github.com/unitreerobotics/unitree_sdk2" rel="noopener noreferrer" target="_blank">unitree_sdk2</a> (C++) e il pacchetto <a href="https://github.com/unitreerobotics/unitree_ros2" rel="noopener noreferrer" target="_blank">unitree_ros2</a>, che nel README indica il supporto per Go2, B2 e H1 e raccomanda Ubuntu 22.04 con ROS 2 Humble (testato anche Ubuntu 20.04 con Foxy). La documentazione per sviluppatori è su <a href="https://support.unitree.com/home/en/developer/about_Go2" rel="noopener noreferrer" target="_blank">support.unitree.com</a>. Per i primi passi vedi la nostra <a href="ros2-unitree-guida-rapida.html">guida rapida ROS 2 su Unitree</a>.</p>
+<p>Nel listino Abra la EDU esiste in più configurazioni, che si differenziano per sensori e calcolo aggiuntivi:</p>
+<table>
+<thead><tr><th>Configurazione</th><th>Cosa aggiunge</th><th>Prezzo (IVA esclusa)</th></tr></thead>
+<tbody>
+<tr><td><a href="../prodotti/unitree-go2-edu.html">Go2 EDU standard</a></td><td>Jetson Orin Nano 8GB, 40 TOPS</td><td>da 8.804 €</td></tr>
+<tr><td><a href="../prodotti/unitree-go2-edu-smart.html">Go2 EDU Smart</a></td><td>Jetson Orin NX 16GB, 100 TOPS</td><td>da 12.473 €</td></tr>
+<tr><td><a href="../prodotti/unitree-go2-edu-plus.html">Go2 EDU con LiDAR Livox Mid-360</a></td><td>Orin NX e LiDAR 3D Mid-360 per la mappatura</td><td>da 16.875 €</td></tr>
+<tr><td><a href="../prodotti/unitree-go2-edu-ultimate.html">Go2 EDU Ultimate</a></td><td>Orin NX e LiDAR 3D Hesai XT16</td><td>da 18.484 €</td></tr>
+</tbody>
+</table>
+<p>Il contenuto preciso di ogni configurazione è sulla relativa scheda prodotto; conferma sempre la dotazione nel preventivo.</p>
+
+<h2>Pro o EDU per un'ispezione?</h2>
+<p>Unitree descrive per la famiglia Go2 la mappatura con LiDAR 3D da app e l'impostazione di percorsi. Per un sopralluogo guidato da un operatore, con video in diretta, la Pro può bastare. Diverso il caso in cui i dati raccolti devono finire in un tuo sistema: letture automatiche, allarmi, report, integrazione con software aziendale. Lì serve accedere ai dati del robot da codice, quindi la EDU.</p>
+<p>Ci sono poi due limiti fisici che valgono per tutte le versioni: nessun grado IP dichiarato e autonomia di 1-2 ore su Air e Pro. Per ambienti con polvere e pioggia la famiglia <a href="../as2.html">AS2</a> nelle versioni Pro, X ed EDU dichiara IP54, l'<a href="../a2.html">A2</a> IP56 (A2 Pro da IP56 a IP67, con componenti principali IP67) e il <a href="../b2.html">B2</a> IP67. Il confronto completo è nell'articolo sul <a href="robot-quadrupede-ispezione-industriale.html">quadrupede per ispezione industriale</a>.</p>
+
+<h2>E il Go2-W?</h2>
+<p>Il <a href="../prodotti/unitree-go2w-std.html">Go2-W</a> è la variante con ruote alle zampe. Secondo Unitree pesa circa 18 kg, arriva a 2,5 m/s, porta circa 8 kg (massimo circa 12 kg), ha un'autonomia di 1,5-3 ore e si programma con SDK. Conviene su percorsi lunghi e piani, come corridoi e piazzali; sulle scale e sui terreni irregolari le zampe classiche restano più versatili.</p>
+
+<h2>Come scegliere in quattro domande</h2>
+<ol>
+<li><strong>Devi scrivere codice o integrare il robot con altri sistemi?</strong> Sì: Go2 EDU. No: vai alla domanda 2.</li>
+<li><strong>Lo userai fuori dalla copertura Wi-Fi o vuoi il GPS?</strong> Sì: Go2 Pro. No: vai alla domanda 3.</li>
+<li><strong>Ti servono rampe oltre i 30°, più velocità o 12 mesi di garanzia Unitree?</strong> Sì: Go2 Pro. No: Go2 Air.</li>
+<li><strong>Lavora sotto la pioggia o in ambienti polverosi?</strong> Valuta AS2, A2 o B2 invece del Go2.</li>
+</ol>
+<p>Se hai dubbi, il <a href="../assessment.html">questionario "Trova il robot giusto"</a> serve a questo. Per tutte le versioni e gli accessori (batterie, caricatori, kit LiDAR, sensore gas) vedi l'<a href="../go2.html">hub Unitree Go2</a>.</p>
+</div>
+
+<section class="article-faq" id="faq">
+<h2>Domande frequenti</h2>
+<div class="faq-item"><h3>Qual è la differenza principale tra Go2 Air e Go2 Pro?</h3><p>La Pro aggiunge 4G con GPS, funzioni vocali e inseguimento laterale ISS 2.0, arriva a 3,5 m/s invece di 2,5 e ha 12 mesi di garanzia invece di 6. Corpo, LiDAR 4D L2 e batteria da 8000 mAh sono gli stessi.</p></div>
+<div class="faq-item"><h3>La Go2 Pro si può programmare con SDK o ROS 2?</h3><p>No. Secondo la tabella ufficiale Unitree solo la Go2 EDU si programma con unitree_sdk2 e unitree_ros2.</p></div>
+<div class="faq-item"><h3>Quanto dura la batteria del Go2?</h3><p>Unitree dichiara circa 1-2 ore per Air e Pro, con batteria da 8000 mAh, e circa 2-4 ore per la EDU, con batteria da 15000 mAh. L'autonomia reale dipende da carico, terreno e velocità.</p></div>
+<div class="faq-item"><h3>Il Go2 è impermeabile?</h3><p>Unitree non dichiara un grado di protezione IP per il Go2. Per polvere e pioggia conviene valutare AS2 (IP54 nelle versioni Pro, X ed EDU), A2 (IP56) o B2 (IP67).</p></div>
+<div class="faq-item"><h3>Quanto costano Go2 Air, Pro ed EDU in Italia?</h3><p>Nel listino Abra Robotics, IVA esclusa con spedizione e dazio inclusi: Go2 Air da 2.576 €, Go2 Pro da 3.981 €, Go2 EDU da 8.804 €. Ogni ordine si conferma con preventivo aggiornato.</p></div>
+</section>
+
+<section class="article-references" id="fonti">
+<h2>Fonti</h2>
+<ol>
+<li>Unitree, pagina prodotto e tabella specifiche Go2: <a href="https://www.unitree.com/go2" rel="noopener noreferrer" target="_blank">unitree.com/go2</a></li>
+<li>Unitree, pagina prodotto Go2-W: <a href="https://www.unitree.com/go2-w" rel="noopener noreferrer" target="_blank">unitree.com/go2-w</a></li>
+<li>Unitree Developer, documentazione Go2: <a href="https://support.unitree.com/home/en/developer/about_Go2" rel="noopener noreferrer" target="_blank">support.unitree.com</a></li>
+<li>Unitree, unitree_sdk2 su GitHub: <a href="https://github.com/unitreerobotics/unitree_sdk2" rel="noopener noreferrer" target="_blank">github.com/unitreerobotics/unitree_sdk2</a></li>
+<li>Unitree, unitree_ros2 su GitHub: <a href="https://github.com/unitreerobotics/unitree_ros2" rel="noopener noreferrer" target="_blank">github.com/unitreerobotics/unitree_ros2</a></li>
+<li>Unitree, specifiche AS2, A2 e B2: <a href="https://www.unitree.com/As2" rel="noopener noreferrer" target="_blank">unitree.com/As2</a>, <a href="https://www.unitree.com/A2" rel="noopener noreferrer" target="_blank">unitree.com/A2</a>, <a href="https://www.unitree.com/b2" rel="noopener noreferrer" target="_blank">unitree.com/b2</a></li>
+<li>Prezzi: <a href="../go2.html">listino Go2 Abra Robotics</a> (IVA esclusa)</li>
+</ol>
+</section>
+
+<div class="article-cta"><h2>Go2 Air, Pro o EDU?</h2><p>Dicci cosa deve fare il robot: ti indichiamo la versione giusta e prepariamo un preventivo con accessori e tempi di consegna.</p><a class="btn btn-primary" href="../assessment.html">Trova la versione giusta</a><a class="btn btn-outline-light" href="../go2.html">Listino Go2</a></div>
+</div></article>
+<footer class="footer">
+<div class="container footer-grid">
+<div class="footer-brand">
+<a class="logo" href="../index.html"><img alt="Abra Robotics" class="logo-img" src="../images/logo.webp" width="180" height="72" decoding="async"/></a>
+<p class="footer-desc">Robotica applicata per aziende, università e istituti di ricerca. Hardware, software su misura, formazione e supporto tecnico dedicato.</p>
+</div>
+<div class="footer-nav">
+<span class="footer-heading">Prodotti</span>
+<a href="../cobot.html">Cobot</a>
+<a href="../amr.html">AMR</a>
+<a href="../quadrupedi.html">Quadrupedi</a>
+<a href="../umanoidi.html">Umanoidi</a>
+<a href="../accessori.html">Accessori</a>
+<a href="../catalogo.html">Catalogo completo</a>
+<a href="../listino-unitree.html">Listino prezzi</a>
+</div>
+<div class="footer-nav">
+<span class="footer-heading">Servizi e risorse</span>
+<a href="../assessment.html">Trova il robot giusto</a>
+<a href="../software.html">Software</a>
+<a href="../finanziamenti.html">Finanziamenti</a>
+<a href="../manifattura-logistica.html">Manifattura e Logistica</a>
+<a href="../universita-ricerca.html">Università e Ricerca</a>
+<a href="../blog.html">Blog</a>
+</div>
+<div class="footer-contact">
+<span class="footer-heading">Contatti</span>
+<a href="../chi-siamo.html">Chi siamo</a>
+<a href="mailto:info@abrarobotics.com">info@abrarobotics.com</a>
+<p>Viale Trieste 105<br/>30026 Portogruaro (VE)</p>
+<a class="btn btn-primary btn-sm" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ22FrpPdyPVRihi4eXPQlljTcG2toa8XF2d8W-QX-L9cKMaXqozq_YsHym56LEdTs9WsnqlTHeF" rel="noopener noreferrer" target="_blank">Prenota una chiamata</a>
+</div>
+</div>
+<div class="container footer-bottom">
+<p class="footer-copy">© 2026 Abra Robotics di Niccolò Mazzoleni. Tutti i diritti riservati. P.IVA 04800170278, Portogruaro (VE).</p>
+<nav aria-label="Note legali" class="footer-legal">
+<a href="../privacy-policy.html">Privacy Policy</a>
+<a href="../cookie-policy.html">Cookie Policy</a>
+<a href="../condizioni-di-vendita.html">Condizioni di vendita</a>
+<a href="../politica-resi.html">Politica resi</a>
+<a href="../note-legali.html">Note legali</a>
+</nav>
+</div>
+</footer>
+<script defer src="../script.js"></script>
+</body></html>

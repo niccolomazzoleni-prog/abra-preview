@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8"/>
+<script>/* abra-consent-default: Consent Mode v2, negato finche' l'utente non sceglie (consent.js) */
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+(function(){var c=null;try{c=JSON.parse(localStorage.getItem('abra_consent')||'null');if(c&&(c.v!==1||Date.now()-c.ts>15552e6))c=null;}catch(e){}window.abraConsent=c;var g=function(v){return v?'granted':'denied';};gtag('consent','default',{ad_storage:g(c&&c.marketing),ad_user_data:g(c&&c.marketing),ad_personalization:g(c&&c.marketing),analytics_storage:g(c&&c.analytics),functionality_storage:'granted',security_storage:'granted',wait_for_update:500});gtag('set','ads_data_redaction',true);gtag('set','url_passthrough',true);})();</script>
+<script defer src="../consent.js"></script>
+<script defer src="../visite.js"></script>
+<!-- Google Tag Manager + Google tag (gtag.js): i comandi entrano subito in dataLayer, DOPO il consent default qui sopra;
+     gli script esterni (~350 KB) si scaricano solo dopo il load (idle) o alla prima interazione, per non rubare banda a CSS/font/hero su mobile. -->
+<script>(function(w,d){w.dataLayer=w.dataLayer||[];w.dataLayer.push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+  gtag('js',new Date());gtag('config','G-T4ZC7CM8RX');
+  var ev=['pointerdown','keydown','touchstart','scroll'],done=0;
+  function load(){if(done)return;done=1;ev.forEach(function(e){w.removeEventListener(e,load,true);});
+    ['https://www.googletagmanager.com/gtm.js?id=GTM-MNLWZSN7','https://www.googletagmanager.com/gtag/js?id=G-T4ZC7CM8RX'].forEach(function(u){var j=d.createElement('script');j.async=true;j.src=u;d.head.appendChild(j);});}
+  ev.forEach(function(e){w.addEventListener(e,load,{capture:true,passive:true});});
+  function idle(){w.requestIdleCallback?requestIdleCallback(load,{timeout:3000}):setTimeout(load,1500);}
+  if(d.readyState==='complete')idle();else w.addEventListener('load',idle);
+})(window,document);</script>
+<!-- End Google Tag Manager -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Unitree G1: aggiornamento firmware senza rischi</title>
+<meta name="description" content="Come aggiornare il firmware dell'Unitree G1 con l'app ufficiale: controlli prima di iniziare (batteria, versione, rete), errori da evitare e downgrade."/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://abrarobotics.com/blog/unitree-g1-aggiornare-firmware.html"/>
+<link href="https://abrarobotics.com/blog/unitree-g1-aggiornare-firmware.html" hreflang="it" rel="alternate"/>
+<link href="https://abrarobotics.com/en/blog/unitree-g1-aggiornare-firmware.html" hreflang="en" rel="alternate"/>
+<link href="https://abrarobotics.com/de/blog/unitree-g1-aggiornare-firmware.html" hreflang="de" rel="alternate"/>
+<link href="https://abrarobotics.com/fr/blog/unitree-g1-aggiornare-firmware.html" hreflang="fr" rel="alternate"/>
+<link href="https://abrarobotics.com/es/blog/unitree-g1-aggiornare-firmware.html" hreflang="es" rel="alternate"/>
+<link href="https://abrarobotics.com/pl/blog/unitree-g1-aggiornare-firmware.html" hreflang="pl" rel="alternate"/>
+<link href="https://abrarobotics.com/nl/blog/unitree-g1-aggiornare-firmware.html" hreflang="nl" rel="alternate"/>
+<link href="https://abrarobotics.com/cs/blog/unitree-g1-aggiornare-firmware.html" hreflang="cs" rel="alternate"/>
+<link href="https://abrarobotics.com/sv/blog/unitree-g1-aggiornare-firmware.html" hreflang="sv" rel="alternate"/>
+<link href="https://abrarobotics.com/da/blog/unitree-g1-aggiornare-firmware.html" hreflang="da" rel="alternate"/>
+<link href="https://abrarobotics.com/no/blog/unitree-g1-aggiornare-firmware.html" hreflang="nb" rel="alternate"/>
+<link href="https://abrarobotics.com/fi/blog/unitree-g1-aggiornare-firmware.html" hreflang="fi" rel="alternate"/>
+<link href="https://abrarobotics.com/blog/unitree-g1-aggiornare-firmware.html" hreflang="x-default" rel="alternate"/>
+<link href="../favicon.ico" rel="icon" sizes="any"/>
+<link href="../images/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32"/>
+<link href="../images/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16"/>
+<link href="../images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="../style.css" rel="stylesheet"/>
+<link href="blog.css" rel="stylesheet"/>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Unitree G1: come fare l'aggiornamento firmware senza rischi",
+  "description": "Come aggiornare il firmware dell'Unitree G1 con l'app ufficiale: controlli prima di iniziare (batteria, versione, rete), errori da evitare e downgrade.",
+  "datePublished": "2026-10-09",
+  "dateModified": "2026-10-19",
+  "author": {
+    "@type": "Organization",
+    "name": "Abra Robotics",
+    "url": "https://abrarobotics.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Abra Robotics",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://abrarobotics.com/images/logo-icon.png"
+    }
+  },
+  "mainEntityOfPage": "https://abrarobotics.com/blog/unitree-g1-aggiornare-firmware.html",
+  "image": "https://abrarobotics.com/images/prodotti/2026/g1.jpg",
+  "inLanguage": "it"
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Come si aggiorna il firmware dell'Unitree G1?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Via rete (OTA), con il robot collegato all'app Unitree Explore. Prima annota la versione attuale e verifica batteria e rete."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso tornare a una versione firmware precedente?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Non è documentato da Unitree. Se un aggiornamento crea problemi, contatta l'assistenza invece di tentare un downgrade da solo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Dopo l'aggiornamento il G1 segnala allarmi sui giunti: cosa fare?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Non ricalibrare da solo. Il manuale Unitree chiede di sentire l'assistenza tecnica prima di decidere se ricalibrare i giunti dall'app."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso spegnere il robot durante l'aggiornamento?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Non interrompere alimentazione e collegamento finché l'aggiornamento non è concluso."
+      }
+    }
+  ]
+}
+  </script>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="Abra Robotics"/>
+<meta property="og:title" content="Unitree G1: aggiornamento firmware senza rischi"/>
+<meta property="og:description" content="Come aggiornare il firmware dell'Unitree G1 con l'app ufficiale: controlli prima di iniziare (batteria, versione, rete), errori da evitare e downgrade."/>
+<meta property="og:url" content="https://abrarobotics.com/blog/unitree-g1-aggiornare-firmware.html"/>
+<meta property="og:image" content="https://abrarobotics.com/images/prodotti/2026/g1.jpg"/>
+<meta property="og:locale" content="it_IT"/>
+<meta name="twitter:card" content="summary_large_image"/>
+</head>
+<body>
+<nav class="navbar"><div class="container navbar-inner">
+<a class="logo" href="../index.html"><img alt="Abra Robotics" class="logo-img" src="../images/logo.webp"/></a>
+<div class="nav-links nav-post-links"><a href="../blog.html">Blog</a></div>
+</div></nav>
+<article class="article-wrap"><div class="container">
+<nav class="breadcrumb"><a href="../index.html">Home</a> / <a href="../blog.html">Blog</a> / Firmware G1</nav>
+
+<figure class="article-cover">
+<img src="../images/prodotti/2026/g1.webp" alt="Robot umanoide Unitree G1 in piedi, vista frontale" width="800" height="800" loading="eager"/>
+</figure>
+
+<header class="article-header"><p class="label">Guide</p>
+<h1>Unitree G1: come fare l'aggiornamento firmware senza rischi</h1>
+<div class="article-meta"><time datetime="2026-10-09">9 ottobre 2026</time><span>Aggiornato 19 ottobre 2026</span><span>Abra Robotics</span></div>
+</header>
+
+<div class="article-content">
+<div class="callout callout-tip"><p><strong>In breve.</strong> Il G1 riceve gli aggiornamenti software via rete (OTA). Il collegamento al robot passa dall'app ufficiale <strong>Unitree Explore</strong>. Prima di iniziare controlla batteria, versione attuale e collegamento; durante l'aggiornamento non spegnere il robot. Un ritorno alla versione precedente non è documentato da Unitree.</p></div>
+
+<p>Le indicazioni che seguono vengono solo da documenti Unitree: la <a href="https://www.unitree.com/g1/" rel="noopener noreferrer" target="_blank">scheda ufficiale del G1</a>, il manuale utente (versione 1.6 dell'agosto 2026), la pagina dell'app Unitree Explore e il centro di assistenza support.unitree.com. Unitree non pubblica una procedura di aggiornamento passo per passo: dove i documenti tacciono, lo diciamo.</p>
+
+<h2>Cosa dice Unitree sull'aggiornamento firmware del G1</h2>
+<p>Nella tabella delle specifiche del manuale il G1 e il G1 EDU riportano entrambi la voce <em>Intelligent OTA Upgrade</em>: il software del robot si aggiorna via rete, senza interventi sull'hardware. Il manuale utente, tra i controlli da fare prima dell'accensione, chiede di verificare che il firmware sia all'ultima versione: «Ensure that the firmware has been updated to the latest version».</p>
+<p>Il collegamento tra telefono e robot passa dall'app <strong>Unitree Explore</strong>, scaricabile per iOS e Android dalla pagina <a href="https://www.unitree.com/app/g1" rel="noopener noreferrer" target="_blank">Unitree Explore APP Download</a>. L'app mostra lo stato del robot in tempo reale (temperatura, allarmi e altri dati), utile per controllare che la macchina sia in condizioni normali prima di procedere.</p>
+
+<h2>I passi, in ordine</h2>
+<ol>
+<li><strong>Installa l'app e collega il robot.</strong> Alla prima connessione il manuale chiede di registrare un account, attivare il Bluetooth del telefono e tenerlo vicino al G1, poi di aggiungere il robot con «Add Robot».</li>
+<li><strong>Scegli la modalità di collegamento.</strong> Il manuale prevede due modalità: AP (il telefono si collega all'hotspot del robot) oppure Wi-Fi tramite router. La procedura è anche nel video «Adding G1 &amp; Network setting» della pagina dell'app.</li>
+<li><strong>Controlla stato e versione.</strong> Prima di aggiornare guarda nell'app che non ci siano allarmi attivi e annota la versione firmware attuale.</li>
+<li><strong>Avvia l'aggiornamento e aspetta.</strong> Segui le indicazioni che l'app mostra per il tuo robot e non interrompere alimentazione o collegamento finché l'operazione non è conclusa.</li>
+</ol>
+
+<h2>Prima di aggiornare: batteria, versione, rete</h2>
+<ul>
+<li><strong>Batteria.</strong> Il manuale non indica una soglia di carica per l'aggiornamento, ma tra i controlli prima dell'accensione chiede batteria e telecomando completamente carichi. La batteria del G1 dura circa 2 ore secondo Unitree.</li>
+<li><strong>Versione.</strong> Annota la versione firmware attuale. Serve a capire se l'aggiornamento è davvero necessario e, in caso di problemi, a dare all'assistenza un'informazione precisa.</li>
+<li><strong>Rete.</strong> Il manuale sconsiglia gli ambienti con interferenze Wi-Fi e, in modalità AP, chiede che il nome dell'hotspot non contenga simboli speciali o spazi. Tieni telefono e robot vicini. Se lavori sul G1 EDU con la rete interna 192.168.123.x, la guida operativa del G1 citata in fondo spiega come è organizzata.</li>
+</ul>
+
+<h2>Dopo l'aggiornamento: allarmi e calibrazione</h2>
+<p>Il manuale, nella sezione sulle anomalie, prevede che un robot che cade spesso o non riesce a stare in piedi dopo il riavvio possa richiedere una nuova calibrazione dei giunti, da fare con i passi indicati nell'app Unitree Explore.</p>
+<p>La calibrazione si fa dall'app: la funzione di calibrazione assistita ricalibra i giunti motore e l'IMU. Nel manuale il percorso è [Settings] → [Data] → [Robot] → [Calibration]; nelle versioni più recenti dell'app il menu può cambiare.</p>
+<div class="callout callout-warning"><p><strong>Attenzione.</strong> Il manuale ricorda che il G1 esce dalla fabbrica già calibrato e che non va ricalibrato durante l'uso normale. Se dopo un aggiornamento compare un allarme, prima di ricalibrare chiedi conferma all'assistenza tecnica.</p></div>
+
+<h2>Cosa non fare</h2>
+<ul>
+<li><strong>Non spegnere il robot</strong> e non chiudere il collegamento durante l'aggiornamento.</li>
+<li><strong>Non aggiornare</strong> con batteria quasi scarica o con una rete instabile.</li>
+<li><strong>Non usare pacchetti firmware non ufficiali</strong>: gli aggiornamenti arrivano solo dai canali Unitree.</li>
+<li><strong>Non ricalibrare "per sicurezza"</strong>: la calibrazione si rifà solo quando serve e dopo aver sentito l'assistenza.</li>
+<li><strong>Non partire</strong> senza conoscere la versione firmware attuale.</li>
+</ul>
+
+<h2>Si può tornare a una versione precedente?</h2>
+<p>Per il firmware del G1 Unitree non pubblica una procedura di downgrade nei documenti consultati (manuale utente, pagina dell'app, FAQ per sviluppatori). Non è quindi un'operazione da tentare da soli. Se un aggiornamento crea problemi, il primo contatto è Abra Robotics; il manuale indica anche l'assistenza tecnica Unitree (support@unitree.cc) e il <a href="https://global-serviceconsole.unitree.com/index.html" rel="noopener noreferrer" target="_blank">portale del servizio clienti Unitree</a>.</p>
+
+<div class="product-strip" aria-label="Prodotti citati">
+<div class="product-strip-head"><span>Prodotti citati nell'articolo</span><a href="../g1.html">Gamma G1</a></div>
+<div class="product-strip-grid">
+<article class="product-card">
+<a class="product-card-media" href="../prodotti/unitree-g1-edu-standard.html"><img alt="Unitree G1 EDU U1" loading="lazy" src="../images/official/unitree-g1-01.webp"/></a>
+<div class="product-card-body">
+<h3><a href="../prodotti/unitree-g1-edu-standard.html">Unitree G1 EDU U1</a></h3>
+<p>SDK, 23 DoF, dock di calcolo</p>
+<div class="product-card-price">38.005 € <small>IVA esclusa</small></div>
+<div class="product-card-actions"><a class="product-card-btn" href="../prodotti/unitree-g1-edu-standard.html">Vedi scheda</a><a class="product-card-link" href="../assessment.html">Preventivo</a></div>
+</div>
+</article>
+<article class="product-card">
+<a class="product-card-media" href="../prodotti/unitree-g1-battery.html"><img alt="Batteria G1" loading="lazy" src="../images/official/unitree-g1-info-batteria.webp"/></a>
+<div class="product-card-body">
+<h3><a href="../prodotti/unitree-g1-battery.html">Batteria G1</a></h3>
+<p>9000 mAh a sgancio rapido</p>
+<div class="product-card-price">880 € <small>IVA esclusa</small></div>
+<div class="product-card-actions"><a class="product-card-btn" href="../prodotti/unitree-g1-battery.html">Vedi scheda</a><a class="product-card-link" href="../assessment.html">Preventivo</a></div>
+</div>
+</article>
+<article class="product-card">
+<a class="product-card-media" href="../prodotti/unitree-g1-remote.html"><img alt="Telecomando G1 (R3)" loading="lazy" src="../images/official/unitree-telecomando.webp"/></a>
+<div class="product-card-body">
+<h3><a href="../prodotti/unitree-g1-remote.html">Telecomando G1 (R3)</a></h3>
+<p>Di scorta, sempre carico</p>
+<div class="product-card-price">367 € <small>IVA esclusa</small></div>
+<div class="product-card-actions"><a class="product-card-btn" href="../prodotti/unitree-g1-remote.html">Vedi scheda</a><a class="product-card-link" href="../assessment.html">Preventivo</a></div>
+</div>
+</article>
+</div>
+</div>
+<h2>Domande frequenti</h2>
+<h3>Come si aggiorna il firmware dell'Unitree G1?</h3>
+<p>Via rete (OTA), con il robot collegato all'app Unitree Explore. Prima annota la versione attuale e verifica batteria e rete.</p>
+<h3>Posso tornare a una versione firmware precedente?</h3>
+<p>Non è documentato da Unitree. Se un aggiornamento crea problemi, contatta l'assistenza invece di tentare un downgrade da solo.</p>
+<h3>Dopo l'aggiornamento il G1 segnala allarmi sui giunti: cosa fare?</h3>
+<p>Non ricalibrare da solo. Il manuale Unitree chiede di sentire l'assistenza tecnica prima di decidere se ricalibrare i giunti dall'app.</p>
+<h3>Posso spegnere il robot durante l'aggiornamento?</h3>
+<p>No. Non interrompere alimentazione e collegamento finché l'aggiornamento non è concluso.</p>
+
+<p>Per l'uso quotidiano del robot la <a href="unitree-g1-guida-operativa.html">guida operativa del G1</a> copre accensione, telecomando e comandi di sicurezza. Chi sviluppa sul G1 EDU trova SDK e ROS 2 nella <a href="unitree-g1-programmazione.html">guida alla programmazione</a>.</p>
+
+<div class="figure-grid">
+<figure class="figure-card"><img src="../images/official/unitree-g1-info-batteria.webp" alt="Batteria a sgancio rapido dell'Unitree G1" width="800" height="800" loading="lazy"/><figcaption>Batteria del G1: parti con la carica piena prima di aggiornare.</figcaption></figure>
+<figure class="figure-card"><img src="../images/official/unitree-telecomando.webp" alt="Telecomando portatile dell'Unitree G1" width="800" height="800" loading="lazy"/><figcaption>Telecomando del G1, da tenere a portata di mano durante le prove dopo l'aggiornamento.</figcaption></figure>
+</div>
+
+<h2>Fonti</h2>
+<ul>
+<li><a href="https://www.unitree.com/g1/" rel="noopener noreferrer" target="_blank">Unitree G1, scheda ufficiale (autonomia, garanzia)</a></li>
+<li><a href="https://www.unitree.com/app/g1" rel="noopener noreferrer" target="_blank">Unitree Explore APP Download: app ufficiale, funzioni e video tutorial del G1</a></li>
+<li><a href="https://marketing.unitree.com/article/en/G1/User_Manual.html" rel="noopener noreferrer" target="_blank">Unitree G1 User Manual V1.6 (voce «Intelligent OTA Upgrade», controlli prima dell'accensione, collegamento all'app, calibrazione)</a></li>
+<li><a href="https://global-serviceconsole.unitree.com/index.html" rel="noopener noreferrer" target="_blank">Unitree, portale del servizio clienti</a></li>
+</ul>
+</div>
+<div class="article-cta"><h2>Devi ancora scegliere il G1?</h2><p>Ti aiutiamo a trovare la configurazione giusta e, dopo la consegna, siamo il primo contatto per avvio, rete e aggiornamenti.</p><a class="btn btn-primary" href="../assessment.html">Trova la configurazione giusta</a><a class="btn btn-outline-light" href="../g1.html">Configurazioni e prezzi G1</a></div>
+</div></article>
+<footer class="footer">
+<div class="container footer-grid">
+<div class="footer-brand">
+<a class="logo" href="../index.html"><img alt="Abra Robotics" class="logo-img" src="../images/logo.webp" width="180" height="72" decoding="async"/></a>
+<p class="footer-desc">Robotica applicata per aziende, università e istituti di ricerca. Hardware, software su misura, formazione e supporto tecnico dedicato.</p>
+</div>
+<div class="footer-nav">
+<span class="footer-heading">Prodotti</span>
+<a href="../cobot.html">Cobot</a>
+<a href="../amr.html">AMR</a>
+<a href="../quadrupedi.html">Quadrupedi</a>
+<a href="../umanoidi.html">Umanoidi</a>
+<a href="../accessori.html">Accessori</a>
+<a href="../catalogo.html">Catalogo completo</a>
+<a href="../listino-unitree.html">Listino prezzi</a>
+</div>
+<div class="footer-nav">
+<span class="footer-heading">Servizi e risorse</span>
+<a href="../assessment.html">Trova il robot giusto</a>
+<a href="../software.html">Software</a>
+<a href="../finanziamenti.html">Finanziamenti</a>
+<a href="../manifattura-logistica.html">Manifattura e Logistica</a>
+<a href="../universita-ricerca.html">Università e Ricerca</a>
+<a href="../blog.html">Blog</a>
+</div>
+<div class="footer-contact">
+<span class="footer-heading">Contatti</span>
+<a href="../chi-siamo.html">Chi siamo</a>
+<a href="mailto:info@abrarobotics.com">info@abrarobotics.com</a>
+<p>Viale Trieste 105<br/>30026 Portogruaro (VE)</p>
+<a class="btn btn-primary btn-sm" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ22FrpPdyPVRihi4eXPQlljTcG2toa8XF2d8W-QX-L9cKMaXqozq_YsHym56LEdTs9WsnqlTHeF" rel="noopener noreferrer" target="_blank">Prenota una chiamata</a>
+</div>
+</div>
+<div class="container footer-bottom">
+<p class="footer-copy">© 2026 Abra Robotics di Niccolò Mazzoleni. Tutti i diritti riservati. P.IVA 04800170278, Portogruaro (VE).</p>
+<nav aria-label="Note legali" class="footer-legal">
+<a href="../privacy-policy.html">Privacy Policy</a>
+<a href="../cookie-policy.html">Cookie Policy</a>
+<a href="../condizioni-di-vendita.html">Condizioni di vendita</a>
+<a href="../politica-resi.html">Politica resi</a>
+<a href="../note-legali.html">Note legali</a>
+</nav>
+</div>
+</footer>
+<script defer src="../script.js"></script>
+</body></html>

@@ -1,0 +1,87 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /editor/
+Disallow: /condivisi/
+# modelli interni dei generatori (segnaposto %%...%%), non sono pagine
+Disallow: /prodotti/_template
+Disallow: /scripts/_amr_catalog_fragment.html
+
+# AI Search Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-CloudVertexBot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: BingPreview
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# LLM / AI context file (llms.txt standard)
+# https://abrarobotics.com/llms.txt
+# Listino completo per assistenti AI: https://abrarobotics.com/llms-full.txt
+
+Sitemap: https://abrarobotics.com/sitemap.xml
+
+User-agent: GeminiBot
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Diffbot
+Allow: /

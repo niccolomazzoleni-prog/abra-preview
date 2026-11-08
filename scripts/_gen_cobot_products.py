@@ -1,0 +1,404 @@
+#!/usr/bin/env python3
+"""Genera schede cobot Fairino, le card del catalogo in cobot.html e lo stub catalogo-cobot.html."""
+from __future__ import annotations
+
+import json
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+sys.path.insert(0, str(ROOT / "prodotti"))
+
+from _cobot_catalog_data import (  # noqa: E402
+    CATALOG,
+    CHIPS_BY_SLUG,
+    IMG,
+    image_for,
+    price_display,
+    sell_price_eur,
+)
+from _cobot_specs_data import ACCORDION_BY_SLUG, included_cards  # noqa: E402
+from site_nav import render_site_nav  # noqa: E402
+
+try:
+    from _site import SITE  # noqa: E402
+except ImportError:
+    SITE = "https://abrarobotics.com"
+
+TEMPLATE = (ROOT / "prodotti" / "_template-cobot.html").read_text(encoding="utf-8")
+OUT_DIR = ROOT / "prodotti"
+MANIFEST_PATH = ROOT / "data" / "cobot-products.json"
+BRAND = "Fairino"
+GOOGLE_CATEGORY = "Business & Industrial > Industrial Machinery > Robotic Arms"
+
+WA_BAR_HTML = """  <div class="wa-bar" id="wa-bar">
+    <p><svg width="20" height="20" viewBox="0 0 24 24" fill="#fff" style="flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg> Vuoi ricevere più informazioni?</p>
+    <a href="https://wa.me/393408592926" target="_blank" rel="noopener" class="wa-btn">Contattaci su WhatsApp</a>
+    <button class="wa-bar-close" id="wa-bar-close" aria-label="Chiudi">&times;</button>
+  </div>"""
+
+PROCESS_HTML = """      <div class="process-steps-product">
+        <div class="step">
+          <span class="step-number">01</span>
+          <h3>Assessment</h3>
+          <p>Analizziamo ciclo, payload, safety e layout cella. Sopralluogo e analisi sono quotati su progetto.</p>
+        </div>
+        <div class="step">
+          <span class="step-number">02</span>
+          <h3>Progettazione</h3>
+          <p>Selezione gripper, percorso robot, integrazione I/O e programmazione base applicazione.</p>
+        </div>
+        <div class="step">
+          <span class="step-number">03</span>
+          <h3>Go-live</h3>
+          <p>Installazione e commissioning — tempi definiti nell'offerta, in base al progetto.</p>
+        </div>
+      </div>"""
+
+
+def filename_for(slug: str) -> str:
+    return f"cobot-{slug}.html"
+
+
+def sku_for(slug: str) -> str:
+    return f"cobot-{slug}"
+
+
+def trim_desc(text: str, max_len: int = 160) -> str:
+    if len(text) <= max_len:
+        return text
+    return text[: max_len - 1].rsplit(" ", 1)[0] + "…"
+
+
+def keyspecs_html(specs: list[tuple[str, str]]) -> str:
+    return "\n".join(
+        f'            <div class="key-spec"><span class="key-spec-value">{v}</span>'
+        f'<span class="key-spec-label">{k}</span></div>'
+        for k, v in specs[:4]
+    )
+
+
+def stats_html(specs: list[tuple[str, str]]) -> str:
+    out = []
+    for label, val in specs[:3]:
+        num = "".join(c for c in val if c.isdigit() or c in ",.")
+        unit = val.replace(num, "").strip() if num else ""
+        target = num.replace(",", ".") if num else "0"
+        u = f'<span class="stat-unit">{unit}</span>' if unit else ""
+        out.append(
+            f'        <div class="product-stat">\n'
+            f'          <span class="stat-number"><span class="counter" data-target="{target.split("–")[0].split("-")[0]}">0</span>{u}</span>\n'
+            f'          <span class="stat-label">{label}</span>\n'
+            f"        </div>"
+        )
+    return "\n".join(out)
+
+
+def included_html(slug: str, title: str) -> str:
+    return "\n".join(
+        f'        <div class="included-card">\n'
+        f'          <span class="included-card-label">{lbl}</span>\n'
+        f'          <span class="included-card-name">{name}</span>\n'
+        f"        </div>"
+        for lbl, name in included_cards(slug, title)
+    )
+
+
+def specs_accordion_html(slug: str) -> str:
+    parts = []
+    for i, (title, rows) in enumerate(ACCORDION_BY_SLUG.get(slug, [])):
+        open_attr = " open" if i == 0 else ""
+        trs = "\n".join(f"              <tr><td>{k}</td><td>{v}</td></tr>" for k, v in rows)
+        parts.append(
+            f'          <details class="faq-item"{open_attr}>\n'
+            f"            <summary>{title}</summary>\n"
+            f'            <table class="specs-table">\n{trs}\n'
+            f"            </table>\n"
+            f"          </details>"
+        )
+    return "\n".join(parts)
+
+
+def spec_mini_html(specs: list[tuple[str, str]], rows: list[tuple[str, str]]) -> str:
+    all_rows = list(specs) + list(rows)
+    return "\n".join(
+        f'        <div class="spec-mini-card">\n'
+        f'          <span class="spec-mini-value">{v}</span>\n'
+        f'          <span class="spec-mini-label">{k}</span>\n'
+        f"        </div>"
+        for k, v in all_rows[:9]
+    )
+
+
+def media_main(slug: str, title: str, group: str) -> str:
+    img_rel = f"../{image_for(slug)}"
+    style = (
+        "max-width:100%;max-height:480px;width:100%;object-fit:contain;padding:24px;"
+        "filter:drop-shadow(0 8px 24px rgba(0,0,0,.35));"
+    )
+    if group == "palletizing":
+        vid = "../videos/fairino-palletizing.mp4"
+        return (
+            f'<video src="{vid}" poster="{img_rel}" autoplay loop muted playsinline '
+            f'style="{style}"></video>'
+        )
+    return f'<img id="gallery-main-img" src="{img_rel}" alt="{title}" style="{style}">'
+
+
+def buy_area(prezzo_eur: float) -> str:
+    vis = price_display(prezzo_eur)
+    return f"""          <div class="buy-box">
+            <div class="buy-box-head">
+              <div class="buy-box-price">
+                <span class="buy-box-amount">{vis}</span>
+                <span class="buy-box-sub">IVA esclusa · prezzo indicativo</span>
+              </div>
+            </div>
+            <ul class="buy-box-perks">
+              <li><span class="bp-ico">✓</span> Assessment applicativo su preventivo</li>
+              <li><span class="bp-ico">✓</span> Configurazione base e supporto Abra</li>
+              <li><span class="bp-ico">✓</span> Disponibilità e consegna da verificare con il produttore</li>
+            </ul>
+            <div class="buy-box-cta"><a href="#form" class="btn btn-primary">Richiedi preventivo</a></div>
+            <p class="buy-box-note">Prezzo indicativo — gripper e safety su preventivo dedicato.</p>
+          </div>"""
+
+
+def product_schema(name: str, desc: str, img: str, price: float, filename: str, sku: str) -> str:
+    img_url = f"{SITE}/{img}"
+    nm, ds = name.replace('"', '\\"'), desc.replace('"', '\\"')
+    canon = f"{SITE}/prodotti/{filename}"
+    breadcrumb = f"""  <script type="application/ld+json">
+  {{"@context": "https://schema.org", "@type": "BreadcrumbList",
+  "itemListElement": [
+    {{"@type": "ListItem", "position": 1, "name": "Home", "item": "{SITE}/"}},
+    {{"@type": "ListItem", "position": 2, "name": "Cobot", "item": "{SITE}/cobot.html"}},
+    {{"@type": "ListItem", "position": 3, "name": "{nm}", "item": "{canon}"}}
+  ]}}
+  </script>"""
+    product = f"""  <script type="application/ld+json">
+  {{"@context": "https://schema.org/", "@type": "Product",
+  "name": "{nm}",
+  "sku": "{sku}",
+  "mpn": "{sku}",
+  "image": ["{img_url}"],
+  "description": "{ds}",
+  "brand": {{"@type": "Brand", "name": "Fairino"}},
+  "category": "{GOOGLE_CATEGORY}",
+  "itemCondition": "https://schema.org/NewCondition",
+  "offers": {{
+    "@type": "Offer",
+    "priceCurrency": "EUR",
+    "price": "{price:.2f}",
+    "priceValidUntil": "2026-12-31",
+    "itemCondition": "https://schema.org/NewCondition",
+        "url": "{canon}",
+    "seller": {{"@type": "Organization", "name": "Abra Robotics", "url": "{SITE}"}}
+  }}}}
+  </script>"""
+    return product + "\n" + breadcrumb
+
+
+def generate_one(row: tuple) -> dict:
+    slug, group, tag, title, subtitle, blurb, specs, rows, use_case, prezzo_eur = row
+    filename = filename_for(slug)
+    sku = sku_for(slug)
+    price = float(sell_price_eur(prezzo_eur))
+    og_image = image_for(slug)
+    meta = trim_desc(f"{title}: {subtitle}. {price_display(prezzo_eur)} IVA esclusa. Cobot Fairino in Italia con Abra Robotics.")
+    lang_title = f"{title} — Cobot Fairino | Abra Robotics"
+
+    html = TEMPLATE
+    repl = {
+        "%%LANG_TITLE%%": lang_title,
+        "%%METADESC%%": meta,
+        "%%FILENAME%%": filename,
+        "%%TITLE%%": title,
+        "%%SUBTITLE%%": subtitle,
+        "%%BADGE%%": tag,
+        "%%DESC%%": blurb,
+        "%%SKU%%": sku,
+        "%%USE_CASE%%": use_case,
+        "%%OG_IMAGE%%": og_image,
+        "%%PRICE_AMOUNT%%": f"{price:.2f}",
+        "%%KEYSPECS%%": keyspecs_html(specs),
+        "%%STATS%%": stats_html(specs),
+        "%%INCLUDED%%": included_html(slug, title),
+        "%%SPECS_ACCORDION%%": specs_accordion_html(slug),
+        "%%SPEC_MINI%%": spec_mini_html(specs, rows),
+        "%%PROCESS%%": PROCESS_HTML,
+        "%%WA_BAR%%": WA_BAR_HTML,
+        "%%MEDIA_MAIN%%": media_main(slug, title, group),
+        "%%BUY_AREA%%": buy_area(prezzo_eur),
+        "%%PRODUCT_SCHEMA%%": product_schema(title, meta, og_image, price, filename, sku),
+        "%%SITE_NAV%%": render_site_nav("../"),
+    }
+    for k, v in repl.items():
+        html = html.replace(k, v)
+
+    (OUT_DIR / filename).write_text(html, encoding="utf-8")
+    return {
+        "slug": slug,
+        "group": group,
+        "sku": sku,
+        "filename": filename,
+        "title": title,
+        "subtitle": subtitle,
+        "tag": tag,
+        "blurb": blurb,
+        "price_eur": price,
+        "price_display": price_display(prezzo_eur),
+        "url": f"{SITE}/prodotti/{filename}",
+        "image": f"{SITE}/{og_image}",
+    }
+
+
+def catalog_card(item: dict) -> str:
+    img = image_for(item["slug"])
+    family = "Soluzione palletizzazione" if item.get("group") == "palletizing" else "Fairino · Cobot 6 assi"
+    return f"""        <article class="cat-card">
+          <div class="cat-media amr-media"><img src="{img}" alt="{item['title']}" loading="lazy"></div>
+          <div class="cat-body">
+            <p class="cat-family">{family}</p>
+            <h3>{item['title']}</h3>
+            <p class="cat-sub">{item['subtitle']}</p>
+            <p class="cat-blurb">{item['blurb'][:120]}…</p>
+            <p class="cat-price">{item['price_display']}</p>
+            <a href="prodotti/{item['filename']}" class="btn btn-primary btn-sm">Vedi scheda →</a>
+          </div>
+        </article>"""
+
+
+def lp_model_card(row: tuple, item: dict) -> str:
+    slug, _group, tag, title, *_ = row
+    chips = CHIPS_BY_SLUG.get(slug, ())
+    chips_html = "".join(f"<span>{c}</span>" for c in chips)
+    img = image_for(slug)
+    return f"""
+        <a class="model-card" href="prodotti/{item['filename']}">
+          <div class="model-media"><img src="{img}" alt="{title}"></div>
+          <div class="model-body">
+            <h3>{title}</h3>
+            <span class="model-tag">{tag}</span>
+            <div class="model-chips">{chips_html}</div>
+            <span class="model-price">{item['price_display']} <small>IVA escl.</small></span>
+            <span class="model-link">Scheda prodotto →</span>
+          </div>
+        </a>"""
+
+
+def _patch_lp_block(text: str, start: str, end: str, cards: str) -> str:
+    if start not in text or end not in text:
+        return text
+    before, rest = text.split(start, 1)
+    _, after = rest.split(end, 1)
+    return f"{before}{start}\n{cards}\n{end}{after}"
+
+
+def patch_lp_cobot(manifest: list[dict]) -> None:
+    lp_path = ROOT / "lp-cobot.html"
+    if not lp_path.exists():
+        return
+    text = lp_path.read_text(encoding="utf-8")
+    by_slug = {m["slug"]: m for m in manifest}
+    robot_cards = "\n".join(
+        lp_model_card(row, by_slug[row[0]])
+        for row in CATALOG
+        if row[1] == "robot" and row[0] in by_slug
+    )
+    pallet_cards = "\n".join(
+        lp_model_card(row, by_slug[row[0]])
+        for row in CATALOG
+        if row[1] == "palletizing" and row[0] in by_slug
+    )
+    text = _patch_lp_block(text, "<!-- COBOT_MODELS_START -->", "<!-- COBOT_MODELS_END -->", robot_cards)
+    text = _patch_lp_block(text, "<!-- COBOT_PALLET_START -->", "<!-- COBOT_PALLET_END -->", pallet_cards)
+    lp_path.write_text(text, encoding="utf-8")
+
+
+HUB_SPECS = {row[0]: row[6] for row in CATALOG}
+HUB_TAGS = {row[0]: row[2] for row in CATALOG}
+
+
+def hub_card(item: dict) -> str:
+    """Card prodotto per cobot.html (stesso componente robot-card degli hub quadrupedi/umanoidi)."""
+    slug = item["slug"]
+    group = item.get("group", "robot")
+    specs = HUB_SPECS.get(slug, [])[:4]
+    specs_html = "".join(
+        f'<div class="key-spec"><span class="key-spec-label">{k}</span><span class="key-spec-value">{v}</span></div>'
+        for k, v in specs
+    )
+    family = "pallet" if group == "palletizing" else "cobot"
+    return f"""<article class="robot-card" data-family="{family}">
+<div class="robot-media">
+<span class="robot-media-tag">{HUB_TAGS.get(slug, item.get('tag', ''))}</span>
+<img alt="{item['title']}" loading="lazy" src="{image_for(slug)}"/>
+</div>
+<div class="robot-body">
+<div>
+<h3>{item['title']}</h3>
+<p class="robot-subtitle">{item['subtitle']}</p>
+</div>
+<div class="key-specs">{specs_html}</div>
+<div class="robot-card-cta">
+<span class="hub-price">{item['price_display']} <small>IVA escl.</small></span>
+<a class="btn btn-primary btn-sm" href="prodotti/{item['filename']}">Vedi scheda →</a>
+</div>
+</div>
+</article>"""
+
+
+def patch_cobot_hub(manifest: list[dict]) -> None:
+    """Riscrive solo le card tra i marcatori di cobot.html (il resto della pagina e' a mano)."""
+    hub = ROOT / "cobot.html"
+    if not hub.exists():
+        return
+    text = hub.read_text(encoding="utf-8")
+    robots = "\n".join(hub_card(m) for m in manifest if m.get("group") == "robot")
+    pallets = "\n".join(hub_card(m) for m in manifest if m.get("group") == "palletizing")
+    text = _patch_lp_block(text, "<!-- COBOT_HUB_ROBOTS_START -->", "<!-- COBOT_HUB_ROBOTS_END -->", robots)
+    text = _patch_lp_block(text, "<!-- COBOT_HUB_PALLET_START -->", "<!-- COBOT_HUB_PALLET_END -->", pallets)
+    hub.write_text(text, encoding="utf-8")
+
+
+CATALOG_STUB = """<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Catalogo cobot spostato | Abra Robotics</title>
+<meta name="robots" content="noindex, follow"/>
+<link rel="canonical" href="https://abrarobotics.com/cobot.html"/>
+<meta http-equiv="refresh" content="0; url=cobot.html"/>
+<script>location.replace('cobot.html' + location.hash);</script>
+</head>
+<body>
+<p>Il catalogo cobot ora è nella pagina <a href="cobot.html">Cobot</a>.</p>
+</body>
+</html>
+"""
+
+
+def write_catalog_stub() -> None:
+    """catalogo-cobot.html resta solo come redirect verso cobot.html (link vecchi e Google)."""
+    (ROOT / "catalogo-cobot.html").write_text(CATALOG_STUB, encoding="utf-8")
+
+
+def main() -> None:
+    manifest = [generate_one(row) for row in CATALOG]
+    MANIFEST_PATH.write_text(
+        json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+    write_catalog_stub()
+    patch_cobot_hub(manifest)
+    patch_lp_cobot(manifest)
+    print(f"Wrote {len(manifest)} schede cobot-*.html")
+    print("Patched lp-cobot.html")
+    print(f"Wrote {MANIFEST_PATH}")
+    print("Patched cobot.html · catalogo-cobot.html = redirect")
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,51 @@
+{
+  "version": 2,
+  "blocchi": [
+    {
+      "id": "perche-abra",
+      "label": "Perché Abra Robotics",
+      "type": "section",
+      "title": "Perché scegliere Abra Robotics",
+      "body": "Siamo parte della filiera di distribuzione di Unitree Italia e ci occupiamo di installazione, integrazione software e formazione. Un unico interlocutore dall'hardware al POC in produzione — configurazione, ROS 2, finanziamenti e supporto post-vendita dedicato."
+    },
+    {
+      "id": "finanziamenti",
+      "label": "Finanziamenti & incentivi",
+      "type": "section",
+      "title": "Agevolazioni e sgravi fiscali (Italia — riferimento 2025/2026)",
+      "body": "In base al profilo aziendale e al tipo di investimento, il progetto può rientrare in uno o più degli strumenti sotto. Abra Robotics effettua **verifica preliminare gratuita** dell'idoneità; l'ammissibilità va confermata con il consulente fiscale del cliente.\n\n• **Iperammortamento 2026** (L. 199/2025, art. 1, commi 427-436; decreto interministeriale 7 maggio 2026) — maggiorazione del costo fiscalmente deducibile (180% fino a 2,5 milioni, 100% fino a 10 milioni, 50% fino a 20 milioni) per beni nuovi degli Allegati IV e V interconnessi, acquistati dal 1° gennaio 2026 al 30 settembre 2028. Richiede comunicazioni al GSE (preventiva, conferma con acconto almeno del 20%, completamento), perizia tecnica asseverata e certificazione contabile.\n\n• **Nuova Sabatini** — contributo MIMIT in conto impianti su finanziamento o leasing per beni strumentali (PMI); rifinanziata dalla Legge di Bilancio 2026 con 650 milioni per il 2026-2027.\n\n• **Credito R&S / innovazione tecnologica** — per attività di sviluppo software, integrazione perception e PoC con componente innovativa documentabile.\n\n• **Bandi PNRR, regionali e camera di commercio** — contributi a fondo perduto o finanziamenti agevolati su progetti di digitalizzazione, formazione e automazione (disponibilità variabile per territorio e sportello).\n\n• **Leasing operativo / strumenti di pagamento dilazionato** — alternativa al purchase diretto per diluire il cash-out e allineare canone al beneficio fiscale.\n\n**Nota:** importi, aliquote e cumulo tra misure sono soggetti a provvedimenti annuali e al profilo del beneficiario. In offerta i prezzi robot restano **IVA esclusa**; l'effetto netto dell'incentivo va stimato in fase di due diligence commerciale."
+    },
+    {
+      "id": "consegna-supporto",
+      "label": "Consegna & supporto",
+      "type": "section",
+      "title": "Consegna, installazione e supporto",
+      "body": "Consegna indicativa: quadrupedi e umanoidi Unitree 4–6 settimane dalla conferma d'ordine. AMR e cobot: disponibilità e tempi di consegna vengono verificati con il produttore e confermati per iscritto prima dell'ordine. Offriamo configurazione in laboratorio, training team tecnico, documentazione SDK e assistenza continuativa via ticket dedicato."
+    },
+    {
+      "id": "ros2-edu",
+      "label": "ROS 2 & ricerca",
+      "type": "section",
+      "title": "Piattaforma aperta per ricerca",
+      "body": "I modelli EDU Unitree supportano nativamente ROS 2, Python e C++ tramite SDK ufficiale. Ideale per laboratori universitari, imitation learning, SLAM e sperimentazione con policy di controllo custom. Abra fornisce starter kit e librerie GitHub proprietarie."
+    },
+    {
+      "id": "hero-abra",
+      "label": "Immagine — Team Abra",
+      "type": "image",
+      "title": "",
+      "image_url": "../images/hero-robots.png",
+      "caption": "Abra Robotics — robotica applicata per aziende, università e ricerca"
+    },
+    {
+      "id": "gallery-unitree",
+      "label": "Galleria — Linea Unitree",
+      "type": "gallery",
+      "title": "Soluzioni Unitree a catalogo",
+      "images": [
+        { "url": "../images/official/unitree-g1-01.webp", "caption": "Unitree G1 — umanoide EDU" },
+        { "url": "../images/prodotti/go2-pro.webp", "caption": "Unitree Go2 Pro — quadrupede" }
+      ]
+    }
+  ]
+}

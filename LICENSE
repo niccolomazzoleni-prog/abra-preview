@@ -1,0 +1,92 @@
+Copyright (c) 2026 Abra Robotics di Niccolò Mazzoleni
+P.IVA / C.F. 04800170278 - info@abrarobotics.com
+All rights reserved. / Tutti i diritti riservati.
+
+PROPRIETARY LICENSE - ENGLISH
+
+This repository and all of its contents, including without limitation source
+code, HTML, CSS, JavaScript, scripts, templates, text, graphics, images,
+videos, logos, data and documentation (the "Software"), are the exclusive
+property of Abra Robotics di Niccolò Mazzoleni (the "Owner") or are used
+under license, and are protected by Italian, European and international
+copyright, trademark and intellectual property laws.
+
+No license or right is granted to any person by the publication or
+visibility of this repository. Without the prior express written
+authorization of the Owner, you may NOT, in whole or in part:
+
+  1. copy, reproduce, download, mirror or clone the Software;
+  2. modify, adapt, translate or create derivative works of the Software;
+  3. distribute, publish, sublicense, sell, rent, lend or otherwise make the
+     Software available to third parties;
+  4. use the Software, or any part of it, for commercial or non-commercial
+     purposes, including to build, host or operate other websites, products
+     or services;
+  5. use the Software, or any part of it, to train, fine-tune or evaluate
+     machine learning or artificial intelligence models, or include it in
+     datasets;
+  6. remove or alter any copyright, trademark or proprietary notice.
+
+Viewing the public website served from this repository in a web browser for
+its intended informational purpose is permitted. Any other use is prohibited.
+
+Third-party trademarks, product names and images (including, by way of
+example, Unitree Robotics) belong to their respective owners and are used for
+descriptive purposes only.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND. IN NO EVENT
+SHALL THE OWNER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE.
+
+Any unauthorized use constitutes an infringement of the Owner's rights and
+will be prosecuted under applicable law, including Law no. 633/1941 (Italian
+Copyright Law). This license is governed by Italian law; the Court of the
+Owner's registered office has exclusive jurisdiction.
+
+For licensing requests: info@abrarobotics.com
+
+
+LICENZA PROPRIETARIA - ITALIANO
+
+Il presente repository e tutti i suoi contenuti, inclusi a titolo
+esemplificativo codice sorgente, HTML, CSS, JavaScript, script, template,
+testi, grafica, immagini, video, loghi, dati e documentazione (il
+"Software"), sono di proprietà esclusiva di Abra Robotics di Niccolò
+Mazzoleni (il "Titolare") o utilizzati su licenza, e sono protetti dalla
+normativa italiana, europea e internazionale sul diritto d'autore, sui
+marchi e sulla proprietà intellettuale.
+
+La pubblicazione o la visibilità del repository non concede alcuna licenza o
+diritto. Senza la preventiva autorizzazione scritta del Titolare è vietato,
+in tutto o in parte:
+
+  1. copiare, riprodurre, scaricare, duplicare o clonare il Software;
+  2. modificare, adattare, tradurre o creare opere derivate dal Software;
+  3. distribuire, pubblicare, concedere in sublicenza, vendere, noleggiare,
+     prestare o comunque mettere il Software a disposizione di terzi;
+  4. utilizzare il Software, o parti di esso, per scopi commerciali o non
+     commerciali, incluso realizzare, ospitare o gestire altri siti web,
+     prodotti o servizi;
+  5. utilizzare il Software, o parti di esso, per addestrare, perfezionare o
+     valutare modelli di machine learning o intelligenza artificiale, o
+     inserirlo in dataset;
+  6. rimuovere o alterare note di copyright, marchi o altre indicazioni di
+     proprietà.
+
+È consentita esclusivamente la consultazione del sito web pubblico servito da
+questo repository tramite browser, per la sua finalità informativa. Ogni
+altro uso è vietato.
+
+Marchi, nomi e immagini di prodotti di terzi (ad esempio Unitree Robotics)
+appartengono ai rispettivi titolari e sono usati a solo scopo descrittivo.
+
+IL SOFTWARE È FORNITO "COSÌ COM'È", SENZA GARANZIE DI ALCUN TIPO. IN NESSUN
+CASO IL TITOLARE SARÀ RESPONSABILE PER PRETESE, DANNI O ALTRE RESPONSABILITÀ
+DERIVANTI DAL SOFTWARE O CONNESSE AL SUO UTILIZZO.
+
+Ogni utilizzo non autorizzato costituisce violazione dei diritti del Titolare
+e sarà perseguito ai sensi di legge, inclusa la Legge 22 aprile 1941 n. 633
+(Legge sul diritto d'autore). La presente licenza è regolata dalla legge
+italiana; è competente in via esclusiva il Foro della sede del Titolare.
+
+Per richieste di licenza: info@abrarobotics.com

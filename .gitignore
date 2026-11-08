@@ -1,0 +1,45 @@
+# OS / build
+.DS_Store
+prodotti/assets/_originals/
+scripts/__pycache__/
+prodotti/__pycache__/
+
+# Listini e audit interni (FOB, Gold, margini) — solo locale
+listini/interno/
+
+# Segreti / config locale
+.env
+.env.local
+local-ai-config.json
+offerte-ai/data/local-ai-config.json
+offerte-ai/data/feedback/
+offerte-ai/data/feedback/**
+
+# Area admin (tool interni; usare in locale)
+admin/
+
+# Hash password admin
+data/admin-auth.json
+
+# Preventivi nominativi / PDF (tieni traccia in locale; vedi samples/README.md)
+offerte-ai/samples/*
+!offerte-ai/samples/README.md
+!offerte-ai/samples/_export-offers-pdf.mjs
+
+# Apps Script con Sheet ID e email (deploy resta su Google)
+apps-script/Code.gs
+
+# Dump / temp locali
+.tmp-*
+lighthouse-*.json
+.venv-ai/
+.hermes/
+
+# Node (export PDF locale)
+node_modules/
+package-lock.json
+package.json
+
+# Watchdog local logs
+scripts/watchdog-logs/
+

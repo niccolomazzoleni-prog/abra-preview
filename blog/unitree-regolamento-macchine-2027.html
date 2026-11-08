@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8"/>
+<script>/* abra-consent-default: Consent Mode v2, negato finche' l'utente non sceglie (consent.js) */
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+(function(){var c=null;try{c=JSON.parse(localStorage.getItem('abra_consent')||'null');if(c&&(c.v!==1||Date.now()-c.ts>15552e6))c=null;}catch(e){}window.abraConsent=c;var g=function(v){return v?'granted':'denied';};gtag('consent','default',{ad_storage:g(c&&c.marketing),ad_user_data:g(c&&c.marketing),ad_personalization:g(c&&c.marketing),analytics_storage:g(c&&c.analytics),functionality_storage:'granted',security_storage:'granted',wait_for_update:500});gtag('set','ads_data_redaction',true);gtag('set','url_passthrough',true);})();</script>
+<script defer src="../consent.js"></script>
+<script defer src="../visite.js"></script>
+<!-- Google Tag Manager + Google tag (gtag.js): i comandi entrano subito in dataLayer, DOPO il consent default qui sopra;
+     gli script esterni (~350 KB) si scaricano solo dopo il load (idle) o alla prima interazione, per non rubare banda a CSS/font/hero su mobile. -->
+<script>(function(w,d){w.dataLayer=w.dataLayer||[];w.dataLayer.push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+  gtag('js',new Date());gtag('config','G-T4ZC7CM8RX');
+  var ev=['pointerdown','keydown','touchstart','scroll'],done=0;
+  function load(){if(done)return;done=1;ev.forEach(function(e){w.removeEventListener(e,load,true);});
+    ['https://www.googletagmanager.com/gtm.js?id=GTM-MNLWZSN7','https://www.googletagmanager.com/gtag/js?id=G-T4ZC7CM8RX'].forEach(function(u){var j=d.createElement('script');j.async=true;j.src=u;d.head.appendChild(j);});}
+  ev.forEach(function(e){w.addEventListener(e,load,{capture:true,passive:true});});
+  function idle(){w.requestIdleCallback?requestIdleCallback(load,{timeout:3000}):setTimeout(load,1500);}
+  if(d.readyState==='complete')idle();else w.addEventListener('load',idle);
+})(window,document);</script>
+<!-- End Google Tag Manager -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Robot Unitree e Regolamento macchine 2027: cosa cambia</title>
+<meta name="description" content="Regolamento (UE) 2023/1230 dal 20 gennaio 2027: marcatura CE, modifiche sostanziali, software e cybersicurezza per chi compra un robot Unitree."/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://abrarobotics.com/blog/unitree-regolamento-macchine-2027.html"/>
+<link href="https://abrarobotics.com/blog/unitree-regolamento-macchine-2027.html" hreflang="it" rel="alternate"/>
+<link href="https://abrarobotics.com/en/blog/unitree-regolamento-macchine-2027.html" hreflang="en" rel="alternate"/>
+<link href="https://abrarobotics.com/de/blog/unitree-regolamento-macchine-2027.html" hreflang="de" rel="alternate"/>
+<link href="https://abrarobotics.com/fr/blog/unitree-regolamento-macchine-2027.html" hreflang="fr" rel="alternate"/>
+<link href="https://abrarobotics.com/es/blog/unitree-regolamento-macchine-2027.html" hreflang="es" rel="alternate"/>
+<link href="https://abrarobotics.com/pl/blog/unitree-regolamento-macchine-2027.html" hreflang="pl" rel="alternate"/>
+<link href="https://abrarobotics.com/nl/blog/unitree-regolamento-macchine-2027.html" hreflang="nl" rel="alternate"/>
+<link href="https://abrarobotics.com/cs/blog/unitree-regolamento-macchine-2027.html" hreflang="cs" rel="alternate"/>
+<link href="https://abrarobotics.com/sv/blog/unitree-regolamento-macchine-2027.html" hreflang="sv" rel="alternate"/>
+<link href="https://abrarobotics.com/da/blog/unitree-regolamento-macchine-2027.html" hreflang="da" rel="alternate"/>
+<link href="https://abrarobotics.com/no/blog/unitree-regolamento-macchine-2027.html" hreflang="nb" rel="alternate"/>
+<link href="https://abrarobotics.com/fi/blog/unitree-regolamento-macchine-2027.html" hreflang="fi" rel="alternate"/>
+<link href="https://abrarobotics.com/blog/unitree-regolamento-macchine-2027.html" hreflang="x-default" rel="alternate"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Robot Unitree e Regolamento macchine 2027: cosa cambia per chi compra"/>
+<meta property="og:description" content="Cosa prevede il Regolamento (UE) 2023/1230 per umanoidi e quadrupedi Unitree: chi è il fabbricante, marcatura CE, software, cybersicurezza e checklist operativa."/>
+<meta property="og:url" content="https://abrarobotics.com/blog/unitree-regolamento-macchine-2027.html"/>
+<meta property="og:image" content="https://abrarobotics.com/images/official/unitree-b2-montagna.webp"/>
+<meta property="og:locale" content="it_IT"/>
+<meta property="og:site_name" content="Abra Robotics"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Robot Unitree e Regolamento macchine 2027"/>
+<meta name="twitter:description" content="Marcatura CE, modifiche sostanziali, software e cybersicurezza: cosa cambia dal 20 gennaio 2027 per chi usa un robot Unitree."/>
+<meta name="twitter:image" content="https://abrarobotics.com/images/official/unitree-b2-montagna.webp"/>
+<link href="../favicon.ico" rel="icon" sizes="any"/>
+<link href="../images/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32"/>
+<link href="../images/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16"/>
+<link href="../images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="../style.css" rel="stylesheet"/>
+<link href="blog.css" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Robot Unitree e Regolamento macchine (UE) 2023/1230: cosa cambia dal 20 gennaio 2027 per chi compra",
+  "description": "Regolamento (UE) 2023/1230 dal 20 gennaio 2027: marcatura CE, modifiche sostanziali, software e cybersicurezza per chi compra un robot Unitree.",
+  "datePublished": "2026-10-01",
+  "dateModified": "2026-10-19",
+  "author": {
+    "@type": "Organization",
+    "name": "Abra Robotics",
+    "url": "https://abrarobotics.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Abra Robotics",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://abrarobotics.com/images/logo-icon.png"
+    }
+  },
+  "mainEntityOfPage": "https://abrarobotics.com/blog/unitree-regolamento-macchine-2027.html",
+  "image": "https://abrarobotics.com/images/official/unitree-b2-montagna.webp",
+  "inLanguage": "it",
+  "about": [
+    {"@type": "Brand", "name": "Unitree Robotics"},
+    {"@type": "Legislation", "name": "Regolamento (UE) 2023/1230 relativo alle macchine", "legislationIdentifier": "32023R1230"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Da quando si applica il Regolamento macchine (UE) 2023/1230?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dal 20 gennaio 2027, al posto della Direttiva 2006/42/CE. Le regole sugli organismi notificati valgono già dal 20 gennaio 2024."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Un robot Unitree comprato nel 2026 va rifatto conforme nel 2027?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, se è stato immesso sul mercato conforme alla Direttiva 2006/42/CE prima di quella data (art. 52). Restano gli obblighi del datore di lavoro sull'uso sicuro."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Se scrivo software mio per un G1 o un Go2 divento fabbricante?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Solo se il software produce una modifica sostanziale, cioè non prevista dal fabbricante e tale da richiedere nuove misure di protezione. Un'applicazione nei limiti d'uso previsti di norma non lo è."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Gli umanoidi devono passare da un organismo notificato?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Non per il solo fatto di essere umanoidi. Serve per le categorie dell'allegato I, parte A, come i sistemi di sicurezza auto-evolutivi basati su apprendimento automatico."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Esiste una norma tecnica specifica per umanoidi e quadrupedi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Non ancora: a ottobre 2026 la ISO 25785-1 è in sviluppo. Si lavora con ISO 12100 e, dove applicabile, con la serie ISO 10218."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Un robot con intelligenza artificiale rientra anche nell'AI Act?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sì, se l'IA svolge una funzione di sicurezza. I requisiti relativi passeranno nel Regolamento macchine con atti delegati attesi entro il 2 agosto 2028."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Le università sono escluse dal Regolamento macchine?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Solo per le macchine costruite apposta per la ricerca e usate temporaneamente in laboratorio. Un robot da catalogo non rientra in automatico nell'esclusione."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<nav class="navbar"><div class="container navbar-inner">
+<a class="logo" href="../index.html"><img alt="Abra Robotics" class="logo-img" src="../images/logo.webp"/></a>
+<div class="nav-links">
+<a href="../lp-unitree.html">Unitree</a>
+<a href="../catalogo-unitree.html">Catalogo</a>
+<a href="../listino-unitree.html">Listino</a>
+<a href="../blog.html">Blog</a>
+</div>
+<a class="btn btn-primary btn-sm" href="../index.html#cta-finale">Preventivo Unitree</a>
+</div></nav>
+
+<article class="article-wrap">
+<div class="container">
+<nav class="breadcrumb"><a href="../index.html">Home</a> / <a href="../blog.html">Blog</a> / Regolamento macchine 2027</nav>
+
+<figure class="article-cover">
+<img src="../images/official/unitree-b2-montagna.webp" alt="Quadrupede industriale Unitree B2: robot soggetto al Regolamento macchine (UE) 2023/1230" width="1600" height="1600" loading="eager"/>
+</figure>
+
+<header class="article-header">
+<p class="label">Unitree · Normativa · Sicurezza</p>
+<h1>Robot Unitree e Regolamento macchine (UE) 2023/1230: cosa cambia dal 20 gennaio 2027 per chi compra</h1>
+<div class="article-meta"><time datetime="2026-10-01">1 ottobre 2026</time><span>Aggiornato 19 ottobre 2026</span><span>Abra Robotics</span><span>~9 min</span></div>
+</header>
+
+<div class="article-layout">
+<div class="article-main">
+<p class="article-lead">Dal <strong>20 gennaio 2027</strong> le macchine vendute nell'Unione europea seguono il <strong>Regolamento (UE) 2023/1230</strong>, che sostituisce la Direttiva macchine 2006/42/CE. Umanoidi come il <a href="../g1.html">G1</a> o l'<a href="../h2.html">H2</a> e quadrupedi come il <a href="../go2.html">Go2</a> o il <a href="../b2.html">B2</a>, usati in azienda, sono macchine e rientrano nel regolamento. Per chi li compra cambiano tre cose: chi risponde della conformità, quando una modifica rende fabbricanti e quali requisiti valgono per software e connettività.</p>
+
+<div class="callout callout-warning">
+<strong>Informazioni generali, non consulenza legale.</strong> La classificazione di un robot e gli obblighi che ne derivano dipendono dall'applicazione concreta, dal software installato e da come il robot è inserito nel processo. Per un caso specifico serve una valutazione dedicata.
+</div>
+
+<div class="article-tldr">
+<p><strong>In breve</strong></p>
+<ul>
+<li>Il regolamento si applica dal 20 gennaio 2027 ed è direttamente valido in tutti gli Stati membri, senza recepimento nazionale.</li>
+<li>Un robot immesso sul mercato in conformità alla direttiva prima di quella data può continuare a essere venduto (art. 52).</li>
+<li>Chi modifica un robot in modo sostanziale, anche solo via software, diventa fabbricante per quella macchina (art. 18), salvo l'utilizzatore non professionale per uso proprio.</li>
+<li>Entrano requisiti espliciti su software di sicurezza, protezione dalle manomissioni e macchine mobili autonome (allegato III).</li>
+<li>Una norma tecnica dedicata a umanoidi e quadrupedi (ISO 25785-1) è ancora in sviluppo.</li>
+</ul>
+</div>
+
+<div class="article-content">
+
+<h2 id="cosa-e">Che cos'è il Regolamento macchine e da quando vale</h2>
+<p>Il <a href="https://eur-lex.europa.eu/eli/reg/2023/1230/oj" rel="noopener noreferrer" target="_blank">Regolamento (UE) 2023/1230</a> fissa i requisiti di sicurezza che una macchina deve avere quando viene immessa sul mercato o messa in servizio nell'UE. Essendo un regolamento e non una direttiva, vale in modo identico in ogni Stato membro.</p>
+<p>La data di applicazione è il <strong>20 gennaio 2027</strong>, come riporta l'<a href="https://osha.europa.eu/en/legislation/directive/regulation-20231230eu-machinery" rel="noopener noreferrer" target="_blank">Agenzia europea per la sicurezza e la salute sul lavoro (EU-OSHA)</a>. Il testo originale indicava il 14 gennaio; la data è stata corretta con una rettifica pubblicata nel luglio 2023. Alcune parti valgono già da prima, ad esempio le regole sugli organismi notificati.</p>
+<p>Per i robot già in circolazione conta l'<strong>articolo 52</strong>: gli Stati membri non possono impedire la messa a disposizione di prodotti immessi sul mercato in conformità alla Direttiva 2006/42/CE prima dell'applicazione del regolamento. Un G1 o un Go2 immesso sul mercato prima del 20 gennaio 2027 in conformità alla direttiva può quindi restare in vendita senza una nuova valutazione secondo il regolamento.</p>
+
+<h2 id="chi-firma">Chi è il fabbricante e chi firma la dichiarazione</h2>
+<p>La dichiarazione di conformità UE e la marcatura CE sono responsabilità del <strong>fabbricante</strong> (art. 10). Il regolamento però individua altri soggetti che possono assumere quel ruolo:</p>
+<ul>
+<li><strong>Importatore</strong> (art. 13): prima di immettere il robot sul mercato verifica che il fabbricante abbia svolto la valutazione di conformità, redatto la documentazione tecnica e apposto la marcatura CE.</li>
+<li><strong>Distributore</strong> (art. 15): deve esercitare la dovuta diligenza sulla conformità.</li>
+<li><strong>Importatore o distributore che vende con il proprio marchio</strong>, o che modifica il prodotto in modo da incidere sulla conformità, diventa fabbricante (art. 17).</li>
+<li><strong>Chiunque apporti una modifica sostanziale</strong> diventa fabbricante per quella macchina (art. 18).</li>
+</ul>
+<p>Anche chi <strong>assembla più macchine</strong> che lavorano in modo solidale per lo stesso risultato crea un "insieme di macchine" (art. 3, punto 1, lettera d), che a sua volta è una macchina con un suo fabbricante. È il caso tipico di un robot inserito in una cella con nastri, ripari e un PLC di sicurezza.</p>
+
+<h2 id="modifica-sostanziale">Quando una modifica è sostanziale</h2>
+<p>Secondo l'articolo 3, punto 16, una modifica è sostanziale quando, con mezzi fisici <strong>o digitali</strong>, dopo l'immissione sul mercato:</p>
+<ol>
+<li>non è prevista né pianificata dal fabbricante;</li>
+<li>incide sulla sicurezza creando un nuovo pericolo o aumentando un rischio esistente;</li>
+<li>richiede nuovi ripari o dispositivi di protezione che comportano la modifica del sistema di controllo della sicurezza, oppure nuove misure per la stabilità o la resistenza meccanica.</li>
+</ol>
+<p>Per un robot Unitree, i casi da valutare con attenzione sono:</p>
+<ul>
+<li>un controllore di locomozione scritto o addestrato da voi al posto di quello di fabbrica;</li>
+<li>un end effector o un carico che cambia baricentro e stabilità;</li>
+<li>l'uso in un'area condivisa con persone che il fabbricante non aveva previsto.</li>
+</ul>
+<p>Riparazione e manutenzione che non toccano la conformità non sono modifiche sostanziali (considerando 26 del regolamento). Un utilizzatore <strong>non professionale</strong> che modifica la propria macchina per uso proprio non diventa fabbricante. Un'azienda o un laboratorio, invece, sono utilizzatori professionali.</p>
+
+<h2 id="cosa-cambia">Cosa cambia rispetto alla Direttiva 2006/42/CE</h2>
+<h3>Software e componenti digitali</h3>
+<p>Il regolamento definisce "componente di sicurezza" anche un componente <strong>digitale, compreso un software</strong>, immesso sul mercato separatamente (art. 3, punto 3). Le modifiche software rientrano espressamente tra quelle che possono essere sostanziali.</p>
+<h3>Protezione dalle manomissioni (allegato III, punto 1.1.9)</h3>
+<ul>
+<li>Il collegamento di un altro dispositivo, anche remoto, non deve creare situazioni pericolose.</li>
+<li>Il software e i dati critici per la sicurezza devono essere individuati e protetti da alterazioni accidentali o intenzionali.</li>
+<li>La macchina deve saper indicare il software di sicurezza installato e conservare prove degli interventi, legittimi o no.</li>
+</ul>
+<h3>Sistemi di comando (allegato III, punto 1.2.1)</h3>
+<p>I sistemi di comando devono resistere anche a tentativi deliberati ragionevolmente prevedibili di terzi. Le versioni del software di sicurezza caricate dopo l'immissione sul mercato devono essere tracciabili per cinque anni. Per i sistemi con comportamento auto-evolutivo:</p>
+<ul>
+<li>non devono compiere azioni oltre il compito e lo spazio di movimento definiti;</li>
+<li>devono registrare i dati sulle decisioni di sicurezza, da conservare per un anno;</li>
+<li>devono poter essere corretti in qualsiasi momento.</li>
+</ul>
+<h3>Macchine mobili autonome (allegato III, parte 3)</h3>
+<p>Un quadrupede che pattuglia un'area in autonomia (per esempio un <a href="../as2.html">AS2</a> o un <a href="../a2.html">A2</a> in ispezione) può rientrare nella definizione di macchina mobile autonoma. Le opzioni previste sono due, singole o combinate in base alla valutazione del rischio:</p>
+<ul>
+<li>lavorare in una zona chiusa da una protezione perimetrale;</li>
+<li>avere dispositivi che rilevano persone e ostacoli nelle vicinanze.</li>
+</ul>
+<p>Dove serve, va prevista una funzione di supervisione da remoto, limitata ad arresto, avvio e messa in posizione sicura.</p>
+<h3>Istruzioni digitali (art. 10, par. 7)</h3>
+<p>Le istruzioni possono essere fornite in formato digitale, scaricabili e accessibili per almeno 10 anni. Su richiesta al momento dell'acquisto, il fabbricante le fornisce gratis in formato cartaceo entro un mese.</p>
+<h3>Organismo notificato</h3>
+<p>Le categorie dell'allegato I, parte A, richiedono una procedura con organismo notificato (art. 25, par. 2). Tra queste ci sono le macchine che integrano sistemi con comportamento <strong>integralmente o parzialmente auto-evolutivo</strong>, basati su apprendimento automatico, che garantiscono funzioni di sicurezza, limitatamente a quei sistemi. Un controllore addestrato e poi congelato non è automaticamente un sistema auto-evolutivo: la classificazione va fatta sul caso concreto.</p>
+
+<h2 id="ai-act-cra">AI Act e Cyber Resilience Act</h2>
+<ul>
+<li><strong><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" rel="noopener noreferrer" target="_blank">AI Act (Regolamento (UE) 2024/1689)</a>.</strong> Un sistema di IA che fa da componente di sicurezza di una macchina può essere ad alto rischio (art. 6, par. 1). Il <a href="https://eur-lex.europa.eu/eli/reg/2026/1744/oj" rel="noopener noreferrer" target="_blank">Regolamento (UE) 2026/1744</a> (Omnibus digitale sull'IA), pubblicato in Gazzetta ufficiale UE il 24 luglio 2026, ha spostato il Regolamento macchine nella sezione B dell'allegato I dell'AI Act. In pratica i requisiti dell'AI Act per l'IA integrata nelle macchine verranno portati dentro il Regolamento macchine con atti delegati, che la Commissione deve adottare entro il 2 agosto 2028 (<a href="https://www.cuatrecasas.com/en/spain/intellectual-property/art/digital-omnibus-ai-has-been-published" rel="noopener noreferrer" target="_blank">sintesi Cuatrecasas</a>). Gli atti delegati non sono ancora usciti: il quadro va ricontrollato al momento dell'acquisto.</li>
+<li><strong>Cyber Resilience Act (<a href="https://eur-lex.europa.eu/eli/reg/2024/2847/oj" rel="noopener noreferrer" target="_blank">Regolamento (UE) 2024/2847</a>).</strong> Riguarda i prodotti con elementi digitali connessi. Secondo la <a href="https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act" rel="noopener noreferrer" target="_blank">Commissione europea</a>, gli obblighi di segnalazione si applicano dall'11 settembre 2026 e quelli principali dall'11 dicembre 2027.</li>
+</ul>
+
+<div class="product-strip" aria-label="Prodotti citati">
+<div class="product-strip-head"><span>Prodotti citati nell'articolo</span><a href="../catalogo-unitree.html">Catalogo Unitree</a></div>
+<div class="product-strip-grid">
+<article class="product-card">
+<a class="product-card-media" href="../prodotti/unitree-go2-edu.html"><img alt="Unitree Go2 EDU" loading="lazy" src="../images/prodotti/go2-edu-std.webp"/></a>
+<div class="product-card-body">
+<h3><a href="../prodotti/unitree-go2-edu.html">Unitree Go2 EDU</a></h3>
+<p>SDK e ROS 2, batteria 15000 mAh</p>
+<div class="product-card-price">8.804 € <small>IVA esclusa</small></div>
+<div class="product-card-actions"><a class="product-card-btn" href="../prodotti/unitree-go2-edu.html">Vedi scheda</a><a class="product-card-link" href="../assessment.html">Preventivo</a></div>
+</div>
+</article>
+<article class="product-card">
+<a class="product-card-media" href="../prodotti/unitree-g1-edu-standard.html"><img alt="Unitree G1 EDU U1" loading="lazy" src="../images/official/unitree-g1-01.webp"/></a>
+<div class="product-card-body">
+<h3><a href="../prodotti/unitree-g1-edu-standard.html">Unitree G1 EDU U1</a></h3>
+<p>SDK, 23 DoF, dock di calcolo</p>
+<div class="product-card-price">38.005 € <small>IVA esclusa</small></div>
+<div class="product-card-actions"><a class="product-card-btn" href="../prodotti/unitree-g1-edu-standard.html">Vedi scheda</a><a class="product-card-link" href="../assessment.html">Preventivo</a></div>
+</div>
+</article>
+<article class="product-card">
+<a class="product-card-media" href="../prodotti/unitree-b2.html"><img alt="Unitree B2" loading="lazy" src="../images/official/unitree-b2-01.webp"/></a>
+<div class="product-card-body">
+<h3><a href="../prodotti/unitree-b2.html">Unitree B2</a></h3>
+<p>Industriale pesante: oltre 40 kg, IP67</p>
+<div class="product-card-price">66.828 € <small>IVA esclusa</small></div>
+<div class="product-card-actions"><a class="product-card-btn" href="../prodotti/unitree-b2.html">Vedi scheda</a><a class="product-card-link" href="../assessment.html">Preventivo</a></div>
+</div>
+</article>
+</div>
+</div>
+<h2 id="norme">Norme tecniche di riferimento</h2>
+<ul>
+<li><strong>ISO 12100</strong>: principi generali per la valutazione e la riduzione del rischio.</li>
+<li><strong>ISO 10218-1 e ISO 10218-2 (edizione 2025)</strong>: sicurezza dei robot industriali e delle loro applicazioni.</li>
+<li><strong>ISO/TS 15066</strong>: collaborazione uomo-robot.</li>
+<li><strong>ISO 13482</strong>: robot per l'assistenza alla persona.</li>
+<li><strong>IEC 62443</strong>: cybersicurezza dei sistemi di automazione industriale.</li>
+</ul>
+<p>Per umanoidi e quadrupedi manca ancora una norma dedicata. La <a href="https://www.iso.org/standard/91469.html" rel="noopener noreferrer" target="_blank">ISO 25785-1</a>, sui robot mobili industriali a stabilità controllata attivamente (con gambe, ruote o altre forme di locomozione), è in fase di sviluppo.</p>
+
+<h2 id="checklist">Checklist: prima di mettere un robot Unitree in reparto</h2>
+<div class="callout callout-tip">
+<strong>Vale anche oggi.</strong> Come datore di lavoro, il <a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2008-04-09;81" rel="noopener noreferrer" target="_blank">D.Lgs. 81/2008</a> (artt. 70 e 71) vi chiede già di mettere a disposizione attrezzature conformi e di valutare i rischi del loro uso. Il regolamento aggiunge attenzione su software e connettività.
+</div>
+<ol>
+<li><strong>Documenti del modello esatto.</strong> Chiedete dichiarazione di conformità UE, istruzioni in italiano e versione firmware di riferimento. Controllate che modello e variante coincidano con il robot consegnato.</li>
+<li><strong>Uso previsto.</strong> Confrontate l'applicazione che avete in mente con l'uso previsto nelle istruzioni. Un uso oltre quello previsto, e le modifiche fatte per ottenerlo, vanno valutati come possibile modifica sostanziale.</li>
+<li><strong>Valutazione del rischio secondo ISO 12100.</strong> Per un robot mobile include di solito:
+<ul>
+<li>caduta del robot e perdita di equilibrio;</li>
+<li>urti con le persone;</li>
+<li>carichi in mano o sul dorso;</li>
+<li>batterie e ricarica;</li>
+<li>comportamento in caso di perdita di comunicazione.</li>
+</ul></li>
+<li><strong>Area di lavoro.</strong> Decidete se il robot lavora in zona segregata o condivisa. In zona condivisa la valutazione riguarda il rilevamento delle persone e limiti di velocità verificati, non solo dichiarati.</li>
+<li><strong>Arresto.</strong> Verificate dove sono e come funzionano l'arresto di emergenza e il telecomando, e chi li ha in mano durante il lavoro.</li>
+<li><strong>Software.</strong> Tenete un registro delle versioni installate e degli aggiornamenti. Ogni controllore scritto da voi va valutato prima dell'uso vicino alle persone.</li>
+<li><strong>Rete e cybersicurezza.</strong> Su una rete di stabilimento, applicate tre misure:
+<ul>
+<li>mettete il robot su una VLAN separata;</li>
+<li>cambiate le credenziali di default;</li>
+<li>disattivate i servizi remoti che non usate e decidete chi può aggiornare il firmware.</li>
+</ul></li>
+<li><strong>Insieme di macchine.</strong> Se il robot entra in una cella con altre macchine, stabilite per iscritto chi è il fabbricante dell'insieme e chi firma la dichiarazione.</li>
+<li><strong>Formazione.</strong> Formate le persone che lavorano vicino al robot, non solo chi lo programma.</li>
+</ol>
+<p>Se state impostando un progetto pilota, il nostro <a href="poc-robot-umanoide-azienda.html">metodo per i PoC con umanoidi</a> prevede questi passaggi prima dell'uso in reparto. Per i quadrupedi in ispezione trovate i dettagli applicativi nella guida al <a href="robot-quadrupede-ispezione-industriale.html">quadrupede per ispezione industriale</a>.</p>
+
+<h2 id="universita">Università e laboratori</h2>
+<p>L'articolo 2, paragrafo 2, lettera m), esclude dal regolamento le macchine "appositamente progettate e costruite a fini di ricerca per essere temporaneamente utilizzate nei laboratori". Un robot commerciale acquistato da catalogo non rientra automaticamente in questa esclusione, perché nasce come prodotto in vendita. Per un laboratorio la strada più prudente resta trattarlo come una macchina: valutazione del rischio, area dedicata e registro del software. Approfondimenti per i gruppi di ricerca nella pagina <a href="../universita-ricerca.html">Università e ricerca</a>.</p>
+
+</div>
+
+<section class="article-faq" id="faq">
+<h2>FAQ: Regolamento macchine e robot Unitree</h2>
+<div class="faq-item"><h3>Da quando si applica il Regolamento macchine (UE) 2023/1230?</h3><p>Dal 20 gennaio 2027, al posto della Direttiva 2006/42/CE. Le regole sugli organismi notificati valgono già dal 20 gennaio 2024.</p></div>
+<div class="faq-item"><h3>Un robot Unitree comprato nel 2026 va rifatto conforme nel 2027?</h3><p>No, se è stato immesso sul mercato conforme alla Direttiva 2006/42/CE prima di quella data (art. 52). Restano gli obblighi del datore di lavoro sull'uso sicuro.</p></div>
+<div class="faq-item"><h3>Se scrivo software mio per un G1 o un Go2 divento fabbricante?</h3><p>Solo se il software produce una modifica sostanziale, cioè non prevista dal fabbricante e tale da richiedere nuove misure di protezione. Un'applicazione nei limiti d'uso previsti di norma non lo è.</p></div>
+<div class="faq-item"><h3>Gli umanoidi devono passare da un organismo notificato?</h3><p>Non per il solo fatto di essere umanoidi. Serve per le categorie dell'allegato I, parte A, come i sistemi di sicurezza auto-evolutivi basati su apprendimento automatico.</p></div>
+<div class="faq-item"><h3>Esiste una norma tecnica specifica per umanoidi e quadrupedi?</h3><p>Non ancora: a ottobre 2026 la ISO 25785-1 è in sviluppo. Si lavora con ISO 12100 e, dove applicabile, con la serie ISO 10218.</p></div>
+<div class="faq-item"><h3>Un robot con intelligenza artificiale rientra anche nell'AI Act?</h3><p>Sì, se l'IA svolge una funzione di sicurezza. I requisiti relativi passeranno nel Regolamento macchine con atti delegati attesi entro il 2 agosto 2028.</p></div>
+<div class="faq-item"><h3>Le università sono escluse dal Regolamento macchine?</h3><p>Solo per le macchine costruite apposta per la ricerca e usate temporaneamente in laboratorio. Un robot da catalogo non rientra in automatico nell'esclusione.</p></div>
+</section>
+
+<section class="article-references" id="riferimenti">
+<h2>Fonti</h2>
+<ol>
+<li>Regolamento (UE) 2023/1230 relativo alle macchine, testo ufficiale: <a href="https://eur-lex.europa.eu/eli/reg/2023/1230/oj" rel="noopener noreferrer" target="_blank">EUR-Lex</a></li>
+<li>EU-OSHA, scheda sul Regolamento 2023/1230: <a href="https://osha.europa.eu/en/legislation/directive/regulation-20231230eu-machinery" rel="noopener noreferrer" target="_blank">osha.europa.eu</a></li>
+<li>Regolamento (UE) 2024/1689 (AI Act): <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" rel="noopener noreferrer" target="_blank">EUR-Lex</a></li>
+<li>Commissione europea, Cyber Resilience Act: <a href="https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act" rel="noopener noreferrer" target="_blank">digital-strategy.ec.europa.eu</a></li>
+<li>Regolamento (UE) 2026/1744 (Omnibus digitale sull'IA), che modifica anche il Regolamento 2023/1230: <a href="https://eur-lex.europa.eu/eli/reg/2026/1744/oj" rel="noopener noreferrer" target="_blank">EUR-Lex</a></li>
+<li>Cuatrecasas, sintesi dell'Omnibus digitale sull'IA pubblicato: <a href="https://www.cuatrecasas.com/en/spain/intellectual-property/art/digital-omnibus-ai-has-been-published" rel="noopener noreferrer" target="_blank">cuatrecasas.com</a></li>
+<li>Gibson Dunn, accordo politico sull'Omnibus (maggio 2026): <a href="https://www.gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes/" rel="noopener noreferrer" target="_blank">gibsondunn.com</a></li>
+<li>Regolamento (UE) 2024/2847 (Cyber Resilience Act): <a href="https://eur-lex.europa.eu/eli/reg/2024/2847/oj" rel="noopener noreferrer" target="_blank">EUR-Lex</a></li>
+<li>D.Lgs. 9 aprile 2008, n. 81 (Testo unico sicurezza sul lavoro): <a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2008-04-09;81" rel="noopener noreferrer" target="_blank">Normattiva</a></li>
+<li>ISO/CD 25785-1, robot mobili industriali a stabilità controllata attivamente: <a href="https://www.iso.org/standard/91469.html" rel="noopener noreferrer" target="_blank">iso.org</a></li>
+</ol>
+</section>
+
+<div class="article-cta">
+<h2>Robot Unitree in azienda o in laboratorio?</h2>
+<p>Partiamo dall'applicazione: valutiamo con voi uso previsto, area di lavoro e configurazione prima dell'offerta.</p>
+<a class="btn btn-primary" href="../assessment.html">Richiedi un assessment</a>
+<a class="btn btn-outline-light" href="../catalogo-unitree.html">Catalogo Unitree</a>
+</div>
+
+</div>
+
+<aside class="article-toc">
+<p class="article-toc-title">Indice</p>
+<ol>
+<li><a href="#cosa-e">Cos'è e da quando vale</a></li>
+<li><a href="#chi-firma">Chi è il fabbricante</a></li>
+<li><a href="#modifica-sostanziale">Modifica sostanziale</a></li>
+<li><a href="#cosa-cambia">Cosa cambia</a></li>
+<li><a href="#ai-act-cra">AI Act e CRA</a></li>
+<li><a href="#norme">Norme tecniche</a></li>
+<li><a href="#checklist">Checklist</a></li>
+<li><a href="#universita">Università</a></li>
+<li><a href="#faq">FAQ</a></li>
+</ol>
+</aside>
+
+</div>
+</div>
+</article>
+
+<footer class="footer">
+<div class="container footer-grid">
+<div class="footer-brand">
+<a class="logo" href="../index.html"><img alt="Abra Robotics" class="logo-img" src="../images/logo.webp" width="180" height="72" decoding="async"/></a>
+<p class="footer-desc">Robotica applicata per aziende, università e istituti di ricerca. Hardware, software su misura, formazione e supporto tecnico dedicato.</p>
+</div>
+<div class="footer-nav">
+<span class="footer-heading">Prodotti</span>
+<a href="../cobot.html">Cobot</a>
+<a href="../amr.html">AMR</a>
+<a href="../quadrupedi.html">Quadrupedi</a>
+<a href="../umanoidi.html">Umanoidi</a>
+<a href="../accessori.html">Accessori</a>
+<a href="../catalogo.html">Catalogo completo</a>
+<a href="../listino-unitree.html">Listino prezzi</a>
+</div>
+<div class="footer-nav">
+<span class="footer-heading">Servizi e risorse</span>
+<a href="../assessment.html">Trova il robot giusto</a>
+<a href="../software.html">Software</a>
+<a href="../finanziamenti.html">Finanziamenti</a>
+<a href="../manifattura-logistica.html">Manifattura e Logistica</a>
+<a href="../universita-ricerca.html">Università e Ricerca</a>
+<a href="../blog.html">Blog</a>
+</div>
+<div class="footer-contact">
+<span class="footer-heading">Contatti</span>
+<a href="../chi-siamo.html">Chi siamo</a>
+<a href="mailto:info@abrarobotics.com">info@abrarobotics.com</a>
+<p>Viale Trieste 105<br/>30026 Portogruaro (VE)</p>
+<a class="btn btn-primary btn-sm" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ22FrpPdyPVRihi4eXPQlljTcG2toa8XF2d8W-QX-L9cKMaXqozq_YsHym56LEdTs9WsnqlTHeF" rel="noopener noreferrer" target="_blank">Prenota una chiamata</a>
+</div>
+</div>
+<div class="container footer-bottom">
+<p class="footer-copy">© 2026 Abra Robotics di Niccolò Mazzoleni. Tutti i diritti riservati. P.IVA 04800170278, Portogruaro (VE).</p>
+<nav aria-label="Note legali" class="footer-legal">
+<a href="../privacy-policy.html">Privacy Policy</a>
+<a href="../cookie-policy.html">Cookie Policy</a>
+<a href="../condizioni-di-vendita.html">Condizioni di vendita</a>
+<a href="../politica-resi.html">Politica resi</a>
+<a href="../note-legali.html">Note legali</a>
+</nav>
+</div>
+</footer>
+<script defer src="../script.js"></script>
+</body>
+</html>

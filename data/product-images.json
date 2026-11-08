@@ -1,0 +1,2308 @@
+{
+  "GO2-AIR": {
+    "path": "images/prodotti/go2-air.webp",
+    "gallery": [
+      "images/prodotti/go2-air.webp"
+    ],
+    "source_url": "https://www.unitree.com/images/f60e629392fc4164a865869f9d51cf63_1920x1080.png",
+    "source": "Unitree listino 2026 Go2 Series!3"
+  },
+  "GO2-PRO": {
+    "path": "images/prodotti/go2-pro.webp",
+    "gallery": [
+      "images/prodotti/go2-pro.webp"
+    ],
+    "source_url": "https://www.unitree.com/images/f60e629392fc4164a865869f9d51cf63_1920x1080.png",
+    "source": "Unitree listino 2026 Go2 Series!4"
+  },
+  "GO2-EDU-STD": {
+    "path": "images/prodotti/go2-edu-std.webp",
+    "gallery": [
+      "images/prodotti/go2-edu-std.webp"
+    ],
+    "source_url": "https://www.unitree.com/images/f60e629392fc4164a865869f9d51cf63_1920x1080.png",
+    "source": "Unitree listino 2026 Go2 Series!7"
+  },
+  "GO2-EDU-SMART": {
+    "path": "images/prodotti/go2-edu-smart.webp",
+    "gallery": [
+      "images/prodotti/go2-edu-smart.webp"
+    ],
+    "source_url": "https://www.unitree.com/images/f60e629392fc4164a865869f9d51cf63_1920x1080.png",
+    "source": "Unitree listino 2026 Go2 Series!8"
+  },
+  "GO2-EDU-ULT": {
+    "path": "images/prodotti/go2-edu-ult.webp",
+    "gallery": [
+      "images/prodotti/go2-edu-ult.webp"
+    ],
+    "source_url": "https://www.unitree.com/images/f60e629392fc4164a865869f9d51cf63_1920x1080.png",
+    "source": "Unitree listino 2026 Go2 Series!10"
+  },
+  "H2-AIR": {
+    "path": "images/prodotti/h2-air.webp",
+    "gallery": [
+      "images/prodotti/h2-air.webp"
+    ],
+    "source_url": "https://www.unitree.com/images/32686742408341c5af3b5dc2f4c85b0e_3840x2160.jpg",
+    "source": "Unitree listino 2026 H2 Series!3"
+  },
+  "H2-EDU": {
+    "path": "images/prodotti/h2-edu.webp",
+    "gallery": [
+      "images/prodotti/h2-edu.webp"
+    ],
+    "source_url": "https://www.unitree.com/images/32686742408341c5af3b5dc2f4c85b0e_3840x2160.jpg",
+    "source": "Unitree listino 2026 H2 Series!4"
+  },
+  "A2-PRO": {
+    "path": "images/official/unitree-a2-02.webp",
+    "source": "Unitree listino 2026 A2&A2-W!4",
+    "source_url": "https://cdn.shopify.com/s/files/1/0620/4932/1193/files/304a80c2dd46b6ca7151240db18bcc75_7b114335-176d-4abd-80b1-ffce2614cbd0.jpg"
+  },
+  "A2W-PRO": {
+    "path": "images/official/unitree-a2-w-01.webp",
+    "source": "Unitree listino 2026 A2&A2-W!6",
+    "source_url": "https://www.unitree.com/images/0c33a742febf4e17899e1c6e23d61908_1920x1072.jpg"
+  },
+  "A2W-STD": {
+    "path": "images/official/unitree-a2-w-01.webp",
+    "source": "Unitree listino 2026 A2&A2-W!5",
+    "source_url": "https://www.unitree.com/images/0c33a742febf4e17899e1c6e23d61908_1920x1072.jpg"
+  },
+  "A2-STD": {
+    "path": "images/official/unitree-a2-01.webp",
+    "source": "Unitree listino 2026 A2&A2-W!3",
+    "source_url": "https://www.unitree.com/images/bba11f01833641a89ca07ca9ddcbb862_1589x1476.png"
+  },
+  "B2W": {
+    "path": "images/prodotti/b2w.webp",
+    "source": "Unitree listino 2026 B2&B2-W!5"
+  },
+  "B2W-LIDAR": {
+    "path": "images/prodotti/b2w-lidar.webp",
+    "source": "Unitree listino 2026 B2&B2-W!6"
+  },
+  "A2-BATTERY": {
+    "path": "images/accessori/a2-battery.jpg",
+    "source": "Unitree listino 2026 A2&A2-W!9"
+  },
+  "A2-CHARGER": {
+    "path": "images/official/unitree-g1-info-batteria.webp",
+    "source": "Unitree listino 2026 A2&A2-W!10",
+    "source_url": "https://www.unitree.com/images/bb3f85d2278745ec952ca3947b0477a0_966x1248.png"
+  },
+  "A2-CONTROLLER": {
+    "path": "images/official/unitree-telecomando.webp",
+    "source": "Unitree listino 2026 A2&A2-W!7",
+    "source_url": "https://www.unitree.com/images/209585547eed4bf392afdf370aa5e7fb_576x476.png"
+  },
+  "ARM-Z1-AIR": {
+    "path": "images/official/unitree-z1-01.webp",
+    "source": "Unitree listino 2026 Z1&D1!3",
+    "source_url": "https://cdn.shopify.com/s/files/1/0620/4932/1193/files/3_e795751c-68d0-4c55-ace1-6aeeb565a06d.jpg"
+  },
+  "ARM-Z1-PRO": {
+    "path": "images/official/unitree-z1-01.webp",
+    "source": "Unitree listino 2026 Z1&D1!8",
+    "source_url": "https://cdn.shopify.com/s/files/1/0620/4932/1193/files/3_e795751c-68d0-4c55-ace1-6aeeb565a06d.jpg"
+  },
+  "B2": {
+    "path": "images/official/unitree-b2-01.webp",
+    "gallery": [
+      "images/official/unitree-b2-01.webp"
+    ],
+    "source": "Unitree listino 2026 B2&B2-W!3",
+    "source_url": "https://www.unitree.com/images/34d683b71937497295436b87381239db_1349x1205.png"
+  },
+  "B2-BATT-HIGH-T": {
+    "path": "images/official/placeholder-prodotto.webp",
+    "source": "Unitree listino 2026 B2&B2-W!10"
+  },
+  "B2-BATT-LOW-T": {
+    "path": "images/official/placeholder-prodotto.webp",
+    "source": "Unitree listino 2026 B2&B2-W!9"
+  },
+  "B2-BATT-STD": {
+    "path": "images/official/placeholder-prodotto.webp",
+    "source": "Unitree listino 2026 B2&B2-W!8"
+  },
+  "B2-CHARGING-BOARD": {
+    "path": "images/official/placeholder-prodotto.webp",
+    "source": "Unitree listino 2026 B2&B2-W!22"
+  },
+  "B2-CONTROLLER": {
+    "path": "images/official/unitree-telecomando.webp",
+    "source": "Unitree listino 2026 B2&B2-W!7",
+    "source_url": "https://www.unitree.com/images/209585547eed4bf392afdf370aa5e7fb_576x476.png"
+  },
+  "B2-FOOT-PAD": {
+    "path": "images/official/placeholder-prodotto.webp",
+    "source": "Unitree listino 2026 B2&B2-W!12"
+  },
+  "B2-FRAME": {
+    "path": "images/official/placeholder-prodotto.webp"
+  },
+  "B2-LIDAR": {
+    "path": "images/prodotti/b2-lidar.webp",
+    "gallery": [
+      "images/prodotti/b2-lidar.webp"
+    ],
+    "source": "Unitree listino 2026 B2&B2-W!4"
+  },
+  "BIONIC-REVO2-BASIC": {
+    "path": "images/accessori/brainco-revo2-basic.webp",
+    "source": "Unitree listino 2026 G1 Series!47"
+  },
+  "D1-ARM": {
+    "path": "images/official/unitree-d1-braccio.webp",
+    "source": "Unitree listino 2026 Z1&D1!13",
+    "source_url": "https://oss-global-cdn.unitree.com/static/ad2bdc4329294a2d92eed4226516e5f8_1560x1184.png"
+  },
+  "G1-AIR": {
+    "path": "images/official/unitree-g1-01.webp",
+    "source": "Unitree listino 2026 G1 Series!3",
+    "source_url": "https://cdn.shopify.com/s/files/1/0620/4932/1193/files/1_968fd08b-9aaf-4f32-b895-5c786285ee52.jpg"
+  },
+  "G1-BATTERY": {
+    "path": "images/official/unitree-g1-info-batteria.webp",
+    "source": "Unitree listino 2026 G1 Series!27",
+    "source_url": "https://www.unitree.com/images/bb3f85d2278745ec952ca3947b0477a0_966x1248.png"
+  },
+  "G1-CHARGER": {
+    "path": "images/official/unitree-g1-info-batteria.webp",
+    "source": "Unitree listino 2026 G1 Series!28",
+    "source_url": "https://www.unitree.com/images/bb3f85d2278745ec952ca3947b0477a0_966x1248.png"
+  },
+  "G1-COMP": {
+    "path": "images/official/unitree-g1-calcio.webp",
+    "source": "Unitree listino 2026 G1 Series!25",
+    "source_url": "https://cdn.shopify.com/s/files/1/0620/4932/1193/files/2_3769ceea-b323-4ebc-a1f4-e27a9624706b.jpg"
+  },
+  "G1-FRAME": {
+    "path": "images/official/placeholder-prodotto.webp",
+    "source": "Unitree listino 2026 G1 Series!32"
+  },
+  "G1-REMOTE": {
+    "path": "images/official/unitree-telecomando.webp",
+    "source": "Unitree listino 2026 G1 Series!26",
+    "source_url": "https://www.unitree.com/images/209585547eed4bf392afdf370aa5e7fb_576x476.png"
+  },
+  "G1-U1": {
+    "path": "images/official/unitree-g1-01.webp",
+    "source": "Unitree listino 2026 G1 Series!6",
+    "source_url": "https://cdn.shopify.com/s/files/1/0620/4932/1193/files/1_968fd08b-9aaf-4f32-b895-5c786285ee52.jpg"
+  },
+  "G1-U10": {
+    "path": "images/official/unitree-g1-02.webp",
+    "source": "Unitree listino 2026 G1 Series!19",
+    "source_url": "https://www.unitree.com/images/6613c61ef0d1412682b771fc62432a50_1464x1400.png"
+  },
+  "G1-U2": {
+    "path": "images/official/unitree-g1-01.webp",
+    "source": "Unitree listino 2026 G1 Series!7",
+    "source_url": "https://cdn.shopify.com/s/files/1/0620/4932/1193/files/1_968fd08b-9aaf-4f32-b895-5c786285ee52.jpg"
+  },
+  "G1-U3": {
+    "path": "images/official/unitree-g1-02.webp",
+    "source": "Unitree listino 2026 G1 Series!8",
+    "source_url": "https://www.unitree.com/images/6613c61ef0d1412682b771fc62432a50_1464x1400.png"
+  },
+  "G1-U4": {
+    "path": "images/official/unitree-g1-02.webp",
+    "source": "Unitree listino 2026 G1 Series!9",
+    "source_url": "https://www.unitree.com/images/6613c61ef0d1412682b771fc62432a50_1464x1400.png"
+  },
+  "G1-U4-37DOF": {
+    "path": "images/official/unitree-g1-02.webp",
+    "source": "Unitree listino 2026 G1 Series!18",
+    "source_url": "https://www.unitree.com/images/6613c61ef0d1412682b771fc62432a50_1464x1400.png"
+  },
+  "G1-U5": {
+    "path": "images/official/unitree-g1-02.webp",
+    "source": "Unitree listino 2026 G1 Series!10",
+    "source_url": "https://www.unitree.com/images/6613c61ef0d1412682b771fc62432a50_1464x1400.png"
+  },
+  "G1-U6": {
+    "path": "images/official/unitree-g1-02.webp",
+    "source": "Unitree listino 2026 G1 Series!11",
+    "source_url": "https://www.unitree.com/images/6613c61ef0d1412682b771fc62432a50_1464x1400.png"
+  },
+  "G1-U7": {
+    "path": "images/official/unitree-g1-02.webp",
+    "source": "Unitree listino 2026 G1 Series!12",
+    "source_url": "https://www.unitree.com/images/6613c61ef0d1412682b771fc62432a50_1464x1400.png"
+  },
+  "G1-U9": {
+    "path": "images/official/unitree-g1-02.webp",
+    "source": "Unitree listino 2026 G1 Series!17",
+    "source_url": "https://www.unitree.com/images/6613c61ef0d1412682b771fc62432a50_1464x1400.png"
+  },
+  "GO2-CHARGER-FAST": {
+    "path": "images/official/unitree-go2-batteria-long.webp",
+    "source": "Unitree listino 2026 Go2 Series!19",
+    "source_url": "https://cdn.shopify.com/s/files/1/0620/4932/1193/files/169_c6ad4b4c-1d1a-4169-9691-4d377fbeaba9.jpg"
+  },
+  "GO2-CHARGER-STD": {
+    "path": "images/official/unitree-go2-batteria-long.webp",
+    "source": "Unitree listino 2026 Go2 Series!18",
+    "source_url": "https://cdn.shopify.com/s/files/1/0620/4932/1193/files/169_c6ad4b4c-1d1a-4169-9691-4d377fbeaba9.jpg"
+  },
+  "GO2-EDU-LASER": {
+    "path": "images/official/unitree-go2-02.webp",
+    "source": "Unitree listino 2026 Go2 Series!9",
+    "source_url": "https://cdn.shopify.com/s/files/1/0620/4932/1193/files/df9f333424ff6cc6164ce421b019fb94_a6f832b0-479e-4294-ac75-6516208b91f4.png"
+  },
+  "GO2-FOOT-PAD": {
+    "path": "images/prodotti/go2-foot-pad.webp",
+    "gallery": [
+      "images/prodotti/go2-foot-pad.webp"
+    ]
+  },
+  "GO2-REMOTE": {
+    "path": "images/official/unitree-go2-controller.webp",
+    "source": "Unitree listino 2026 Go2 Series!15",
+    "source_url": "https://cdn.shopify.com/s/files/1/0620/4932/1193/files/150.jpg"
+  },
+  "GO2-SELF-CHARGE": {
+    "path": "images/official/placeholder-prodotto.webp",
+    "source": "Unitree listino 2026 Go2 Series!21"
+  },
+  "GO2W-U2": {
+    "path": "images/prodotti/go2w-u2.webp",
+    "gallery": [
+      "images/prodotti/go2w-u2.webp"
+    ],
+    "source": "Unitree listino 2026 Go2-W!4"
+  },
+  "GO2W-U3": {
+    "path": "images/prodotti/go2w-u3.webp",
+    "gallery": [
+      "images/prodotti/go2w-u3.webp"
+    ],
+    "source": "Unitree listino 2026 Go2-W!5"
+  },
+  "GO2W-U4": {
+    "path": "images/prodotti/go2w-u4.webp",
+    "gallery": [
+      "images/prodotti/go2w-u4.webp"
+    ],
+    "source": "Unitree listino 2026 Go2-W!6"
+  },
+  "GO2W-U5": {
+    "path": "images/prodotti/go2w-u5.webp",
+    "gallery": [
+      "images/prodotti/go2w-u5.webp"
+    ],
+    "source": "Unitree listino 2026 Go2-W!7"
+  },
+  "H2-BATTERY": {
+    "path": "images/official/placeholder-prodotto.webp",
+    "source": "Unitree listino 2026 H2 Series!34"
+  },
+  "H2-CHARGER-FAST": {
+    "path": "images/prodotti/h2-charger-fast.webp",
+    "gallery": [
+      "images/prodotti/h2-charger-fast.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!35"
+  },
+  "H2-COMPUTE-AGX-ORIN": {
+    "path": "images/prodotti/h2-compute-agx-orin.webp",
+    "gallery": [
+      "images/prodotti/h2-compute-agx-orin.webp"
+    ]
+  },
+  "H2-COMPUTE-AGX-THOR": {
+    "path": "images/prodotti/h2-compute-agx-thor.webp",
+    "gallery": [
+      "images/prodotti/h2-compute-agx-thor.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!38"
+  },
+  "H2-COMPUTE-I8": {
+    "path": "images/prodotti/h2-compute-i8.webp",
+    "gallery": [
+      "images/prodotti/h2-compute-i8.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!36"
+  },
+  "H2-COMPUTE-ORIN-NX": {
+    "path": "images/prodotti/h2-compute-orin-nx.webp",
+    "gallery": [
+      "images/prodotti/h2-compute-orin-nx.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!37"
+  },
+  "H2-GRIPPER-DEX1-ADV": {
+    "path": "images/official/unitree-dex1-1-b.webp",
+    "source": "Unitree listino 2026 H2 Series!50",
+    "source_url": "https://www.unitree.com/images/b98699988c4249a89dd246f406ffaa2d_694x750.png"
+  },
+  "H2-GRIPPER-DEX1-FLAG": {
+    "path": "images/official/unitree-dex1-1-b.webp",
+    "source_url": "https://www.unitree.com/images/b98699988c4249a89dd246f406ffaa2d_694x750.png"
+  },
+  "H2-GRIPPER-DEX1-STD": {
+    "path": "images/official/unitree-dex1-1.webp",
+    "source": "Unitree listino 2026 H2 Series!49",
+    "source_url": "https://www.unitree.com/images/563d33a0fe6146f9919f82e0e2799244_800x800.png"
+  },
+  "H2-HAND-DEX3": {
+    "path": "images/prodotti/h2-hand-dex3.webp",
+    "gallery": [
+      "images/prodotti/h2-hand-dex3.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!43"
+  },
+  "H2-HAND-DEX3-TAC": {
+    "path": "images/prodotti/h2-hand-dex3-tac.webp",
+    "gallery": [
+      "images/prodotti/h2-hand-dex3-tac.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!44"
+  },
+  "H2-HAND-DEX5": {
+    "path": "images/official/unitree-dex5-1.webp",
+    "source": "Unitree listino 2026 H2 Series!41",
+    "source_url": "https://www.unitree.com/images/148d8cc897044981ac31186d69ce369f_800x800.png"
+  },
+  "H2-HAND-DEX5P": {
+    "path": "images/official/unitree-dex5-1.webp",
+    "source": "Unitree listino 2026 H2 Series!42",
+    "source_url": "https://www.unitree.com/images/148d8cc897044981ac31186d69ce369f_800x800.png"
+  },
+  "H2-HAND-INSPIRE-DFQ": {
+    "path": "images/official/inspire-rh56dfx.webp",
+    "source": "Unitree listino 2026 H2 Series!45",
+    "source_url": "https://en.inspire-robots.com/wp-content/uploads/2026/09/Products_DFX-1536x1536.jpg"
+  },
+  "H2-HAND-INSPIRE-FTP": {
+    "path": "images/official/inspire-rh56dfx.webp",
+    "source_url": "https://en.inspire-robots.com/wp-content/uploads/2026/09/Products_DFX-1536x1536.jpg"
+  },
+  "H2-HAND-REVO2-BASIC": {
+    "path": "images/accessori/brainco-revo2-basic.webp",
+    "source": "Unitree listino 2026 H2 Series!47"
+  },
+  "H2-HAND-REVO3-U21": {
+    "path": "images/accessori/brainco-revo3-u21.webp",
+    "source": "Unitree listino 2026 H2 Series!51"
+  },
+  "H2-HAND-REVO3-U21T": {
+    "path": "images/accessori/brainco-revo3-u21.webp",
+    "source": "Unitree listino 2026 H2 Series!52"
+  },
+  "H2-HAND-REVO3-U21V": {
+    "path": "images/accessori/brainco-revo3-u21.webp",
+    "source": "Unitree listino 2026 H2 Series!53"
+  },
+  "H2-HAND-INSPIRE-E2": {
+    "path": "images/official/inspire-rh56dfx.webp",
+    "source": "Unitree listino 2026 H2 Series!46",
+    "source_url": "https://en.inspire-robots.com/wp-content/uploads/2026/09/Products_DFX-1536x1536.jpg"
+  },
+  "H2-HAND-REVO2-TACTILE": {
+    "path": "images/accessori/brainco-revo2-basic.webp",
+    "source": "Unitree listino 2026 H2 Series!48"
+  },
+  "H2-REMOTE": {
+    "path": "images/official/unitree-telecomando.webp",
+    "source": "Unitree listino 2026 H2 Series!33",
+    "source_url": "https://www.unitree.com/images/209585547eed4bf392afdf370aa5e7fb_576x476.png"
+  },
+  "HAND-DEX3-1-NO-TAC": {
+    "path": "images/prodotti/hand-dex3-1-no-tac.webp",
+    "gallery": [
+      "images/prodotti/hand-dex3-1-no-tac.webp"
+    ],
+    "source": "Unitree listino 2026 G1 Series!41"
+  },
+  "HAND-DEX3-1-TAC": {
+    "path": "images/prodotti/hand-dex3-1-tac.webp",
+    "gallery": [
+      "images/prodotti/hand-dex3-1-tac.webp"
+    ],
+    "source": "Unitree listino 2026 G1 Series!42"
+  },
+  "HAND-FINGERS-NO-TAC": {
+    "path": "images/official/inspire-rh56dfx.webp",
+    "source": "Unitree listino 2026 G1 Series!43",
+    "source_url": "https://en.inspire-robots.com/wp-content/uploads/2026/09/Products_DFX-1536x1536.jpg"
+  },
+  "HAND-FINGERS-TAC": {
+    "path": "images/official/inspire-rh56dfx.webp",
+    "source_url": "https://en.inspire-robots.com/wp-content/uploads/2026/09/Products_DFX-1536x1536.jpg"
+  },
+  "HELIOS-5515": {
+    "path": "images/official/hesai-xt16.webp",
+    "source_url": "https://www.hesaitech.com/wp-content/uploads/2024/11/XT.png"
+  },
+  "ORIN-NX-UPGRADE": {
+    "path": "images/prodotti/orin-nx-upgrade.webp",
+    "gallery": [
+      "images/prodotti/orin-nx-upgrade.webp"
+    ]
+  },
+  "R1-AIR": {
+    "path": "images/prodotti/r1-air.webp",
+    "gallery": [
+      "images/prodotti/r1-air.webp"
+    ]
+  },
+  "R1-BATTERY": {
+    "path": "images/official/unitree-g1-info-batteria.webp",
+    "source_url": "https://www.unitree.com/images/bb3f85d2278745ec952ca3947b0477a0_966x1248.png"
+  },
+  "R1-CHARGER": {
+    "path": "images/official/unitree-go2-batteria-long.webp",
+    "source_url": "https://cdn.shopify.com/s/files/1/0620/4932/1193/files/169_c6ad4b4c-1d1a-4169-9691-4d377fbeaba9.jpg"
+  },
+  "R1-D": {
+    "path": "images/manifattura/unitree-r1-d.png"
+  },
+  "R1-FRAME": {
+    "path": "images/official/placeholder-prodotto.webp"
+  },
+  "R1-HAND-DEX3-NO-TAC": {
+    "path": "images/prodotti/r1-hand-dex3-no-tac.webp",
+    "gallery": [
+      "images/prodotti/r1-hand-dex3-no-tac.webp"
+    ]
+  },
+  "R1-HAND-DEX3-TAC": {
+    "path": "images/prodotti/r1-hand-dex3-tac.webp",
+    "gallery": [
+      "images/prodotti/r1-hand-dex3-tac.webp"
+    ]
+  },
+  "R1-REMOTE": {
+    "path": "images/official/unitree-telecomando.webp",
+    "source_url": "https://www.unitree.com/images/209585547eed4bf392afdf370aa5e7fb_576x476.png"
+  },
+  "R1-REVO2-BASIC": {
+    "path": "images/accessori/brainco-revo2-basic.webp"
+  },
+  "R1-REVO2-HAPTIC": {
+    "path": "images/accessori/brainco-revo2-basic.webp"
+  },
+  "R1-U1": {
+    "path": "images/official/unitree-r1-01.webp",
+    "gallery": [
+      "images/official/unitree-r1-01.webp"
+    ],
+    "source_url": "https://www.unitree.com/images/be9e7bde5e104a40bc1a8e8eccf71a00_1860x1550.png"
+  },
+  "R1-U2": {
+    "path": "images/official/unitree-r1-01.webp",
+    "gallery": [
+      "images/official/unitree-r1-01.webp"
+    ],
+    "source_url": "https://www.unitree.com/images/be9e7bde5e104a40bc1a8e8eccf71a00_1860x1550.png"
+  },
+  "R1-U3": {
+    "path": "images/official/unitree-r1-01.webp",
+    "gallery": [
+      "images/official/unitree-r1-01.webp"
+    ],
+    "source_url": "https://www.unitree.com/images/be9e7bde5e104a40bc1a8e8eccf71a00_1860x1550.png"
+  },
+  "R1-U4": {
+    "path": "images/official/unitree-r1-01.webp",
+    "gallery": [
+      "images/official/unitree-r1-01.webp"
+    ],
+    "source_url": "https://www.unitree.com/images/be9e7bde5e104a40bc1a8e8eccf71a00_1860x1550.png"
+  },
+  "R1-U5": {
+    "path": "images/official/unitree-r1-01.webp",
+    "gallery": [
+      "images/official/unitree-r1-01.webp"
+    ],
+    "source_url": "https://www.unitree.com/images/be9e7bde5e104a40bc1a8e8eccf71a00_1860x1550.png"
+  },
+  "R1-U6": {
+    "path": "images/official/unitree-r1-01.webp",
+    "gallery": [
+      "images/official/unitree-r1-01.webp"
+    ],
+    "source_url": "https://www.unitree.com/images/be9e7bde5e104a40bc1a8e8eccf71a00_1860x1550.png"
+  },
+  "Z1-GRIPPER-D405": {
+    "path": "images/official/unitree-z1-pinza.webp",
+    "source": "Unitree listino 2026 Z1&D1!19",
+    "source_url": "https://cdn.shopify.com/s/files/1/0620/4932/1193/files/3_e795751c-68d0-4c55-ace1-6aeeb565a06d.jpg"
+  },
+  "Z1-GRIPPER-D435I": {
+    "path": "images/official/unitree-z1-pinza.webp",
+    "source": "Unitree listino 2026 Z1&D1!18",
+    "source_url": "https://cdn.shopify.com/s/files/1/0620/4932/1193/files/3_e795751c-68d0-4c55-ace1-6aeeb565a06d.jpg"
+  },
+  "Z1-GRIPPER-STD": {
+    "path": "images/official/unitree-z1-pinza.webp",
+    "source": "Unitree listino 2026 Z1&D1!17",
+    "source_url": "https://cdn.shopify.com/s/files/1/0620/4932/1193/files/3_e795751c-68d0-4c55-ace1-6aeeb565a06d.jpg"
+  },
+  "AS2-AIR": {
+    "path": "images/prodotti/2026/as2.webp"
+  },
+  "AS2-PRO": {
+    "path": "images/prodotti/2026/as2.webp"
+  },
+  "AS2-EDU": {
+    "path": "images/prodotti/2026/as2.webp",
+    "source": "Unitree listino 2026 As2 Series!6"
+  },
+  "AS2-EDU-SMART": {
+    "path": "images/prodotti/2026/as2.webp",
+    "source": "Unitree listino 2026 As2 Series!7"
+  },
+  "AS2-EDU-LASER": {
+    "path": "images/prodotti/2026/as2.webp",
+    "source": "Unitree listino 2026 As2 Series!8"
+  },
+  "AS2-EDU-ULT": {
+    "path": "images/prodotti/2026/as2.webp",
+    "source": "Unitree listino 2026 As2 Series!9"
+  },
+  "AS2-X": {
+    "path": "images/prodotti/2026/as2.webp",
+    "source": "Unitree listino 2026 As2 Series!5"
+  },
+  "G1D-STANDARD": {
+    "path": "images/prodotti/g1-d-standard.webp",
+    "source": "Unitree listino 2026 G1-D!3"
+  },
+  "G1D-FLAGSHIP": {
+    "path": "images/prodotti/g1-d-flagship.webp",
+    "source": "Unitree listino 2026 G1-D!8"
+  },
+  "GO2-SCREEN-DC": {
+    "path": "images/official/unitree-go2-03.webp",
+    "gallery": [
+      "images/official/unitree-go2-03.webp"
+    ],
+    "source": "Unitree listino 2026 Go2 Series!11",
+    "source_url": "https://cdn.shopify.com/s/files/1/0620/4932/1193/files/24.png"
+  },
+  "GO2-SCREEN-DC-3IN1": {
+    "path": "images/official/unitree-go2-03.webp",
+    "gallery": [
+      "images/official/unitree-go2-03.webp"
+    ],
+    "source": "Unitree listino 2026 Go2 Series!12",
+    "source_url": "https://cdn.shopify.com/s/files/1/0620/4932/1193/files/24.png"
+  },
+  "GO2-SCREEN-DC-GIMBAL": {
+    "path": "images/official/unitree-go2-03.webp",
+    "gallery": [
+      "images/official/unitree-go2-03.webp"
+    ],
+    "source": "Unitree listino 2026 Go2 Series!13",
+    "source_url": "https://cdn.shopify.com/s/files/1/0620/4932/1193/files/24.png"
+  },
+  "GO2-GAS": {
+    "path": "images/official/unitree-go2-02.webp",
+    "gallery": [
+      "images/official/unitree-go2-02.webp"
+    ],
+    "source": "Unitree listino 2026 Go2 Series!14",
+    "source_url": "https://cdn.shopify.com/s/files/1/0620/4932/1193/files/df9f333424ff6cc6164ce421b019fb94_a6f832b0-479e-4294-ac75-6516208b91f4.png"
+  },
+  "GO2-BATTERY-STD": {
+    "path": "images/official/unitree-go2-batteria-std.webp",
+    "gallery": [
+      "images/official/unitree-go2-batteria-std.webp"
+    ],
+    "source": "Unitree listino 2026 Go2 Series!16",
+    "source_url": "https://cdn.shopify.com/s/files/1/0620/4932/1193/files/168.jpg"
+  },
+  "GO2-BATTERY-LONG": {
+    "path": "images/official/unitree-go2-batteria-long.webp",
+    "gallery": [
+      "images/official/unitree-go2-batteria-long.webp"
+    ],
+    "source": "Unitree listino 2026 Go2 Series!17, Go2-W!11",
+    "source_url": "https://cdn.shopify.com/s/files/1/0620/4932/1193/files/169_c6ad4b4c-1d1a-4169-9691-4d377fbeaba9.jpg"
+  },
+  "GO2-DOCK-40": {
+    "path": "images/prodotti/orin-nx-upgrade.webp",
+    "gallery": [
+      "images/prodotti/orin-nx-upgrade.webp"
+    ],
+    "source": "Unitree listino 2026 Go2 Series!22"
+  },
+  "GO2-LIDAR-MID360": {
+    "path": "images/official/livox-mid360.webp",
+    "gallery": [
+      "images/official/livox-mid360.webp"
+    ],
+    "source": "Unitree listino 2026 Go2 Series!28",
+    "source_url": "https://www.livoxtech.com/dps/8422db38d7e9d38ce47e65391c420a7e.jpg"
+  },
+  "GO2-LIDAR-XT16": {
+    "path": "images/official/hesai-xt16.webp",
+    "gallery": [
+      "images/official/hesai-xt16.webp"
+    ],
+    "source": "Unitree listino 2026 Go2 Series!29, Go2-W!19",
+    "source_url": "https://www.hesaitech.com/wp-content/uploads/2024/11/XT.png"
+  },
+  "GO2-SCREEN-REMOTE": {
+    "path": "images/prodotti/go2-screen-remote.webp",
+    "gallery": [
+      "images/prodotti/go2-screen-remote.webp"
+    ],
+    "source": "Unitree listino 2026 Go2 Series!31, Go2-W!22"
+  },
+  "GO2-SCREEN-REMOTE-3IN1": {
+    "path": "images/prodotti/go2-screen-remote-3in1.webp",
+    "gallery": [
+      "images/prodotti/go2-screen-remote-3in1.webp"
+    ],
+    "source": "Unitree listino 2026 Go2 Series!32, Go2-W!23"
+  },
+  "GO2-SCREEN-REMOTE-GIMBAL": {
+    "path": "images/prodotti/go2-screen-remote-gimbal.webp",
+    "gallery": [
+      "images/prodotti/go2-screen-remote-gimbal.webp"
+    ],
+    "source": "Unitree listino 2026 Go2 Series!33, Go2-W!24"
+  },
+  "GO2-GAS-SENSOR": {
+    "path": "images/prodotti/go2-gas-sensor.webp",
+    "gallery": [
+      "images/prodotti/go2-gas-sensor.webp"
+    ],
+    "source": "Unitree listino 2026 Go2 Series!34, Go2-W!25"
+  },
+  "GO2W-STD": {
+    "path": "images/prodotti/go2w-u3.webp",
+    "gallery": [
+      "images/prodotti/go2w-u3.webp"
+    ],
+    "source": "Unitree listino 2026 Go2-W!3"
+  },
+  "GO2W-SCREEN-3IN1": {
+    "path": "images/prodotti/go2w-u3.webp",
+    "gallery": [
+      "images/prodotti/go2w-u3.webp"
+    ],
+    "source": "Unitree listino 2026 Go2-W!8"
+  },
+  "GO2W-SCREEN-GIMBAL": {
+    "path": "images/prodotti/go2w-u3.webp",
+    "gallery": [
+      "images/prodotti/go2w-u3.webp"
+    ],
+    "source": "Unitree listino 2026 Go2-W!9"
+  },
+  "GO2W-DEPTH-CAM": {
+    "path": "images/prodotti/2026/realsense-d435i.webp",
+    "gallery": [
+      "images/prodotti/2026/realsense-d435i.webp"
+    ],
+    "source": "Unitree listino 2026 Go2-W!20"
+  },
+  "AS2-REMOTE": {
+    "path": "images/prodotti/as2-remote.webp",
+    "gallery": [
+      "images/prodotti/as2-remote.webp"
+    ],
+    "source": "Unitree listino 2026 As2 Series!10, AS2-W!8",
+    "source_url": "https://cdn.shopify.com/s/files/1/0620/4932/1193/files/150.jpg"
+  },
+  "AS2-BATTERY-STD": {
+    "path": "images/prodotti/2026/as2-battery-std.webp",
+    "gallery": [
+      "images/prodotti/2026/as2-battery-std.webp"
+    ],
+    "source": "Unitree listino 2026 As2 Series!11, AS2-W!9"
+  },
+  "AS2-BATTERY-LONG": {
+    "path": "images/prodotti/2026/as2-battery-long.webp",
+    "gallery": [
+      "images/prodotti/2026/as2-battery-long.webp"
+    ],
+    "source": "Unitree listino 2026 As2 Series!12, AS2-W!10"
+  },
+  "AS2-CHARGER-STD": {
+    "path": "images/prodotti/2026/as2-charger-std.webp",
+    "gallery": [
+      "images/prodotti/2026/as2-charger-std.webp"
+    ],
+    "source": "Unitree listino 2026 As2 Series!13, AS2-W!11"
+  },
+  "AS2-CHARGER-FAST": {
+    "path": "images/prodotti/2026/as2-charger-fast.webp",
+    "gallery": [
+      "images/prodotti/2026/as2-charger-fast.webp"
+    ],
+    "source": "Unitree listino 2026 As2 Series!14, AS2-W!12"
+  },
+  "AS2-CHARGING-BOARD": {
+    "path": "images/prodotti/as2-charging-board.webp",
+    "gallery": [
+      "images/prodotti/as2-charging-board.webp"
+    ],
+    "source": "Unitree listino 2026 As2 Series!15, AS2-W!13"
+  },
+  "AS2W-X": {
+    "path": "images/prodotti/as2-w.webp",
+    "gallery": [
+      "images/prodotti/as2-w.webp"
+    ],
+    "source": "Unitree listino 2026 AS2-W!3"
+  },
+  "AS2W-EDU-STD": {
+    "path": "images/prodotti/as2-w.webp",
+    "gallery": [
+      "images/prodotti/as2-w.webp"
+    ],
+    "source": "Unitree listino 2026 AS2-W!4"
+  },
+  "AS2W-EDU-SMART": {
+    "path": "images/prodotti/as2-w.webp",
+    "gallery": [
+      "images/prodotti/as2-w.webp"
+    ],
+    "source": "Unitree listino 2026 AS2-W!5"
+  },
+  "AS2W-EDU-PLUS": {
+    "path": "images/prodotti/as2-w.webp",
+    "gallery": [
+      "images/prodotti/as2-w.webp"
+    ],
+    "source": "Unitree listino 2026 AS2-W!6"
+  },
+  "AS2W-EDU-ULT": {
+    "path": "images/prodotti/as2-w.webp",
+    "gallery": [
+      "images/prodotti/as2-w.webp"
+    ],
+    "source": "Unitree listino 2026 AS2-W!7"
+  },
+  "A2-G20-REMOTE": {
+    "path": "images/prodotti/a2-g20-remote.webp",
+    "gallery": [
+      "images/prodotti/a2-g20-remote.webp"
+    ],
+    "source": "Unitree listino 2026 A2&A2-W!8"
+  },
+  "A2-COMPUTE-DOCK": {
+    "path": "images/prodotti/a2-compute-dock.webp",
+    "gallery": [
+      "images/prodotti/a2-compute-dock.webp"
+    ],
+    "source": "Unitree listino 2026 A2&A2-W!11"
+  },
+  "A2-UWB-MODULE": {
+    "path": "images/prodotti/a2-uwb-module.webp",
+    "gallery": [
+      "images/prodotti/a2-uwb-module.webp"
+    ],
+    "source": "Unitree listino 2026 A2&A2-W!12"
+  },
+  "A2-CHARGING-BOARD": {
+    "path": "images/prodotti/a2-charging-board.webp",
+    "gallery": [
+      "images/prodotti/a2-charging-board.webp"
+    ],
+    "source": "Unitree listino 2026 A2&A2-W!13"
+  },
+  "B2-CHARGER": {
+    "path": "images/prodotti/b2-charger.webp",
+    "gallery": [
+      "images/prodotti/b2-charger.webp"
+    ],
+    "source": "Unitree listino 2026 B2&B2-W!11"
+  },
+  "B2W-WHEEL-KIT": {
+    "path": "images/prodotti/b2w-wheel-kit.webp",
+    "gallery": [
+      "images/prodotti/b2w-wheel-kit.webp"
+    ],
+    "source": "Unitree listino 2026 B2&B2-W!13"
+  },
+  "B2-SLAM-KIT": {
+    "path": "images/prodotti/b2-slam-kit.webp",
+    "gallery": [
+      "images/prodotti/b2-slam-kit.webp"
+    ],
+    "source": "Unitree listino 2026 B2&B2-W!16"
+  },
+  "B2-COMPUTE-I7": {
+    "path": "images/prodotti/b2-compute-i7.webp",
+    "gallery": [
+      "images/prodotti/b2-compute-i7.webp"
+    ],
+    "source": "Unitree listino 2026 B2&B2-W!18"
+  },
+  "B2-COMPUTE-ORIN-NX": {
+    "path": "images/prodotti/b2-compute-orin-nx.webp",
+    "gallery": [
+      "images/prodotti/b2-compute-orin-nx.webp"
+    ],
+    "source": "Unitree listino 2026 B2&B2-W!19"
+  },
+  "B2-AGX-X1": {
+    "path": "images/prodotti/b2-agx-x1.webp",
+    "gallery": [
+      "images/prodotti/b2-agx-x1.webp"
+    ],
+    "source": "Unitree listino 2026 B2&B2-W!20"
+  },
+  "B2-AGX-X2": {
+    "path": "images/prodotti/b2-agx-x2.webp",
+    "gallery": [
+      "images/prodotti/b2-agx-x2.webp"
+    ],
+    "source": "Unitree listino 2026 B2&B2-W!21"
+  },
+  "R1-BASIC": {
+    "path": "images/official/unitree-r1-01.webp",
+    "gallery": [
+      "images/official/unitree-r1-01.webp"
+    ],
+    "source": "Unitree listino 2026 R1 series!4",
+    "source_url": "https://www.unitree.com/images/be9e7bde5e104a40bc1a8e8eccf71a00_1860x1550.png"
+  },
+  "R1-EDU-SMART": {
+    "path": "images/official/unitree-r1-01.webp",
+    "gallery": [
+      "images/official/unitree-r1-01.webp"
+    ],
+    "source": "Unitree listino 2026 R1 series!6",
+    "source_url": "https://www.unitree.com/images/be9e7bde5e104a40bc1a8e8eccf71a00_1860x1550.png"
+  },
+  "R1-EDU-PROF-A": {
+    "path": "images/official/unitree-r1-01.webp",
+    "gallery": [
+      "images/official/unitree-r1-01.webp"
+    ],
+    "source": "Unitree listino 2026 R1 series!7",
+    "source_url": "https://www.unitree.com/images/be9e7bde5e104a40bc1a8e8eccf71a00_1860x1550.png"
+  },
+  "R1-EDU-PROF-B": {
+    "path": "images/official/unitree-r1-01.webp",
+    "gallery": [
+      "images/official/unitree-r1-01.webp"
+    ],
+    "source": "Unitree listino 2026 R1 series!8",
+    "source_url": "https://www.unitree.com/images/be9e7bde5e104a40bc1a8e8eccf71a00_1860x1550.png"
+  },
+  "R1-EDU-PROF-C": {
+    "path": "images/official/unitree-r1-01.webp",
+    "gallery": [
+      "images/official/unitree-r1-01.webp"
+    ],
+    "source": "Unitree listino 2026 R1 series!9",
+    "source_url": "https://www.unitree.com/images/be9e7bde5e104a40bc1a8e8eccf71a00_1860x1550.png"
+  },
+  "R1-EDU-PROF-D": {
+    "path": "images/official/unitree-r1-01.webp",
+    "gallery": [
+      "images/official/unitree-r1-01.webp"
+    ],
+    "source": "Unitree listino 2026 R1 series!10",
+    "source_url": "https://www.unitree.com/images/be9e7bde5e104a40bc1a8e8eccf71a00_1860x1550.png"
+  },
+  "R1-EDU-PROF-E": {
+    "path": "images/official/unitree-r1-01.webp",
+    "gallery": [
+      "images/official/unitree-r1-01.webp"
+    ],
+    "source": "Unitree listino 2026 R1 series!11",
+    "source_url": "https://www.unitree.com/images/be9e7bde5e104a40bc1a8e8eccf71a00_1860x1550.png"
+  },
+  "R1-EDU-PROF-F": {
+    "path": "images/official/unitree-r1-01.webp",
+    "gallery": [
+      "images/official/unitree-r1-01.webp"
+    ],
+    "source": "Unitree listino 2026 R1 series!12",
+    "source_url": "https://www.unitree.com/images/be9e7bde5e104a40bc1a8e8eccf71a00_1860x1550.png"
+  },
+  "R1-EDU-PROF-G": {
+    "path": "images/official/unitree-r1-01.webp",
+    "gallery": [
+      "images/official/unitree-r1-01.webp"
+    ],
+    "source": "Unitree listino 2026 R1 series!13",
+    "source_url": "https://www.unitree.com/images/be9e7bde5e104a40bc1a8e8eccf71a00_1860x1550.png"
+  },
+  "R1-EDU-PROF-H": {
+    "path": "images/official/unitree-r1-01.webp",
+    "gallery": [
+      "images/official/unitree-r1-01.webp"
+    ],
+    "source": "Unitree listino 2026 R1 series!14",
+    "source_url": "https://www.unitree.com/images/be9e7bde5e104a40bc1a8e8eccf71a00_1860x1550.png"
+  },
+  "R1-COMPUTE-40": {
+    "path": "images/prodotti/2026/compute-40-tops.webp",
+    "gallery": [
+      "images/prodotti/2026/compute-40-tops.webp"
+    ],
+    "source": "Unitree listino 2026 R1 series!19, R1-A!59"
+  },
+  "R1-COMPUTE-100": {
+    "path": "images/prodotti/2026/compute-100-tops.webp",
+    "gallery": [
+      "images/prodotti/2026/compute-100-tops.webp"
+    ],
+    "source": "Unitree listino 2026 R1 series!20, R1-A!60"
+  },
+  "R1-LIDAR-KIT": {
+    "path": "images/official/livox-mid360.webp",
+    "gallery": [
+      "images/official/livox-mid360.webp"
+    ],
+    "source": "Unitree listino 2026 R1 series!21",
+    "source_url": "https://www.livoxtech.com/dps/8422db38d7e9d38ce47e65391c420a7e.jpg"
+  },
+  "DEX1-1-STD": {
+    "path": "images/official/unitree-dex1-1.webp",
+    "gallery": [
+      "images/official/unitree-dex1-1.webp"
+    ],
+    "source": "Unitree listino 2026 R1 series!22, R1-A!61, G1 Series!49, G1-D!22",
+    "source_url": "https://www.unitree.com/images/563d33a0fe6146f9919f82e0e2799244_800x800.png"
+  },
+  "DEX1-1-PLUS": {
+    "path": "images/official/unitree-dex1-1-b.webp",
+    "gallery": [
+      "images/official/unitree-dex1-1-b.webp"
+    ],
+    "source": "Unitree listino 2026 R1 series!23, R1-A!62, G1 Series!50, G1-D!23",
+    "source_url": "https://www.unitree.com/images/b98699988c4249a89dd246f406ffaa2d_694x750.png"
+  },
+  "LINKER-O6": {
+    "path": "images/prodotti/2026/linker-o6.webp",
+    "gallery": [
+      "images/prodotti/2026/linker-o6.webp"
+    ],
+    "source": "Unitree listino 2026 R1 series!28, R1 series!35, R1-A!67"
+  },
+  "LINKER-O6-TAC": {
+    "path": "images/prodotti/2026/linker-o6-tac.webp",
+    "gallery": [
+      "images/prodotti/2026/linker-o6-tac.webp"
+    ],
+    "source": "Unitree listino 2026 R1 series!29, R1 series!36, R1-A!68"
+  },
+  "R1-A5-STD": {
+    "path": "images/prodotti/2026/r1-a5.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a5.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!3"
+  },
+  "R1-A5-D-STD": {
+    "path": "images/prodotti/2026/r1-a5-d.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a5-d.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!4"
+  },
+  "R1-A7-STD": {
+    "path": "images/prodotti/2026/r1-a7.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a7.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!5"
+  },
+  "R1-A7-D-STD": {
+    "path": "images/prodotti/2026/r1-a7-d.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a7-d.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!6"
+  },
+  "R1-A5-SMART-A": {
+    "path": "images/prodotti/2026/r1-a5.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a5.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!7"
+  },
+  "R1-A5-SMART-B": {
+    "path": "images/prodotti/2026/r1-a5.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a5.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!8"
+  },
+  "R1-A5-SMART-C": {
+    "path": "images/prodotti/2026/r1-a5.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a5.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!9"
+  },
+  "R1-A5-SMART-D": {
+    "path": "images/prodotti/2026/r1-a5.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a5.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!10"
+  },
+  "R1-A5-SMART-E": {
+    "path": "images/prodotti/2026/r1-a5.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a5.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!11"
+  },
+  "R1-A5-SMART-F": {
+    "path": "images/prodotti/2026/r1-a5.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a5.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!12"
+  },
+  "R1-A5-SMART-G": {
+    "path": "images/prodotti/2026/r1-a5.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a5.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!13"
+  },
+  "R1-A5-SMART-H": {
+    "path": "images/prodotti/2026/r1-a5.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a5.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!14"
+  },
+  "R1-A5-D-SMART-A": {
+    "path": "images/prodotti/2026/r1-a5-d.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a5-d.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!15"
+  },
+  "R1-A5-D-SMART-B": {
+    "path": "images/prodotti/2026/r1-a5-d.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a5-d.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!16"
+  },
+  "R1-A5-D-SMART-C": {
+    "path": "images/prodotti/2026/r1-a5-d.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a5-d.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!17"
+  },
+  "R1-A5-D-SMART-D": {
+    "path": "images/prodotti/2026/r1-a5-d.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a5-d.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!18"
+  },
+  "R1-A5-D-SMART-E": {
+    "path": "images/prodotti/2026/r1-a5-d.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a5-d.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!19"
+  },
+  "R1-A5-D-SMART-F": {
+    "path": "images/prodotti/2026/r1-a5-d.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a5-d.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!20"
+  },
+  "R1-A5-D-SMART-G": {
+    "path": "images/prodotti/2026/r1-a5-d.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a5-d.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!21"
+  },
+  "R1-A5-D-SMART-H": {
+    "path": "images/prodotti/2026/r1-a5-d.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a5-d.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!22"
+  },
+  "R1-A5-D-ULT-A": {
+    "path": "images/prodotti/2026/r1-a5-d.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a5-d.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!23"
+  },
+  "R1-A5-D-ULT-B": {
+    "path": "images/prodotti/2026/r1-a5-d.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a5-d.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!24"
+  },
+  "R1-A5-D-ULT-C": {
+    "path": "images/prodotti/2026/r1-a5-d.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a5-d.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!25"
+  },
+  "R1-A5-D-ULT-D": {
+    "path": "images/prodotti/2026/r1-a5-d.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a5-d.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!26"
+  },
+  "R1-A5-D-ULT-E": {
+    "path": "images/prodotti/2026/r1-a5-d.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a5-d.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!27"
+  },
+  "R1-A5-D-ULT-F": {
+    "path": "images/prodotti/2026/r1-a5-d.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a5-d.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!28"
+  },
+  "R1-A5-D-ULT-G": {
+    "path": "images/prodotti/2026/r1-a5-d.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a5-d.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!29"
+  },
+  "R1-A5-D-ULT-H": {
+    "path": "images/prodotti/2026/r1-a5-d.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a5-d.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!30"
+  },
+  "R1-A7-SMART-A": {
+    "path": "images/prodotti/2026/r1-a7.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a7.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!31"
+  },
+  "R1-A7-SMART-B": {
+    "path": "images/prodotti/2026/r1-a7.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a7.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!32"
+  },
+  "R1-A7-SMART-C": {
+    "path": "images/prodotti/2026/r1-a7.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a7.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!33"
+  },
+  "R1-A7-SMART-D": {
+    "path": "images/prodotti/2026/r1-a7.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a7.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!34"
+  },
+  "R1-A7-SMART-E": {
+    "path": "images/prodotti/2026/r1-a7.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a7.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!35"
+  },
+  "R1-A7-SMART-F": {
+    "path": "images/prodotti/2026/r1-a7.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a7.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!36"
+  },
+  "R1-A7-SMART-G": {
+    "path": "images/prodotti/2026/r1-a7.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a7.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!37"
+  },
+  "R1-A7-SMART-H": {
+    "path": "images/prodotti/2026/r1-a7.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a7.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!38"
+  },
+  "R1-A7-D-SMART-A": {
+    "path": "images/prodotti/2026/r1-a7-d.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a7-d.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!39"
+  },
+  "R1-A7-D-SMART-B": {
+    "path": "images/prodotti/2026/r1-a7-d.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a7-d.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!40"
+  },
+  "R1-A7-D-SMART-C": {
+    "path": "images/prodotti/2026/r1-a7-d.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a7-d.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!41"
+  },
+  "R1-A7-D-SMART-D": {
+    "path": "images/prodotti/2026/r1-a7-d.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a7-d.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!42"
+  },
+  "R1-A7-D-SMART-E": {
+    "path": "images/prodotti/2026/r1-a7-d.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a7-d.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!43"
+  },
+  "R1-A7-D-SMART-F": {
+    "path": "images/prodotti/2026/r1-a7-d.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a7-d.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!44"
+  },
+  "R1-A7-D-SMART-G": {
+    "path": "images/prodotti/2026/r1-a7-d.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a7-d.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!45"
+  },
+  "R1-A7-D-SMART-H": {
+    "path": "images/prodotti/2026/r1-a7-d.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a7-d.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!46"
+  },
+  "R1-A7-D-ULT-A": {
+    "path": "images/prodotti/2026/r1-a7-d.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a7-d.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!47"
+  },
+  "R1-A7-D-ULT-B": {
+    "path": "images/prodotti/2026/r1-a7-d.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a7-d.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!48"
+  },
+  "R1-A7-D-ULT-C": {
+    "path": "images/prodotti/2026/r1-a7-d.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a7-d.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!49"
+  },
+  "R1-A7-D-ULT-D": {
+    "path": "images/prodotti/2026/r1-a7-d.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a7-d.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!50"
+  },
+  "R1-A7-D-ULT-E": {
+    "path": "images/prodotti/2026/r1-a7-d.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a7-d.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!51"
+  },
+  "R1-A7-D-ULT-F": {
+    "path": "images/prodotti/2026/r1-a7-d.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a7-d.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!52"
+  },
+  "R1-A7-D-ULT-G": {
+    "path": "images/prodotti/2026/r1-a7-d.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a7-d.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!53"
+  },
+  "R1-A7-D-ULT-H": {
+    "path": "images/prodotti/2026/r1-a7-d.webp",
+    "gallery": [
+      "images/prodotti/2026/r1-a7-d.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!54"
+  },
+  "R1A-D-CHASSIS-BATTERY": {
+    "path": "images/prodotti/2026/as2-battery-long.webp",
+    "gallery": [
+      "images/prodotti/2026/as2-battery-long.webp"
+    ],
+    "source": "Unitree listino 2026 R1-A!57"
+  },
+  "G1-PRO": {
+    "path": "images/official/unitree-g1-02.webp",
+    "gallery": [
+      "images/official/unitree-g1-02.webp"
+    ],
+    "source": "Unitree listino 2026 G1 Series!4",
+    "source_url": "https://www.unitree.com/images/6613c61ef0d1412682b771fc62432a50_1464x1400.png"
+  },
+  "G1-PLUS": {
+    "path": "images/prodotti/2026/unitree-g1-plus.webp",
+    "gallery": [
+      "images/prodotti/2026/unitree-g1-plus.webp",
+      "images/prodotti/2026/unitree-g1-plus-dettagli.webp"
+    ],
+    "source_url": "https://www.unitree.com/images/1c07b00b22eb40448af5736919891c77_1454x1902.png",
+    "source": "Unitree pagina ufficiale G1+ (https://www.unitree.com/G1plus/)"
+  },
+  "G1-E": {
+    "path": "images/official/unitree-g1-02.webp",
+    "gallery": [
+      "images/official/unitree-g1-02.webp"
+    ],
+    "source": "Unitree listino 2026 G1 Series!5",
+    "source_url": "https://www.unitree.com/images/6613c61ef0d1412682b771fc62432a50_1464x1400.png"
+  },
+  "G1-EDU-ULT-G": {
+    "path": "images/official/unitree-g1-02.webp",
+    "gallery": [],
+    "source": "Unitree listino 2026 G1 Series!14",
+    "source_url": "https://www.unitree.com/images/6613c61ef0d1412682b771fc62432a50_1464x1400.png"
+  },
+  "G1-EDU-ULT-H": {
+    "path": "images/official/unitree-g1-02.webp",
+    "gallery": [],
+    "source": "Unitree listino 2026 G1 Series!15",
+    "source_url": "https://www.unitree.com/images/6613c61ef0d1412682b771fc62432a50_1464x1400.png"
+  },
+  "G1-EDU-ULT-I": {
+    "path": "images/official/unitree-g1-02.webp",
+    "gallery": [],
+    "source": "Unitree listino 2026 G1 Series!16",
+    "source_url": "https://www.unitree.com/images/6613c61ef0d1412682b771fc62432a50_1464x1400.png"
+  },
+  "G1-EDU-PROF-F": {
+    "path": "images/official/unitree-g1-02.webp",
+    "gallery": [],
+    "source": "Unitree listino 2026 G1 Series!20",
+    "source_url": "https://www.unitree.com/images/6613c61ef0d1412682b771fc62432a50_1464x1400.png"
+  },
+  "G1-EDU-PROF-G": {
+    "path": "images/official/unitree-g1-02.webp",
+    "gallery": [],
+    "source": "Unitree listino 2026 G1 Series!21",
+    "source_url": "https://www.unitree.com/images/6613c61ef0d1412682b771fc62432a50_1464x1400.png"
+  },
+  "G1-EDU-PROF-H": {
+    "path": "images/official/unitree-g1-02.webp",
+    "gallery": [],
+    "source": "Unitree listino 2026 G1 Series!22",
+    "source_url": "https://www.unitree.com/images/6613c61ef0d1412682b771fc62432a50_1464x1400.png"
+  },
+  "G1-EDU-PROF-I": {
+    "path": "images/official/unitree-g1-02.webp",
+    "gallery": [],
+    "source": "Unitree listino 2026 G1 Series!23",
+    "source_url": "https://www.unitree.com/images/6613c61ef0d1412682b771fc62432a50_1464x1400.png"
+  },
+  "G1-EDU-BOXING": {
+    "path": "images/official/unitree-g1-02.webp",
+    "gallery": [
+      "images/official/unitree-g1-02.webp"
+    ],
+    "source": "Unitree listino 2026 G1 Series!24",
+    "source_url": "https://www.unitree.com/images/6613c61ef0d1412682b771fc62432a50_1464x1400.png"
+  },
+  "G1-LIDAR-MID360": {
+    "path": "images/official/livox-mid360.webp",
+    "gallery": [
+      "images/official/livox-mid360.webp"
+    ],
+    "source": "Unitree listino 2026 G1 Series!33",
+    "source_url": "https://www.livoxtech.com/dps/8422db38d7e9d38ce47e65391c420a7e.jpg"
+  },
+  "G1-DEPTH-CAM": {
+    "path": "images/prodotti/2026/realsense-d435i.webp",
+    "gallery": [
+      "images/prodotti/2026/realsense-d435i.webp"
+    ],
+    "source": "Unitree listino 2026 G1 Series!34"
+  },
+  "G1-HEAD-2DOF": {
+    "path": "images/prodotti/2026/g1-head-2dof.webp",
+    "gallery": [
+      "images/prodotti/2026/g1-head-2dof.webp"
+    ],
+    "source": "Unitree listino 2026 G1 Series!35"
+  },
+  "G1-AGX-ORIN-DOCK": {
+    "path": "images/prodotti/2026/g1-agx-orin-dock.webp",
+    "gallery": [
+      "images/prodotti/2026/g1-agx-orin-dock.webp"
+    ],
+    "source": "Unitree listino 2026 G1 Series!36, G1-D!20"
+  },
+  "G1-THOR-DOCK": {
+    "path": "images/prodotti/2026/g1-thor-dock.webp",
+    "gallery": [
+      "images/prodotti/2026/g1-thor-dock.webp"
+    ],
+    "source": "Unitree listino 2026 G1 Series!37, G1-D!21"
+  },
+  "G1-E-NX": {
+    "path": "images/accessori/compute-orin-nx.webp",
+    "gallery": [
+      "images/accessori/compute-orin-nx.webp"
+    ],
+    "source": "Unitree listino 2026 G1 Series!38"
+  },
+  "G1-WAIST-3DOF": {
+    "path": "images/prodotti/g1-waist-3dof.webp",
+    "gallery": [
+      "images/prodotti/g1-waist-3dof.webp"
+    ],
+    "source": "Unitree listino 2026 G1 Series!39"
+  },
+  "G1-WRIST-2DOF": {
+    "path": "images/prodotti/g1-wrist-2dof.webp",
+    "gallery": [
+      "images/prodotti/g1-wrist-2dof.webp"
+    ],
+    "source": "Unitree listino 2026 G1 Series!40"
+  },
+  "BIONIC-REVO2-TOUCH": {
+    "path": "images/prodotti/2026/revo2-touch.webp",
+    "gallery": [
+      "images/prodotti/2026/revo2-touch.webp"
+    ],
+    "source": "Unitree listino 2026 G1 Series!48"
+  },
+  "WUJI-HAND-2": {
+    "path": "images/prodotti/2026/wuji-hand-2.webp",
+    "gallery": [
+      "images/prodotti/2026/wuji-hand-2.webp"
+    ],
+    "source": "Unitree listino 2026 G1 Series!51, H2 Series!54, H2-A&D!64"
+  },
+  "G1D-STD-A": {
+    "path": "images/official/unitree-g1-d-standard.webp",
+    "gallery": [
+      "images/official/unitree-g1-d-standard.webp"
+    ],
+    "source": "Unitree listino 2026 G1-D!3",
+    "source_url": "https://www.unitree.com/images/f43fb0c9fa8f4f589a40f98734afd8e8_1434x1470.png"
+  },
+  "G1D-STD-B": {
+    "path": "images/official/unitree-g1-d-standard.webp",
+    "gallery": [
+      "images/official/unitree-g1-d-standard.webp"
+    ],
+    "source": "Unitree listino 2026 G1-D!4",
+    "source_url": "https://www.unitree.com/images/f43fb0c9fa8f4f589a40f98734afd8e8_1434x1470.png"
+  },
+  "G1D-STD-C": {
+    "path": "images/official/unitree-g1-d-standard.webp",
+    "gallery": [
+      "images/official/unitree-g1-d-standard.webp"
+    ],
+    "source": "Unitree listino 2026 G1-D!5",
+    "source_url": "https://www.unitree.com/images/f43fb0c9fa8f4f589a40f98734afd8e8_1434x1470.png"
+  },
+  "G1D-STD-D": {
+    "path": "images/official/unitree-g1-d-standard.webp",
+    "gallery": [
+      "images/official/unitree-g1-d-standard.webp"
+    ],
+    "source": "Unitree listino 2026 G1-D!6",
+    "source_url": "https://www.unitree.com/images/f43fb0c9fa8f4f589a40f98734afd8e8_1434x1470.png"
+  },
+  "G1D-STD-E": {
+    "path": "images/official/unitree-g1-d-standard.webp",
+    "gallery": [
+      "images/official/unitree-g1-d-standard.webp"
+    ],
+    "source": "Unitree listino 2026 G1-D!7",
+    "source_url": "https://www.unitree.com/images/f43fb0c9fa8f4f589a40f98734afd8e8_1434x1470.png"
+  },
+  "G1D-ULT-A": {
+    "path": "images/official/unitree-g1-d-mobile.webp",
+    "gallery": [
+      "images/official/unitree-g1-d-mobile.webp"
+    ],
+    "source": "Unitree listino 2026 G1-D!8",
+    "source_url": "https://www.unitree.com/images/7f4f8e4ff1b64850842fbc819f75d27e_1450x1834.png"
+  },
+  "G1D-ULT-B": {
+    "path": "images/official/unitree-g1-d-mobile.webp",
+    "gallery": [
+      "images/official/unitree-g1-d-mobile.webp"
+    ],
+    "source": "Unitree listino 2026 G1-D!9",
+    "source_url": "https://www.unitree.com/images/7f4f8e4ff1b64850842fbc819f75d27e_1450x1834.png"
+  },
+  "G1D-ULT-C": {
+    "path": "images/official/unitree-g1-d-mobile.webp",
+    "gallery": [
+      "images/official/unitree-g1-d-mobile.webp"
+    ],
+    "source": "Unitree listino 2026 G1-D!10",
+    "source_url": "https://www.unitree.com/images/7f4f8e4ff1b64850842fbc819f75d27e_1450x1834.png"
+  },
+  "G1D-ULT-D": {
+    "path": "images/official/unitree-g1-d-mobile.webp",
+    "gallery": [
+      "images/official/unitree-g1-d-mobile.webp"
+    ],
+    "source": "Unitree listino 2026 G1-D!11",
+    "source_url": "https://www.unitree.com/images/7f4f8e4ff1b64850842fbc819f75d27e_1450x1834.png"
+  },
+  "G1D-ULT-E": {
+    "path": "images/official/unitree-g1-d-mobile.webp",
+    "gallery": [
+      "images/official/unitree-g1-d-mobile.webp"
+    ],
+    "source": "Unitree listino 2026 G1-D!12",
+    "source_url": "https://www.unitree.com/images/7f4f8e4ff1b64850842fbc819f75d27e_1450x1834.png"
+  },
+  "G1D-DATA-PLATFORM": {
+    "path": "images/prodotti/g1-d-standard.webp",
+    "gallery": [
+      "images/prodotti/g1-d-standard.webp"
+    ],
+    "source": "Unitree listino 2026 G1-D!13"
+  },
+  "VR-TELEOP-KIT": {
+    "path": "images/prodotti/2026/pico-vr-kit.webp",
+    "gallery": [
+      "images/prodotti/2026/pico-vr-kit.webp"
+    ],
+    "source": "Unitree listino 2026 G1-D!15"
+  },
+  "WHEELED-BASE-CHARGING-KIT": {
+    "path": "images/prodotti/wheeled-base-charging-kit.webp",
+    "gallery": [
+      "images/prodotti/wheeled-base-charging-kit.webp"
+    ],
+    "source": "Unitree listino 2026 G1-D!19, H2-A&D!47"
+  },
+  "G1D-REVO2-TOUCH": {
+    "path": "images/prodotti/2026/revo2-touch.webp",
+    "gallery": [
+      "images/prodotti/2026/revo2-touch.webp"
+    ],
+    "source": "Unitree listino 2026 G1-D!27"
+  },
+  "H2-EDU-SMART-A": {
+    "path": "images/official/unitree-h2-01.webp",
+    "gallery": [
+      "images/official/unitree-h2-01.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!5",
+    "source_url": "https://www.unitree.com/images/f951770ea2e74197a6b0c089d13efc5a_800x800.png"
+  },
+  "H2-EDU-SMART-B": {
+    "path": "images/official/unitree-h2-01.webp",
+    "gallery": [
+      "images/official/unitree-h2-01.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!6",
+    "source_url": "https://www.unitree.com/images/f951770ea2e74197a6b0c089d13efc5a_800x800.png"
+  },
+  "H2-EDU-SMART-C": {
+    "path": "images/official/unitree-h2-01.webp",
+    "gallery": [
+      "images/official/unitree-h2-01.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!7",
+    "source_url": "https://www.unitree.com/images/f951770ea2e74197a6b0c089d13efc5a_800x800.png"
+  },
+  "H2-EDU-SMART-D": {
+    "path": "images/official/unitree-h2-01.webp",
+    "gallery": [
+      "images/official/unitree-h2-01.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!8",
+    "source_url": "https://www.unitree.com/images/f951770ea2e74197a6b0c089d13efc5a_800x800.png"
+  },
+  "H2-EDU-SMART-E": {
+    "path": "images/official/unitree-h2-01.webp",
+    "gallery": [
+      "images/official/unitree-h2-01.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!9",
+    "source_url": "https://www.unitree.com/images/f951770ea2e74197a6b0c089d13efc5a_800x800.png"
+  },
+  "H2-EDU-SMART-F": {
+    "path": "images/official/unitree-h2-01.webp",
+    "gallery": [
+      "images/official/unitree-h2-01.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!10",
+    "source_url": "https://www.unitree.com/images/f951770ea2e74197a6b0c089d13efc5a_800x800.png"
+  },
+  "H2-EDU-SMART-G": {
+    "path": "images/official/unitree-h2-01.webp",
+    "gallery": [
+      "images/official/unitree-h2-01.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!11",
+    "source_url": "https://www.unitree.com/images/f951770ea2e74197a6b0c089d13efc5a_800x800.png"
+  },
+  "H2-EDU-SMART-H": {
+    "path": "images/official/unitree-h2-01.webp",
+    "gallery": [
+      "images/official/unitree-h2-01.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!12",
+    "source_url": "https://www.unitree.com/images/f951770ea2e74197a6b0c089d13efc5a_800x800.png"
+  },
+  "H2-EDU-SMART-I": {
+    "path": "images/official/unitree-h2-01.webp",
+    "gallery": [
+      "images/official/unitree-h2-01.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!13",
+    "source_url": "https://www.unitree.com/images/f951770ea2e74197a6b0c089d13efc5a_800x800.png"
+  },
+  "H2-EDU-SMART-J": {
+    "path": "images/official/unitree-h2-01.webp",
+    "gallery": [
+      "images/official/unitree-h2-01.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!14",
+    "source_url": "https://www.unitree.com/images/f951770ea2e74197a6b0c089d13efc5a_800x800.png"
+  },
+  "H2-EDU-SMART-K": {
+    "path": "images/official/unitree-h2-01.webp",
+    "gallery": [
+      "images/official/unitree-h2-01.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!15",
+    "source_url": "https://www.unitree.com/images/f951770ea2e74197a6b0c089d13efc5a_800x800.png"
+  },
+  "H2-EDU-SMART-L": {
+    "path": "images/official/unitree-h2-01.webp",
+    "gallery": [
+      "images/official/unitree-h2-01.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!16",
+    "source_url": "https://www.unitree.com/images/f951770ea2e74197a6b0c089d13efc5a_800x800.png"
+  },
+  "H2-EDU-SMART-M": {
+    "path": "images/official/unitree-h2-01.webp",
+    "gallery": [
+      "images/official/unitree-h2-01.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!17",
+    "source_url": "https://www.unitree.com/images/f951770ea2e74197a6b0c089d13efc5a_800x800.png"
+  },
+  "H2-PLUS-SMART": {
+    "path": "images/official/unitree-h2-plus-01.webp",
+    "gallery": [
+      "images/official/unitree-h2-plus-01.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!18",
+    "source_url": "https://www.unitree.com/images/76658a29925a49a397efe2f726f5e1e3_800x800.png"
+  },
+  "H2-PLUS-ULT-A": {
+    "path": "images/official/unitree-h2-plus-01.webp",
+    "gallery": [
+      "images/official/unitree-h2-plus-01.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!19",
+    "source_url": "https://www.unitree.com/images/76658a29925a49a397efe2f726f5e1e3_800x800.png"
+  },
+  "H2-PLUS-ULT-B": {
+    "path": "images/official/unitree-h2-plus-01.webp",
+    "gallery": [
+      "images/official/unitree-h2-plus-01.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!20",
+    "source_url": "https://www.unitree.com/images/76658a29925a49a397efe2f726f5e1e3_800x800.png"
+  },
+  "H2-PLUS-ULT-C": {
+    "path": "images/official/unitree-h2-plus-01.webp",
+    "gallery": [
+      "images/official/unitree-h2-plus-01.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!21",
+    "source_url": "https://www.unitree.com/images/76658a29925a49a397efe2f726f5e1e3_800x800.png"
+  },
+  "H2-PLUS-ULT-D": {
+    "path": "images/official/unitree-h2-plus-01.webp",
+    "gallery": [
+      "images/official/unitree-h2-plus-01.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!22",
+    "source_url": "https://www.unitree.com/images/76658a29925a49a397efe2f726f5e1e3_800x800.png"
+  },
+  "H2-PLUS-ULT-E": {
+    "path": "images/official/unitree-h2-plus-01.webp",
+    "gallery": [
+      "images/official/unitree-h2-plus-01.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!23",
+    "source_url": "https://www.unitree.com/images/76658a29925a49a397efe2f726f5e1e3_800x800.png"
+  },
+  "H2-PLUS-ULT-F": {
+    "path": "images/official/unitree-h2-plus-01.webp",
+    "gallery": [
+      "images/official/unitree-h2-plus-01.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!24",
+    "source_url": "https://www.unitree.com/images/76658a29925a49a397efe2f726f5e1e3_800x800.png"
+  },
+  "H2-PLUS-ULT-G": {
+    "path": "images/official/unitree-h2-plus-01.webp",
+    "gallery": [
+      "images/official/unitree-h2-plus-01.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!25",
+    "source_url": "https://www.unitree.com/images/76658a29925a49a397efe2f726f5e1e3_800x800.png"
+  },
+  "H2-PLUS-ULT-H": {
+    "path": "images/official/unitree-h2-plus-01.webp",
+    "gallery": [
+      "images/official/unitree-h2-plus-01.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!26",
+    "source_url": "https://www.unitree.com/images/76658a29925a49a397efe2f726f5e1e3_800x800.png"
+  },
+  "H2-PLUS-ULT-I": {
+    "path": "images/official/unitree-h2-plus-01.webp",
+    "gallery": [
+      "images/official/unitree-h2-plus-01.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!27",
+    "source_url": "https://www.unitree.com/images/76658a29925a49a397efe2f726f5e1e3_800x800.png"
+  },
+  "H2-PLUS-ULT-J": {
+    "path": "images/official/unitree-h2-plus-01.webp",
+    "gallery": [
+      "images/official/unitree-h2-plus-01.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!28",
+    "source_url": "https://www.unitree.com/images/76658a29925a49a397efe2f726f5e1e3_800x800.png"
+  },
+  "H2-PLUS-ULT-K": {
+    "path": "images/official/unitree-h2-plus-01.webp",
+    "gallery": [
+      "images/official/unitree-h2-plus-01.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!29",
+    "source_url": "https://www.unitree.com/images/76658a29925a49a397efe2f726f5e1e3_800x800.png"
+  },
+  "H2-PLUS-ULT-L": {
+    "path": "images/official/unitree-h2-plus-01.webp",
+    "gallery": [
+      "images/official/unitree-h2-plus-01.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!30",
+    "source_url": "https://www.unitree.com/images/76658a29925a49a397efe2f726f5e1e3_800x800.png"
+  },
+  "H2-PLUS-ULT-M": {
+    "path": "images/official/unitree-h2-plus-01.webp",
+    "gallery": [
+      "images/official/unitree-h2-plus-01.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!31",
+    "source_url": "https://www.unitree.com/images/76658a29925a49a397efe2f726f5e1e3_800x800.png"
+  },
+  "H2-PLUS-ULT-N": {
+    "path": "images/official/unitree-h2-plus-01.webp",
+    "gallery": [
+      "images/official/unitree-h2-plus-01.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!32",
+    "source_url": "https://www.unitree.com/images/76658a29925a49a397efe2f726f5e1e3_800x800.png"
+  },
+  "H2-FRAME": {
+    "path": "images/prodotti/2026/h2-frame.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-frame.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!39"
+  },
+  "H2-LIDAR-KIT": {
+    "path": "images/prodotti/2026/h2-lidar-kit.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-lidar-kit.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!40"
+  },
+  "H2-PLUS-REVO3-U21": {
+    "path": "images/accessori/brainco-revo3-u21.webp",
+    "gallery": [
+      "images/accessori/brainco-revo3-u21.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!55"
+  },
+  "H2-PLUS-REVO3-U21T": {
+    "path": "images/accessori/brainco-revo3-u21.webp",
+    "gallery": [
+      "images/accessori/brainco-revo3-u21.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!56"
+  },
+  "H2-PLUS-REVO3-U21V": {
+    "path": "images/accessori/brainco-revo3-u21.webp",
+    "gallery": [
+      "images/accessori/brainco-revo3-u21.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!57"
+  },
+  "H2-PLUS-SHARPAWAVE": {
+    "path": "images/prodotti/2026/sharpawave.webp",
+    "gallery": [
+      "images/prodotti/2026/sharpawave.webp"
+    ],
+    "source": "Unitree listino 2026 H2 Series!58"
+  },
+  "H2-A-STD-A": {
+    "path": "images/prodotti/2026/h2-a.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-a.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!3"
+  },
+  "H2-A-STD-B": {
+    "path": "images/prodotti/2026/h2-a.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-a.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!4"
+  },
+  "H2-A-STD-C": {
+    "path": "images/prodotti/2026/h2-a.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-a.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!5"
+  },
+  "H2-A-STD-D": {
+    "path": "images/prodotti/2026/h2-a.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-a.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!6"
+  },
+  "H2-A-STD-E": {
+    "path": "images/prodotti/2026/h2-a.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-a.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!7"
+  },
+  "H2-A-STD-F": {
+    "path": "images/prodotti/2026/h2-a.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-a.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!8"
+  },
+  "H2-A-STD-G": {
+    "path": "images/prodotti/2026/h2-a.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-a.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!9"
+  },
+  "H2-A-STD-H": {
+    "path": "images/prodotti/2026/h2-a.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-a.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!10"
+  },
+  "H2-A-STD-I": {
+    "path": "images/prodotti/2026/h2-a.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-a.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!11"
+  },
+  "H2-A-STD-J": {
+    "path": "images/prodotti/2026/h2-a.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-a.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!12"
+  },
+  "H2-A-STD-K": {
+    "path": "images/prodotti/2026/h2-a.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-a.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!13"
+  },
+  "H2-A-STD-L": {
+    "path": "images/prodotti/2026/h2-a.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-a.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!14"
+  },
+  "H2-A-STD-M": {
+    "path": "images/prodotti/2026/h2-a.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-a.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!15"
+  },
+  "H2-D-STD-A": {
+    "path": "images/prodotti/2026/h2-d-standard.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-d-standard.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!16"
+  },
+  "H2-D-STD-B": {
+    "path": "images/prodotti/2026/h2-d-standard.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-d-standard.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!17"
+  },
+  "H2-D-STD-C": {
+    "path": "images/prodotti/2026/h2-d-standard.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-d-standard.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!18"
+  },
+  "H2-D-STD-D": {
+    "path": "images/prodotti/2026/h2-d-standard.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-d-standard.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!19"
+  },
+  "H2-D-STD-E": {
+    "path": "images/prodotti/2026/h2-d-standard.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-d-standard.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!20"
+  },
+  "H2-D-STD-F": {
+    "path": "images/prodotti/2026/h2-d-standard.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-d-standard.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!21"
+  },
+  "H2-D-STD-G": {
+    "path": "images/prodotti/2026/h2-d-standard.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-d-standard.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!22"
+  },
+  "H2-D-STD-H": {
+    "path": "images/prodotti/2026/h2-d-standard.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-d-standard.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!23"
+  },
+  "H2-D-STD-I": {
+    "path": "images/prodotti/2026/h2-d-standard.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-d-standard.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!24"
+  },
+  "H2-D-STD-J": {
+    "path": "images/prodotti/2026/h2-d-standard.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-d-standard.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!25"
+  },
+  "H2-D-STD-K": {
+    "path": "images/prodotti/2026/h2-d-standard.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-d-standard.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!26"
+  },
+  "H2-D-STD-L": {
+    "path": "images/prodotti/2026/h2-d-standard.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-d-standard.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!27"
+  },
+  "H2-D-STD-M": {
+    "path": "images/prodotti/2026/h2-d-standard.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-d-standard.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!28"
+  },
+  "H2-D-ULT-A": {
+    "path": "images/prodotti/2026/h2-d-ultimate.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-d-ultimate.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!29"
+  },
+  "H2-D-ULT-B": {
+    "path": "images/prodotti/2026/h2-d-ultimate.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-d-ultimate.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!30"
+  },
+  "H2-D-ULT-C": {
+    "path": "images/prodotti/2026/h2-d-ultimate.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-d-ultimate.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!31"
+  },
+  "H2-D-ULT-D": {
+    "path": "images/prodotti/2026/h2-d-ultimate.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-d-ultimate.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!32"
+  },
+  "H2-D-ULT-E": {
+    "path": "images/prodotti/2026/h2-d-ultimate.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-d-ultimate.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!33"
+  },
+  "H2-D-ULT-F": {
+    "path": "images/prodotti/2026/h2-d-ultimate.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-d-ultimate.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!34"
+  },
+  "H2-D-ULT-G": {
+    "path": "images/prodotti/2026/h2-d-ultimate.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-d-ultimate.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!35"
+  },
+  "H2-D-ULT-H": {
+    "path": "images/prodotti/2026/h2-d-ultimate.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-d-ultimate.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!36"
+  },
+  "H2-D-ULT-I": {
+    "path": "images/prodotti/2026/h2-d-ultimate.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-d-ultimate.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!37"
+  },
+  "H2-D-ULT-J": {
+    "path": "images/prodotti/2026/h2-d-ultimate.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-d-ultimate.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!38"
+  },
+  "H2-D-ULT-K": {
+    "path": "images/prodotti/2026/h2-d-ultimate.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-d-ultimate.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!39"
+  },
+  "H2-D-ULT-L": {
+    "path": "images/prodotti/2026/h2-d-ultimate.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-d-ultimate.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!40"
+  },
+  "H2-D-ULT-M": {
+    "path": "images/prodotti/2026/h2-d-ultimate.webp",
+    "gallery": [
+      "images/prodotti/2026/h2-d-ultimate.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!41"
+  },
+  "H2-VIS-COMPUTER": {
+    "path": "images/prodotti/h2-vis-computer.webp",
+    "gallery": [
+      "images/prodotti/h2-vis-computer.webp"
+    ],
+    "source": "Unitree listino 2026 H2-A&D!45"
+  },
+  "ARM-Z1-AIR-GRIPPER": {
+    "path": "images/official/unitree-z1-01.webp",
+    "gallery": [
+      "images/official/unitree-z1-01.webp"
+    ],
+    "source": "Unitree listino 2026 Z1&D1!4",
+    "source_url": "https://cdn.shopify.com/s/files/1/0620/4932/1193/files/3_e795751c-68d0-4c55-ace1-6aeeb565a06d.jpg"
+  },
+  "ARM-Z1-AIR-D435I": {
+    "path": "images/official/unitree-z1-01.webp",
+    "gallery": [
+      "images/official/unitree-z1-01.webp"
+    ],
+    "source": "Unitree listino 2026 Z1&D1!5",
+    "source_url": "https://cdn.shopify.com/s/files/1/0620/4932/1193/files/3_e795751c-68d0-4c55-ace1-6aeeb565a06d.jpg"
+  },
+  "ARM-Z1-AIR-D405": {
+    "path": "images/official/unitree-z1-01.webp",
+    "gallery": [
+      "images/official/unitree-z1-01.webp"
+    ],
+    "source": "Unitree listino 2026 Z1&D1!6",
+    "source_url": "https://cdn.shopify.com/s/files/1/0620/4932/1193/files/3_e795751c-68d0-4c55-ace1-6aeeb565a06d.jpg"
+  },
+  "ARM-Z1-PRO-GRIPPER": {
+    "path": "images/official/unitree-z1-01.webp",
+    "gallery": [
+      "images/official/unitree-z1-01.webp"
+    ],
+    "source": "Unitree listino 2026 Z1&D1!9",
+    "source_url": "https://cdn.shopify.com/s/files/1/0620/4932/1193/files/3_e795751c-68d0-4c55-ace1-6aeeb565a06d.jpg"
+  },
+  "ARM-Z1-PRO-D435I": {
+    "path": "images/official/unitree-z1-01.webp",
+    "gallery": [
+      "images/official/unitree-z1-01.webp"
+    ],
+    "source": "Unitree listino 2026 Z1&D1!10",
+    "source_url": "https://cdn.shopify.com/s/files/1/0620/4932/1193/files/3_e795751c-68d0-4c55-ace1-6aeeb565a06d.jpg"
+  },
+  "ARM-Z1-PRO-D405": {
+    "path": "images/official/unitree-z1-01.webp",
+    "gallery": [
+      "images/official/unitree-z1-01.webp"
+    ],
+    "source": "Unitree listino 2026 Z1&D1!11",
+    "source_url": "https://cdn.shopify.com/s/files/1/0620/4932/1193/files/3_e795751c-68d0-4c55-ace1-6aeeb565a06d.jpg"
+  },
+  "GO2-X": {
+    "path": "images/official/unitree-go2-01.webp",
+    "gallery": [
+      "images/official/unitree-go2-01.webp"
+    ],
+    "source": "Unitree listino 2026 Go2 Series!6",
+    "source_url": "https://www.unitree.com/images/a0811393701b4b95ba66ab1663c96fa4_1830x1600.png"
+  },
+  "DEX2-5": {
+    "path": "images/prodotti/dex2-5.webp",
+    "gallery": [
+      "images/prodotti/dex2-5.webp"
+    ],
+    "source": "Unitree listino 2026 G1 Series!52"
+  },
+  "G1-U8": {
+    "path": "images/official/unitree-g1-02.webp",
+    "gallery": [
+      "images/official/unitree-g1-02.webp"
+    ],
+    "source": "Unitree listino 2026 G1 Series!13",
+    "source_url": "https://www.unitree.com/images/6613c61ef0d1412682b771fc62432a50_1464x1400.png"
+  },
+  "D1T-STD": {
+    "path": "images/official/unitree-d1-t-kit.webp",
+    "gallery": [
+      "images/official/unitree-d1-t-kit.webp"
+    ],
+    "source": "Unitree listino 2026 Z1&D1!14",
+    "source_url": "https://oss-global-cdn.unitree.com/static/87c665f89bce4829a1433e3a84bd2f35_1920x1080.jpg"
+  },
+  "D1T-FULL": {
+    "path": "images/official/unitree-d1-t-kit.webp",
+    "gallery": [
+      "images/official/unitree-d1-t-kit.webp"
+    ],
+    "source": "Unitree listino 2026 Z1&D1!15",
+    "source_url": "https://oss-global-cdn.unitree.com/static/87c665f89bce4829a1433e3a84bd2f35_1920x1080.jpg"
+  },
+  "H2-D": {
+    "path": "images/prodotti/h2-d.webp",
+    "gallery": [
+      "images/prodotti/h2-d.webp"
+    ]
+  },
+  "AS2-W": {
+    "path": "images/prodotti/as2-w.webp",
+    "gallery": [
+      "images/prodotti/as2-w.webp"
+    ],
+    "source": "Unitree listino 2026 AS2-W!3"
+  },
+  "H2-PLUS": {
+    "path": "images/prodotti/h2-plus.webp",
+    "gallery": [
+      "images/prodotti/h2-plus.webp"
+    ]
+  },
+  "GO2-AIR-MAIN-BOARD": {
+    "path": "images/prodotti/go2-air.webp",
+    "source": "Immagine di famiglia del robot (ricambio senza foto dedicata)"
+  },
+  "G1-FOOT-SOLE": {
+    "path": "images/official/unitree-g1-02.webp",
+    "source": "Immagine di famiglia del robot (ricambio senza foto dedicata)",
+    "source_url": "https://www.unitree.com/images/6613c61ef0d1412682b771fc62432a50_1464x1400.png"
+  },
+  "G1-MAIN-BOARD": {
+    "path": "images/official/unitree-g1-02.webp",
+    "source": "Immagine di famiglia del robot (ricambio senza foto dedicata)",
+    "source_url": "https://www.unitree.com/images/6613c61ef0d1412682b771fc62432a50_1464x1400.png"
+  },
+  "B2W-SINGLE-WHEEL": {
+    "path": "images/prodotti/b2w.webp",
+    "source": "Immagine di famiglia del robot (ricambio senza foto dedicata)"
+  },
+  "GO2-UWB-MODULE": {
+    "path": "images/prodotti/go2-edu-std.webp",
+    "source": "Immagine di famiglia del robot (ricambio senza foto dedicata)"
+  },
+  "G1-HIP-IMU-COVER": {
+    "path": "images/official/unitree-g1-02.webp",
+    "source": "Immagine di famiglia del robot (ricambio senza foto dedicata)",
+    "source_url": "https://www.unitree.com/images/6613c61ef0d1412682b771fc62432a50_1464x1400.png"
+  },
+  "G1-FRONT-WEARING-PLATE": {
+    "path": "images/official/unitree-g1-02.webp",
+    "source": "Immagine di famiglia del robot (ricambio senza foto dedicata)",
+    "source_url": "https://www.unitree.com/images/6613c61ef0d1412682b771fc62432a50_1464x1400.png"
+  },
+  "G1-BACK-NECK-RUBBER-COVER": {
+    "path": "images/official/unitree-g1-02.webp",
+    "source": "Immagine di famiglia del robot (ricambio senza foto dedicata)",
+    "source_url": "https://www.unitree.com/images/6613c61ef0d1412682b771fc62432a50_1464x1400.png"
+  }
+}

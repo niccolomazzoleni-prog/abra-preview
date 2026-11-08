@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8"/>
+<script>/* abra-consent-default: Consent Mode v2, negato finche' l'utente non sceglie (consent.js) */
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+(function(){var c=null;try{c=JSON.parse(localStorage.getItem('abra_consent')||'null');if(c&&(c.v!==1||Date.now()-c.ts>15552e6))c=null;}catch(e){}window.abraConsent=c;var g=function(v){return v?'granted':'denied';};gtag('consent','default',{ad_storage:g(c&&c.marketing),ad_user_data:g(c&&c.marketing),ad_personalization:g(c&&c.marketing),analytics_storage:g(c&&c.analytics),functionality_storage:'granted',security_storage:'granted',wait_for_update:500});gtag('set','ads_data_redaction',true);gtag('set','url_passthrough',true);})();</script>
+<script defer src="../consent.js"></script>
+<script defer src="../visite.js"></script>
+<!-- Google Tag Manager + Google tag (gtag.js): i comandi entrano subito in dataLayer, DOPO il consent default qui sopra;
+     gli script esterni (~350 KB) si scaricano solo dopo il load (idle) o alla prima interazione, per non rubare banda a CSS/font/hero su mobile. -->
+<script>(function(w,d){w.dataLayer=w.dataLayer||[];w.dataLayer.push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+  gtag('js',new Date());gtag('config','G-T4ZC7CM8RX');
+  var ev=['pointerdown','keydown','touchstart','scroll'],done=0;
+  function load(){if(done)return;done=1;ev.forEach(function(e){w.removeEventListener(e,load,true);});
+    ['https://www.googletagmanager.com/gtm.js?id=GTM-MNLWZSN7','https://www.googletagmanager.com/gtag/js?id=G-T4ZC7CM8RX'].forEach(function(u){var j=d.createElement('script');j.async=true;j.src=u;d.head.appendChild(j);});}
+  ev.forEach(function(e){w.addEventListener(e,load,{capture:true,passive:true});});
+  function idle(){w.requestIdleCallback?requestIdleCallback(load,{timeout:3000}):setTimeout(load,1500);}
+  if(d.readyState==='complete')idle();else w.addEventListener('load',idle);
+})(window,document);</script>
+<!-- End Google Tag Manager -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Palletizzazione con cobot: costi, tempi e quando conviene</title>
+<meta name="description" content="Cosa contiene una cella di palletizzazione con cobot, come dimensionare payload e sbraccio, prezzi Fairino a listino e quando serve un robot industriale."/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://abrarobotics.com/blog/palletizzazione-cobot-costi.html"/>
+<link href="https://abrarobotics.com/blog/palletizzazione-cobot-costi.html" hreflang="it" rel="alternate"/>
+<link href="https://abrarobotics.com/en/blog/palletizzazione-cobot-costi.html" hreflang="en" rel="alternate"/>
+<link href="https://abrarobotics.com/de/blog/palletizzazione-cobot-costi.html" hreflang="de" rel="alternate"/>
+<link href="https://abrarobotics.com/fr/blog/palletizzazione-cobot-costi.html" hreflang="fr" rel="alternate"/>
+<link href="https://abrarobotics.com/es/blog/palletizzazione-cobot-costi.html" hreflang="es" rel="alternate"/>
+<link href="https://abrarobotics.com/pl/blog/palletizzazione-cobot-costi.html" hreflang="pl" rel="alternate"/>
+<link href="https://abrarobotics.com/nl/blog/palletizzazione-cobot-costi.html" hreflang="nl" rel="alternate"/>
+<link href="https://abrarobotics.com/sv/blog/palletizzazione-cobot-costi.html" hreflang="sv" rel="alternate"/>
+<link href="https://abrarobotics.com/no/blog/palletizzazione-cobot-costi.html" hreflang="nb" rel="alternate"/>
+<link href="https://abrarobotics.com/fi/blog/palletizzazione-cobot-costi.html" hreflang="fi" rel="alternate"/>
+<link href="https://abrarobotics.com/blog/palletizzazione-cobot-costi.html" hreflang="x-default" rel="alternate"/>
+<link href="../favicon.ico" rel="icon" sizes="any"/>
+<link href="../images/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32"/>
+<link href="../images/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16"/>
+<link href="../images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="../style.css" rel="stylesheet"/>
+<link href="blog.css" rel="stylesheet"/>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Palletizzazione con cobot: costi, tempi e quando conviene",
+  "description": "Cosa contiene una cella di palletizzazione con cobot, come dimensionare payload e sbraccio, prezzi Fairino a listino e quando serve un robot industriale.",
+  "datePublished": "2026-10-01",
+  "dateModified": "2026-10-19",
+  "author": {
+    "@type": "Organization",
+    "name": "Abra Robotics",
+    "url": "https://abrarobotics.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Abra Robotics",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://abrarobotics.com/images/logo-icon.png"
+    }
+  },
+  "mainEntityOfPage": "https://abrarobotics.com/blog/palletizzazione-cobot-costi.html",
+  "image": "https://abrarobotics.com/images/manifattura/fairino-fr20.png",
+  "inLanguage": "it"
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Quanto costa una cella di palletizzazione con cobot?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Da 30.690 € con l'FR10 e da 36.828 € con l'FR20, IVA esclusa, robot e workstation compresi. Gripper, safety scanner, sopralluogo e integrazione si quotano a parte."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quale cobot serve per scatole da 10 kg?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Si somma scatola, gripper ed eventuale falda. Una scatola da 10 kg con un gripper di qualche chilo supera già i 10 kg nominali dell'FR10: si valuta un FR20 o un FR30."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Un cobot può lavorare senza recinzione?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Solo se la valutazione dei rischi della cella lo consente. Scanner, velocità ridotte e layout si decidono sull'applicazione intera."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quante scatole al minuto può palletizzare?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dipende da peso, distanze, pattern e cambio pallet. La cadenza reale si misura con una prova sulle scatole vere."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "È finanziabile?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Può rientrare nelle agevolazioni per beni strumentali, se il progetto rispetta i requisiti. La conferma spetta al commercialista."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Fino a che altezza si può impilare?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Con la colonna di sollevamento del kit Fairino si impila fino a 1.800 mm. Senza colonna il limite è lo sbraccio del cobot."
+      }
+    }
+  ]
+}
+</script>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="Abra Robotics"/>
+<meta property="og:title" content="Palletizzazione con cobot: costi, tempi e quando conviene"/>
+<meta property="og:description" content="Cosa contiene una cella di palletizzazione con cobot, come dimensionare payload e sbraccio, prezzi Fairino a listino e quando serve un robot industriale."/>
+<meta property="og:url" content="https://abrarobotics.com/blog/palletizzazione-cobot-costi.html"/>
+<meta property="og:image" content="https://abrarobotics.com/images/manifattura/fairino-fr20.png"/>
+<meta property="og:locale" content="it_IT"/>
+<meta name="twitter:card" content="summary_large_image"/>
+</head>
+<body>
+<nav class="navbar"><div class="container navbar-inner">
+<a class="logo" href="../index.html"><img alt="Abra Robotics" class="logo-img" src="../images/logo.webp"/></a>
+<div class="nav-links nav-post-links"><a href="../blog.html">Blog</a></div>
+</div></nav>
+<article class="article-wrap"><div class="container">
+<nav class="breadcrumb"><a href="../index.html">Home</a> / <a href="../blog.html">Blog</a> / Palletizzazione con cobot</nav>
+
+<figure class="article-cover">
+<img src="../images/manifattura/fairino-fr20.webp" alt="Cobot Fairino FR20 per palletizzazione fine linea" loading="eager"/>
+</figure>
+
+<header class="article-header"><p class="label">Manifattura e logistica</p>
+<h1>Palletizzazione con cobot: costi, tempi e quando conviene</h1>
+<div class="article-meta"><time datetime="2026-10-01">1 ottobre 2026</time><span>Aggiornato 19 ottobre 2026</span><span>Abra Robotics</span></div>
+</header>
+
+<div class="article-content">
+<div class="article-tldr"><strong>Risposta breve:</strong> a listino una cella di palletizzazione con cobot Fairino parte da 30.690 € IVA esclusa, con robot FR10 e workstation. Gripper e safety si quotano a parte. Conviene su linee a bassa o media cadenza, con formati che cambiano e poco spazio. Non conviene con carichi pesanti, sbracci lunghi e ritmi alti senza pause: lì serve un palletizzatore industriale.</div>
+
+<p>A fine linea la palletizzazione manuale è un lavoro ripetitivo e faticoso. Un cobot lo può fare, ma il costo e la riuscita dipendono da tre numeri che conviene avere prima di chiedere un preventivo: peso della scatola, cadenza della linea e altezza del pallet.</p>
+
+<h2>Cosa contiene una cella di palletizzazione</h2>
+<ul>
+<li><strong>Cobot.</strong> Il braccio a 6 assi che prende la scatola e la posa sul pallet.</li>
+<li><strong>Gripper.</strong> Ventose per scatole chiuse e superfici piane, pinze o forche per sacchi e casse aperte. Il suo peso conta nel payload.</li>
+<li><strong>Struttura o workstation.</strong> Telaio con interfaccia robot e postazioni pallet. Secondo il catalogo Fairino la versione fissa con FR20 pesa circa 330 kg e la workstation si può spostare sul pavimento. Il cobot da abbinare si sceglie su payload e sbraccio.</li>
+<li><strong>Colonna di sollevamento.</strong> Serve quando il pallet è più alto di quanto il braccio raggiunge da fermo. Nel kit Fairino la versione con colonna arriva a 1.800 mm di altezza di impilaggio.</li>
+<li><strong>Sicurezza.</strong> Scanner laser o barriere che rallentano o fermano il robot quando un operatore entra nell'area.</li>
+<li><strong>Software di pattern.</strong> Definisce strati, orientamento delle scatole e falde interfalda senza riscrivere il programma a ogni formato.</li>
+<li><strong>Ingresso scatole.</strong> Rulliera o nastro con un punto di presa fisso e ripetibile.</li>
+</ul>
+
+<h2>Video: ciclo di palletizzazione con cobot Fairino</h2>
+<video controls preload="metadata" playsinline poster="../images/manifattura/fairino-fr20.png" src="../videos/fairino-palletizing.mp4" title="Ciclo di palletizzazione con cobot Fairino" style="width:100%;height:auto;"></video>
+
+<h2>Payload: si somma tutto quello che il robot porta</h2>
+<p>Il cobot non si sceglie sul solo peso della scatola. Il robot porta scatola, gripper ed eventuale falda. <a href="https://www.fairino.info/se/mdl/info/when-does-20-kg-cobot-palletising-pay-off" rel="noopener noreferrer" target="_blank">Fairino Europe</a> porta questo esempio: una scatola da 14 kg con un gripper da 5 kg fa 19 kg, prima di qualsiasi margine. Su un cobot da 20 kg resta pochissimo.</p>
+<p>Conta anche la distanza. Lo stesso carico tenuto lontano dalla base crea più coppia sui giunti. Gli angoli del pallet più lontani dal robot sono il punto critico.</p>
+
+<h3>I modelli Fairino a listino per la palletizzazione</h3>
+<table>
+<thead><tr><th>Modello</th><th>Payload</th><th>Sbraccio</th><th>Prezzo da (IVA esclusa)</th></tr></thead>
+<tbody>
+<tr><td><a href="../prodotti/cobot-fairino-fr10.html">Fairino FR10</a></td><td>10 kg</td><td>1.400 mm</td><td>10.387 €</td></tr>
+<tr><td><a href="../prodotti/cobot-fairino-fr16.html">Fairino FR16</a></td><td>16 kg</td><td>1.034 mm</td><td>10.450 €</td></tr>
+<tr><td><a href="../prodotti/cobot-fairino-fr20.html">Fairino FR20</a></td><td>20 kg</td><td>1.854 mm</td><td>14.677 €</td></tr>
+<tr><td><a href="../prodotti/cobot-fairino-fr30.html">Fairino FR30</a></td><td>30 kg</td><td>1.403 mm</td><td>16.256 €</td></tr>
+</tbody>
+</table>
+<p>Payload e sbraccio dal <a href="https://fairino-doc-de.readthedocs.io/3.9.3/_downloads/bd8a0e09a044448752c2d1bc3273832e/FAIRINO%20Product%20Catalogue.pdf" rel="noopener noreferrer" target="_blank">catalogo prodotti Fairino</a>; prezzi dal listino pubblico Abra. Il catalogo indica anche un picco di carico superiore al nominale (per esempio 25 kg per l'FR20), ma per dimensionare una cella si parte dal valore nominale.</p>
+<p>Per un pallet EUR intero lo sbraccio pesa quanto il payload. L'FR16 porta di più dell'FR10 ma arriva meno lontano. L'FR20 unisce 20 kg di carico e lo sbraccio più lungo tra i modelli in tabella, 1.854 mm: è il modello adatto a scatole medie su pallet completi. L'FR30 serve per carichi pesanti vicini alla base.</p>
+
+<div class="product-strip" aria-label="Prodotti citati">
+<div class="product-strip-head"><span>Prodotti citati nell'articolo</span><a href="../cobot.html">Catalogo cobot</a></div>
+<div class="product-strip-grid">
+<article class="product-card">
+<a class="product-card-media" href="../prodotti/cobot-fairino-fr20.html"><img alt="Fairino FR20" loading="lazy" src="../images/manifattura/fairino-fr20.png"/></a>
+<div class="product-card-body">
+<h3><a href="../prodotti/cobot-fairino-fr20.html">Fairino FR20</a></h3>
+<p>Cobot 20 kg, sbraccio 1.854 mm</p>
+<div class="product-card-price">14.677 € <small>IVA esclusa</small></div>
+<div class="product-card-actions"><a class="product-card-btn" href="../prodotti/cobot-fairino-fr20.html">Vedi scheda</a><a class="product-card-link" href="../assessment.html">Preventivo</a></div>
+</div>
+</article>
+<article class="product-card">
+<a class="product-card-media" href="../prodotti/cobot-fairino-palletizing-fr10.html"><img alt="Cella palletizzazione FR10" loading="lazy" src="../images/manifattura/fairino-fr10.png"/></a>
+<div class="product-card-body">
+<h3><a href="../prodotti/cobot-fairino-palletizing-fr10.html">Cella palletizzazione FR10</a></h3>
+<p>Cobot FR10 e workstation</p>
+<div class="product-card-price">da 30.690 € <small>IVA esclusa</small></div>
+<div class="product-card-actions"><a class="product-card-btn" href="../prodotti/cobot-fairino-palletizing-fr10.html">Vedi scheda</a><a class="product-card-link" href="../assessment.html">Preventivo</a></div>
+</div>
+</article>
+<article class="product-card">
+<a class="product-card-media" href="../prodotti/cobot-fairino-palletizing-fr20.html"><img alt="Cella palletizzazione FR20" loading="lazy" src="../images/manifattura/fairino-fr20.png"/></a>
+<div class="product-card-body">
+<h3><a href="../prodotti/cobot-fairino-palletizing-fr20.html">Cella palletizzazione FR20</a></h3>
+<p>Cobot FR20 e workstation</p>
+<div class="product-card-price">da 36.828 € <small>IVA esclusa</small></div>
+<div class="product-card-actions"><a class="product-card-btn" href="../prodotti/cobot-fairino-palletizing-fr20.html">Vedi scheda</a><a class="product-card-link" href="../assessment.html">Preventivo</a></div>
+</div>
+</article>
+</div>
+</div>
+<h2>Quanto costa in totale</h2>
+<p>Prezzi di listino Abra, IVA esclusa:</p>
+<ul>
+<li><a href="../prodotti/cobot-fairino-palletizing-station.html">Workstation di palletizzazione Fairino</a>, senza robot: da 10.230 €.</li>
+<li><a href="../prodotti/cobot-fairino-palletizing-fr10.html">Cella con FR10 e workstation</a>: da 30.690 €.</li>
+<li><a href="../prodotti/cobot-fairino-palletizing-fr20.html">Cella con FR20 e workstation</a>: da 36.828 €.</li>
+</ul>
+<p>La cella costa più della somma di robot e workstation (10.387 € + 10.230 € per l'FR10, 14.677 € + 10.230 € per l'FR20) perché, secondo le schede prodotto, comprende anche i servizi Abra: montaggio del cobot sulla workstation, programmazione dei pattern e avvio di base. Si quotano a parte, sul progetto: gripper, safety scanner, sopralluogo, analisi di fattibilità, rulliere e integrazione con il gestionale. Sono voci che cambiano molto da linea a linea. Per questo un prezzo unico "chiavi in mano" senza vedere scatole e layout non è affidabile.</p>
+
+<h2>Tempi: si parte dalla cadenza della linea</h2>
+<p>La velocità massima del robot dice poco. Si parte dalla linea. Con 10 scatole al minuto ci sono in teoria 6 secondi per scatola. Da quel tempo vanno tolti il cambio pallet e le falde. Se il cambio pallet dura due minuti e nessuno accumula le scatole in arrivo, la linea si ferma.</p>
+<p>Il modo corretto per saperlo è provare il ciclo con le scatole vere prima di comprare la workstation: Fairino Europe scrive che una prova con gli imballi reali vale più di qualsiasi stima fatta sulle sole dimensioni. Una simulazione con pesi e misure reali aiuta a scartare le ipotesi sbagliate, ma non sostituisce la prova.</p>
+
+<h2>Sicurezza: cobot non vuol dire cella senza rischi</h2>
+<p>Il catalogo Fairino dichiara per i cobot la certificazione di sicurezza funzionale secondo ISO 10218, ISO 13849 e ISO 15066. Sono norme sul robot e sui suoi sistemi di comando. La cella però include un gripper che porta scatole da molti chili all'altezza delle persone, e quel rischio si valuta sull'applicazione completa.</p>
+<p>La valutazione dei rischi decide se servono scanner, zone a velocità ridotta o una protezione fisica. La marcatura CE riguarda la cella intera. Dal 20 gennaio 2027 il riferimento diventa il <a href="https://eur-lex.europa.eu/eli/reg/2023/1230/oj" rel="noopener noreferrer" target="_blank">Regolamento macchine (UE) 2023/1230</a>, che sostituisce la Direttiva 2006/42/CE: chi assembla cobot, workstation, rulliere e protezioni crea un insieme di macchine con un suo fabbricante. I dettagli sono nella guida al <a href="unitree-regolamento-macchine-2027.html">Regolamento macchine 2027</a>.</p>
+
+<h2>Quando conviene e quando no</h2>
+<p><strong>Conviene</strong> su linee a bassa o media cadenza, con più formati di prodotto, dove lo spazio è poco o gli operatori devono avvicinarsi spesso al pallet.</p>
+<p><strong>Non conviene</strong> con ritmi alti e continui, prodotti pesanti e sbracci lunghi insieme. In quel caso un palletizzatore industriale costa di più all'inizio ma regge meglio la produzione. Lo stesso vale per sacchi molto pesanti o pallet oltre le altezze raggiungibili con la colonna.</p>
+
+<h2>Come stimare il rientro dell'investimento</h2>
+<p>Una formula semplice:</p>
+<p><strong>mesi di rientro = investimento totale ÷ risparmio mensile</strong></p>
+<p>Il risparmio mensile non è "un operatore in meno". Va costruito con ore effettive liberate per turno, giorni lavorati, fermi previsti, manutenzione, scarti da pallet instabili e spazio recuperato.</p>
+<p><em>Esempio con numeri ipotetici, non riferiti a un cliente:</em> investimento di 50.000 € tra cella, gripper, safety e integrazione. La cella libera 4 ore di lavoro manuale per turno, su un turno, 220 giorni l'anno, a un costo orario di 30 €. Il risparmio è 26.400 € l'anno, circa 2.200 € al mese. Il rientro è di circa 23 mesi, prima di eventuali agevolazioni. Con due turni il conto cambia molto: per questo il numero di turni è la prima domanda che facciamo.</p>
+
+<h2>Incentivi</h2>
+<p>Una cella di palletizzazione è un bene strumentale e può rientrare nelle agevolazioni 2026, ma dipende da come è strutturato il progetto. Trovi il quadro nell'articolo <a href="finanziamento-robot-industria-40.html">Finanziare un robot: iperammortamento 2026, Sabatini e bandi</a> e sulla <a href="../finanziamenti.html">pagina Finanziamenti</a>. Verifichiamo la finanziabilità prima del preventivo, senza garantire l'esito.</p>
+
+<h2>Cosa ci serve per un preventivo</h2>
+<ul>
+<li>Misure e peso massimo delle scatole, con foto dell'imballo.</li>
+<li>Scatole al minuto, turni e pause.</li>
+<li>Tipo di pallet, altezza finale e uso di falde.</li>
+<li>Pianta o foto dell'area di fine linea.</li>
+</ul>
+<p>Con questi dati facciamo l'<a href="../assessment.html">assessment applicativo</a>. Per portare i pallet a magazzino la cella si può abbinare a un <a href="../amr.html">AMR</a>.</p>
+
+<section class="article-faq">
+<h2>Domande frequenti</h2>
+<h3>Quanto costa una cella di palletizzazione con cobot?</h3>
+<p>Da 30.690 € con l'FR10 e da 36.828 € con l'FR20, IVA esclusa, robot e workstation compresi. Gripper, safety scanner, sopralluogo e integrazione si quotano a parte.</p>
+<h3>Quale cobot serve per scatole da 10 kg?</h3>
+<p>Si somma scatola, gripper ed eventuale falda. Una scatola da 10 kg con un gripper di qualche chilo supera già i 10 kg nominali dell'FR10: si valuta un FR20 o un FR30.</p>
+<h3>Un cobot può lavorare senza recinzione?</h3>
+<p>Solo se la valutazione dei rischi della cella lo consente. Scanner, velocità ridotte e layout si decidono sull'applicazione intera.</p>
+<h3>Quante scatole al minuto può palletizzare?</h3>
+<p>Dipende da peso, distanze, pattern e cambio pallet. La cadenza reale si misura con una prova sulle scatole vere.</p>
+<h3>È finanziabile?</h3>
+<p>Può rientrare nelle agevolazioni per beni strumentali, se il progetto rispetta i requisiti. La conferma spetta al commercialista.</p>
+<h3>Fino a che altezza si può impilare?</h3>
+<p>Con la colonna di sollevamento del kit Fairino si impila fino a 1.800 mm. Senza colonna il limite è lo sbraccio del cobot.</p>
+</section>
+
+<section class="article-references" id="riferimenti">
+<h2>Fonti</h2>
+<ol>
+<li>Fairino, catalogo prodotti (payload, sbraccio, certificazioni, workstation di palletizzazione): <a href="https://fairino-doc-de.readthedocs.io/3.9.3/_downloads/bd8a0e09a044448752c2d1bc3273832e/FAIRINO%20Product%20Catalogue.pdf" rel="noopener noreferrer" target="_blank">FAIRINO Product Catalogue (PDF)</a></li>
+<li>Fairino Europe, <em>When does 20 kg cobot palletising pay off</em>: <a href="https://www.fairino.info/se/mdl/info/when-does-20-kg-cobot-palletising-pay-off" rel="noopener noreferrer" target="_blank">fairino.info</a></li>
+<li>Regolamento (UE) 2023/1230 relativo alle macchine: <a href="https://eur-lex.europa.eu/eli/reg/2023/1230/oj" rel="noopener noreferrer" target="_blank">EUR-Lex</a></li>
+<li>Prezzi: listino pubblico Abra Robotics, IVA esclusa, nel <a href="../cobot.html">catalogo cobot</a>.</li>
+</ol>
+</section>
+</div>
+<div class="article-cta"><h2>Il cobot regge la tua linea?</h2><p>Mandaci peso delle scatole, cadenza e altezza del pallet: facciamo l'assessment della linea e un preventivo con cella, gripper e safety.</p><a class="btn btn-primary" href="../assessment.html">Richiedi l'assessment della linea</a><a class="btn btn-outline-light" href="../cobot.html">Catalogo cobot</a></div>
+</div></article>
+<footer class="footer">
+<div class="container footer-grid">
+<div class="footer-brand">
+<a class="logo" href="../index.html"><img alt="Abra Robotics" class="logo-img" src="../images/logo.webp" width="180" height="72" decoding="async"/></a>
+<p class="footer-desc">Robotica applicata per aziende, università e istituti di ricerca. Hardware, software su misura, formazione e supporto tecnico dedicato.</p>
+</div>
+<div class="footer-nav">
+<span class="footer-heading">Prodotti</span>
+<a href="../cobot.html">Cobot</a>
+<a href="../amr.html">AMR</a>
+<a href="../quadrupedi.html">Quadrupedi</a>
+<a href="../umanoidi.html">Umanoidi</a>
+<a href="../accessori.html">Accessori</a>
+<a href="../catalogo.html">Catalogo completo</a>
+<a href="../listino-unitree.html">Listino prezzi</a>
+</div>
+<div class="footer-nav">
+<span class="footer-heading">Servizi e risorse</span>
+<a href="../assessment.html">Trova il robot giusto</a>
+<a href="../software.html">Software</a>
+<a href="../finanziamenti.html">Finanziamenti</a>
+<a href="../manifattura-logistica.html">Manifattura e Logistica</a>
+<a href="../universita-ricerca.html">Università e Ricerca</a>
+<a href="../blog.html">Blog</a>
+</div>
+<div class="footer-contact">
+<span class="footer-heading">Contatti</span>
+<a href="../chi-siamo.html">Chi siamo</a>
+<a href="mailto:info@abrarobotics.com">info@abrarobotics.com</a>
+<p>Viale Trieste 105<br/>30026 Portogruaro (VE)</p>
+<a class="btn btn-primary btn-sm" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ22FrpPdyPVRihi4eXPQlljTcG2toa8XF2d8W-QX-L9cKMaXqozq_YsHym56LEdTs9WsnqlTHeF" rel="noopener noreferrer" target="_blank">Prenota una chiamata</a>
+</div>
+</div>
+<div class="container footer-bottom">
+<p class="footer-copy">© 2026 Abra Robotics di Niccolò Mazzoleni. Tutti i diritti riservati. P.IVA 04800170278, Portogruaro (VE).</p>
+<nav aria-label="Note legali" class="footer-legal">
+<a href="../privacy-policy.html">Privacy Policy</a>
+<a href="../cookie-policy.html">Cookie Policy</a>
+<a href="../condizioni-di-vendita.html">Condizioni di vendita</a>
+<a href="../politica-resi.html">Politica resi</a>
+<a href="../note-legali.html">Note legali</a>
+</nav>
+</div>
+</footer>
+<script defer src="../script.js"></script>
+</body></html>

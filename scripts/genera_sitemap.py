@@ -1,0 +1,259 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Genera sitemap.xml con le pagine indicizzabili che vale la pena far scansionare.
+
+Accessori/ricambi, mani e pinze, varianti quasi duplicate (configurazioni a lettera, bundle,
+schede doppie, moduli top AMR) e pagine legali restano online e indicizzabili ma fuori dalla
+sitemap: le regole (pattern sui dati prodotto) sono in scripts/schede_regole.py."""
+from __future__ import annotations
+
+import re
+import subprocess
+import sys
+from datetime import date
+from pathlib import Path
+from xml.etree.ElementTree import Element, SubElement, tostring
+from xml.dom import minidom
+
+ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "prodotti"))
+sys.path.insert(0, str(ROOT / "scripts"))
+from schede_regole import motivo_esclusione  # noqa: E402
+try:
+    from _site import SITE  # noqa: E402
+except ImportError:
+    SITE = "https://abrarobotics.com"
+
+EXCLUDE_FILES = {
+    "index.backup.html",
+    "index-zenixa.html",
+    "restyle-preview.html",
+    "grazie.html",
+    "grazie-en.html",
+    "condizioni-di-vendita.html",
+    "condizioni-di-vendita-en.html",
+    "checklist.html",
+    "checklist-en.html",
+    "read-this.html",
+    # legacy redirect stubs (noindex) — keep out of sitemap
+    "software-en.html",
+    # h2.html is a live hub page (not a stub) — include in sitemap
+}
+
+EXCLUDE_DIRS = {
+    ".claude",
+    "admin",
+    "editor",
+    "node_modules",
+    "__pycache__",
+    "offerte-ai",
+    "fonts",
+    "lp-thank-you",
+    "lp-thank-you-en",
+    "listini",
+    "stripe",
+    "apps-script",
+}
+
+# Extra path substrings to drop (ads LC variants + thank-you)
+EXCLUDE_NAME_SUFFIXES = ("-lc.html", "-lc-en.html")
+
+PRIORITY = {
+    "index.html": 1.0,
+    "catalogo.html": 0.95,
+    "catalogo-unitree.html": 0.9,
+    "amr.html": 0.9,
+    "g1.html": 0.9,
+    "go2.html": 0.9,
+    "r1.html": 0.9,
+    "a2.html": 0.9,
+    "b2.html": 0.9,
+    "z1.html": 0.9,
+    "r1-d.html": 0.9,
+    "g1-en.html": 0.9,
+    "go2-en.html": 0.9,
+    "r1-en.html": 0.9,
+    "a2-en.html": 0.9,
+    "b2-en.html": 0.9,
+    "z1-en.html": 0.9,
+    "as2-en.html": 0.9,
+    "h2-en.html": 0.9,
+    "g1-d-en.html": 0.9,
+    "r1-d-en.html": 0.9,
+    "cobot.html": 0.9,
+    "quadrupedi.html": 0.9,
+    "umanoidi.html": 0.9,
+    "accessori.html": 0.85,
+    "manifattura-logistica.html": 0.85,
+    "universita-ricerca.html": 0.85,
+    "finanziamenti.html": 0.85,
+    "assessment.html": 0.85,
+    "chi-siamo.html": 0.8,
+    "listino-unitree.html": 0.75,
+    "lp-quadrupedi.html": 0.8,
+    "lp-umanoidi.html": 0.8,
+    "lp-amr.html": 0.8,
+    "lp-cobot.html": 0.8,
+    "g1-d.html": 0.85,
+    "as2.html": 0.9,
+    "h2.html": 0.9,
+    "lp-unitree.html": 0.9,
+    "blog.html": 0.75,
+    "unitree-italia-guida-completa.html": 0.9,
+}
+
+CHANGEFREQ = {
+    "index.html": "weekly",
+    "catalogo-unitree.html": "weekly",
+    "listino-unitree.html": "weekly",
+}
+
+
+def canonical_elsewhere(text: str, path: Path) -> bool:
+    """Pagine il cui canonical punta a un'altra pagina (duplicati): fuori dalla sitemap."""
+    m = re.search(r'<link[^>]*rel="canonical"[^>]*href="([^"]+)"', text) or re.search(r'<link[^>]*href="([^"]+)"[^>]*rel="canonical"', text)
+    if not m:
+        return False
+    rel = path.relative_to(ROOT).as_posix()
+    own = {SITE.rstrip("/") + "/" + rel, SITE.rstrip("/") + "/" + rel.replace("index.html", "")}
+    return m.group(1).rstrip("/") not in {u.rstrip("/") for u in own}
+
+
+def is_noindex(text: str) -> bool:
+    # support both attribute orders: name=… content=… OR content=… name=…
+    m = re.search(
+        r'<meta\s+[^>]*name=["\']robots["\'][^>]*>',
+        text,
+        re.I,
+    )
+    if not m:
+        return False
+    tag = m.group(0)
+    cm = re.search(r'content=["\']([^"\']+)["\']', tag, re.I)
+    if not cm:
+        return False
+    return "noindex" in cm.group(1).lower()
+
+
+def priority_for(path: Path) -> str:
+    name = path.name
+    if name in PRIORITY:
+        return f"{PRIORITY[name]:.1f}"
+    if path.parent.name == "prodotti" and name.startswith("unitree-"):
+        return "0.8"
+    if path.parent.name == "prodotti" and name.startswith("amr-"):
+        return "0.85"
+    if path.parent.name == "prodotti" and name.startswith("cobot-"):
+        return "0.85"
+    if name.endswith("-policy.html") or name == "note-legali.html":
+        return "0.3"
+    return "0.6"
+
+
+def changefreq_for(path: Path) -> str:
+    return CHANGEFREQ.get(path.name, "monthly")
+
+
+ESCLUSE: dict[str, int] = {}
+
+
+def collect_urls() -> list[tuple[str, str, str, str]]:
+    urls: list[tuple[str, str, str, str]] = []
+
+    for html in sorted(ROOT.rglob("*.html")):
+        rel = html.relative_to(ROOT)
+        if any(part in EXCLUDE_DIRS for part in rel.parts):
+            continue
+        if rel.name.startswith("_"):
+            continue
+        if rel.name in EXCLUDE_FILES:
+            continue
+        if any(rel.name.endswith(suf) for suf in EXCLUDE_NAME_SUFFIXES):
+            continue
+        text = html.read_text(encoding="utf-8", errors="replace")
+        if canonical_elsewhere(text, html):
+            continue
+        if is_noindex(text):
+            continue
+        # skip meta-refresh redirect stubs
+        if re.search(r'http-equiv=["\']refresh["\']', text, re.I):
+            continue
+        motivo = motivo_esclusione(rel.as_posix())
+        if motivo:  # resta online e indicizzabile, solo fuori dalla sitemap
+            ESCLUSE[motivo] = ESCLUSE.get(motivo, 0) + 1
+            continue
+        loc =SITE + "/" + rel.as_posix().replace("index.html", "").rstrip("/")
+        if loc.endswith("/") and not loc.endswith("://"):
+            loc = loc.rstrip("/") or SITE + "/"
+        if rel.name == "index.html" and len(rel.parts) == 1:
+            loc = SITE + "/"
+        elif rel.name == "index.html":  # pagine paese /de/ ecc.: URL con la barra, come il canonical
+            loc = SITE + "/" + rel.parent.as_posix() + "/"
+        pr = priority_for(html)
+        if rel.name == "index.html" and len(rel.parts) > 1:
+            pr = "0.8"
+        urls.append((loc, changefreq_for(html), pr, rel.as_posix()))
+
+    # dedupe preserving order
+    seen: set[str] = set()
+    out: list[tuple[str, str, str, str]] = []
+    for loc, cf, pr, rel in urls:
+        if loc in seen:
+            continue
+        seen.add(loc)
+        out.append((loc, cf, pr, rel))
+    return out
+
+
+def git_lastmod() -> dict[str, str]:
+    """Data dell'ultimo commit di ogni file (AAAA-MM-GG). Un lastmod uguale per tutte le URL a ogni
+    rigenerazione viene ignorato da Google: cosi' cambia solo per le pagine davvero modificate."""
+    try:
+        out = subprocess.run(["git", "-C", str(ROOT), "log", "--format=@%cs", "--name-only", "--", "*.html"],
+                             capture_output=True, text=True, check=True).stdout
+    except (OSError, subprocess.CalledProcessError):
+        return {}
+    dates: dict[str, str] = {}
+    current = ""
+    for line in out.splitlines():
+        if line.startswith("@"):
+            current = line[1:]
+        elif line and line not in dates:
+            dates[line] = current
+    return dates
+
+
+def modified_locally() -> set[str]:
+    try:
+        out = subprocess.run(["git", "-C", str(ROOT), "status", "--porcelain"], capture_output=True, text=True, check=True).stdout
+    except (OSError, subprocess.CalledProcessError):
+        return set()
+    return {line[3:].strip() for line in out.splitlines()}
+
+
+def build_xml(urls: list[tuple[str, str, str, str]]) -> str:
+    today = date.today().isoformat()
+    dates, dirty = git_lastmod(), modified_locally()
+    urlset = Element("urlset", xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
+    for loc, cf, pr, rel in urls:
+        url = SubElement(urlset, "url")
+        SubElement(url, "loc").text = loc
+        SubElement(url, "lastmod").text = today if rel in dirty else dates.get(rel, today)
+        SubElement(url, "changefreq").text = cf
+        SubElement(url, "priority").text = pr
+    raw = tostring(urlset, encoding="unicode")
+    return minidom.parseString(raw).toprettyxml(indent="  ")
+
+
+def main() -> None:
+    urls = collect_urls()
+    xml = build_xml(urls)
+    out = ROOT / "sitemap.xml"
+    out.write_text(xml, encoding="utf-8")
+    print(f"Scritto {out} — {len(urls)} URL")
+    for motivo, n in sorted(ESCLUSE.items(), key=lambda kv: -kv[1]):
+        print(f"  fuori dalla sitemap: {n:4d}  {motivo}")
+
+
+if __name__ == "__main__":
+    main()

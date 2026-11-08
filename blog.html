@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<script>/* abra-consent-default: Consent Mode v2, negato finche' l'utente non sceglie (consent.js) */
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+(function(){var c=null;try{c=JSON.parse(localStorage.getItem('abra_consent')||'null');if(c&&(c.v!==1||Date.now()-c.ts>15552e6))c=null;}catch(e){}window.abraConsent=c;var g=function(v){return v?'granted':'denied';};gtag('consent','default',{ad_storage:g(c&&c.marketing),ad_user_data:g(c&&c.marketing),ad_personalization:g(c&&c.marketing),analytics_storage:g(c&&c.analytics),functionality_storage:'granted',security_storage:'granted',wait_for_update:500});gtag('set','ads_data_redaction',true);gtag('set','url_passthrough',true);})();</script>
+<script defer src="consent.js"></script>
+<script defer src="visite.js"></script>
+<meta content="G6A_4xRUkEdTQnXeAm_M37_ovtX1XVe5bjkGzvsCHzk" name="google-site-verification"/>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MNLWZSN7');</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T4ZC7CM8RX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-T4ZC7CM8RX');</script>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Blog robotica: guide Unitree, umanoidi e automazione | Abra</title>
+<meta content="Guide tecniche, confronti e approfondimenti su robot umanoidi Unitree G1, quadrupedi, cobot e automazione industriale in Italia. Contenuti per aziende,…" name="description"/>
+<meta name="keywords" content="blog robotica, Unitree G1 guida, robot umanoide Italia, programmazione G1, umanoidi vs cobot, filiera di distribuzione di Unitree Italia"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://abrarobotics.com/blog.html"/>
+<link href="https://abrarobotics.com/blog.html" hreflang="it" rel="alternate"/>
+<link href="https://abrarobotics.com/blog.html" hreflang="x-default" rel="alternate"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Blog robotica | Abra Robotics"/>
+<meta property="og:description" content="Guide tecniche su Unitree G1, umanoidi, quadrupedi e robotica industriale in Italia."/>
+<meta property="og:url" content="https://abrarobotics.com/blog.html"/>
+<meta property="og:image" content="https://abrarobotics.com/images/official/unitree-g1-03.webp"/>
+<meta property="og:locale" content="it_IT"/>
+<meta property="og:site_name" content="Abra Robotics"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link href="favicon.ico" rel="icon" sizes="any"/>
+<link href="images/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32"/>
+<link href="images/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16"/>
+<link href="images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="style.css" rel="stylesheet"/>
+<link href="blog/blog.css" rel="stylesheet"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Blog","name":"Blog Abra Robotics","description":"Guide tecniche su robotica, Unitree e automazione industriale in Italia","url":"https://abrarobotics.com/blog.html","publisher":{"@type":"Organization","name":"Abra Robotics","url":"https://abrarobotics.com/","logo":{"@type":"ImageObject","url":"https://abrarobotics.com/images/logo-full.png"}},"inLanguage":"it"}
+</script>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNLWZSN7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div class="top-bar"><p>Verifica gratuita di ammissibilità agli incentivi. <a href="index.html#cta-finale">Scopri come →</a></p></div>
+<nav class="navbar">
+<div class="container navbar-inner">
+<a class="logo" href="index.html"><img alt="Abra Robotics" class="logo-img" src="images/logo.webp"/></a>
+<div class="nav-links">
+<div class="nav-item-dropdown">
+<button class="nav-dropdown-trigger" type="button">Prodotti <span class="nav-caret">▾</span></button>
+<div class="nav-dropdown-panel">
+<a href="cobot.html">Cobot</a>
+<a href="amr.html">AMR</a>
+<a href="quadrupedi.html">Quadrupedi</a>
+<a href="umanoidi.html">Umanoidi</a>
+<a href="accessori.html">Accessori</a>
+<a href="catalogo.html">Catalogo completo</a>
+<a href="listino-unitree.html">Listino prezzi</a>
+</div>
+</div>
+<a href="listino-unitree.html">Prezzi</a>
+<a href="assessment.html">Trova il robot giusto</a>
+<a href="finanziamenti.html">Finanziamenti</a>
+<a href="blog.html" style="font-weight:700">Blog</a>
+<div class="nav-item-dropdown">
+<button class="nav-dropdown-trigger" type="button">Per chi <span class="nav-caret">▾</span></button>
+<div class="nav-dropdown-panel">
+<a href="manifattura-logistica.html">Manifattura e Logistica</a>
+<a href="universita-ricerca.html">Università e Ricerca</a>
+</div>
+</div>
+</div>
+<a class="btn btn-primary btn-sm" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ22FrpPdyPVRihi4eXPQlljTcG2toa8XF2d8W-QX-L9cKMaXqozq_YsHym56LEdTs9WsnqlTHeF" rel="noopener noreferrer" target="_blank">Prenota una chiamata</a>
+<button aria-label="Menu" class="menu-toggle"><span></span><span></span></button>
+</div>
+</nav>
+<div class="mobile-menu">
+<div class="mobile-dropdown"><button class="mobile-dropdown-trigger" type="button">Prodotti <span class="nav-caret">▾</span></button>
+<div class="mobile-dropdown-panel">
+<a href="cobot.html">Cobot</a>
+<a href="amr.html">AMR</a>
+<a href="quadrupedi.html">Quadrupedi</a>
+<a href="umanoidi.html">Umanoidi</a>
+<a href="accessori.html">Accessori</a>
+<a href="catalogo.html">Catalogo completo</a>
+<a href="listino-unitree.html">Listino prezzi</a>
+</div></div>
+<a href="listino-unitree.html">Prezzi</a>
+<a href="assessment.html">Trova il robot giusto</a><a href="finanziamenti.html">Finanziamenti</a><a href="blog.html">Blog</a>
+<a href="index.html#cta-finale" class="btn btn-primary">Prenota una chiamata</a>
+</div>
+
+<section class="blog-hero">
+<div class="container">
+<p class="label">Blog</p>
+<h1>Note dal campo: robotica che consegniamo e configuriamo ogni settimana</h1>
+<p class="blog-hero-sub">Guide pratiche su G1, quadrupedi e automazione industriale — scritte dal team Abra, non da un generatore di testi.</p>
+<div class="blog-categories">
+<a class="blog-cat-pill active" href="blog.html">Tutti</a>
+<a class="blog-cat-pill" href="blog.html#umanoidi">Umanoidi</a>
+<a class="blog-cat-pill" href="blog.html#unitree">Unitree</a>
+<a class="blog-cat-pill" href="blog.html#industria">Industria</a>
+</div>
+</div>
+</section>
+
+<section class="container">
+<div class="blog-grid">
+
+<a class="blog-card" href="blog/amr-robot-vs-agv.html">
+<div class="blog-card-media"><img src="images/manifattura/amr/mir600-hero.webp" alt="AMR MiR600 per la movimentazione interna di pallet" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Cobot e AMR</span>
+<h2 class="blog-card-title">AMR robot vs AGV: differenze, costi e quando scegliere</h2>
+<p class="blog-card-excerpt">AMR robot vs AGV: percorso fisso o navigazione SLAM, infrastruttura, flotte, sicurezza ISO 3691-4 e voci di costo. Quando conviene ancora un AGV.</p>
+<p class="blog-card-meta">4 nov 2026 · 10 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/unitree-g1-cosa-puo-fare.html">
+<div class="blog-card-media"><img src="images/official/unitree-g1-01.webp" alt="Unitree G1 EDU in piedi, robot umanoide per laboratorio e applicazioni" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Applicazioni · Unitree G1</span>
+<h2 class="blog-card-title">Unitree G1: cosa può fare davvero (e cosa no)</h2>
+<p class="blog-card-excerpt">Cosa fa l'Unitree G1 appena acceso, cosa aggiungono SDK2 e ROS 2 sulle versioni EDU, i limiti di manipolazione e autonomia, con fonti ufficiali.</p>
+<p class="blog-card-meta">3 nov 2026 · 9 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/cobot-saldatura-prezzo.html">
+<div class="blog-card-media"><img src="images/manifattura/fairino-fr10.webp" alt="Cobot Fairino FR10, base per una postazione di saldatura leggera" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Cobot e AMR</span>
+<h2 class="blog-card-title">Cobot per saldatura: cosa entra nel prezzo</h2>
+<p class="blog-card-excerpt">Cobot per saldatura: oltre al robot entrano torcia, generatore, tavolo, aspirazione fumi, sicurezza e messa in servizio. FR10 da 10.387 € IVA esclusa.</p>
+<p class="blog-card-meta">2 nov 2026 · 9 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/cane-robot-da-guardia.html">
+<div class="blog-card-media"><img src="images/official/unitree-go2-esterno.webp" alt="Unitree Go2, cane robot da guardia in ambiente esterno" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Applicazioni · Quadrupedi</span>
+<h2 class="blog-card-title">Cane robot da guardia: cosa può fare e cosa no</h2>
+<p class="blog-card-excerpt">Cane robot da guardia: pattugliamento teleoperato o autonomo, video in sala controllo, sensori, autonomia e limiti reali. Prezzi da listino e norme.</p>
+<p class="blog-card-meta">1 nov 2026 · 9 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/robot-umanoide-cinese.html">
+<div class="blog-card-media"><img src="images/official/unitree-h2-01.webp" alt="Robot umanoide cinese Unitree H2 a grandezza naturale" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Prezzi e versioni</span>
+<h2 class="blog-card-title">Robot umanoide cinese: chi lo produce e cosa arriva in UE</h2>
+<p class="blog-card-excerpt">Mappa dei produttori cinesi di robot umanoidi: Unitree, UBTech, AgiBot, Fourier ed EngineAI. Prezzi Unitree, CE e cosa serve per comprare in UE.</p>
+<p class="blog-card-meta">31 ott 2026 · 9 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/unitree-accessori-g1-as2-cosa-serve.html">
+<div class="blog-card-media"><img src="images/official/unitree-g1-01.webp" alt="Unitree G1 con accessori: batteria, caricatore, telecomando e LiDAR" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Prezzi e versioni · Accessori</span>
+<h2 class="blog-card-title">Accessori Unitree G1 e AS2: cosa serve davvero e cosa no</h2>
+<p class="blog-card-excerpt">Batterie, caricatori, dock di calcolo, telecomandi e LiDAR per Unitree G1 e AS2: cosa serve, quando comprarlo e prezzi dal listino pubblico.</p>
+<p class="blog-card-meta">30 ott 2026 · 8 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/g1-addestramento-da-video-mujoco.html">
+<div class="blog-card-media"><img src="images/official/unitree-g1-01.webp" alt="Unitree G1 EDU, piattaforma per motion imitation da video" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Sviluppo · Motion imitation</span>
+<h2 class="blog-card-title">Unitree G1 motion imitation in MuJoCo: da un video al robot</h2>
+<p class="blog-card-excerpt">Pipeline open per Unitree G1 motion imitation in MuJoCo: posa da video con GVHMR, retargeting GMR, RL con mjlab e limiti del sim-to-real.</p>
+<p class="blog-card-meta">30 ott 2026 · 8 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/unitree-r1-universita-didattica.html">
+<div class="blog-card-media"><img src="images/official/unitree-r1-01.webp" alt="Unitree R1 EDU, robot umanoide bipede compatto" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Applicazioni</span>
+<h2 class="blog-card-title">Unitree R1 università: cosa ci si fa davvero in didattica</h2>
+<p class="blog-card-excerpt">Unitree R1 università: specifiche ufficiali, SDK DDS e ROS 2, corsi di controllo, RL e percezione, limiti, prezzi di listino e fondi per la ricerca.</p>
+<p class="blog-card-meta">28 ott 2026 · 10 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/unitree-h2-primo-avvio.html">
+<div class="blog-card-media"><img src="images/prodotti/h2-edu.webp" alt="Unitree H2 EDU, umanoide full-size a grandezza naturale" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Guide d&#x27;uso · Umanoidi</span>
+<h2 class="blog-card-title">Unitree H2 avvio: cosa sapere prima di accendere</h2>
+<p class="blog-card-excerpt">Unitree H2 avvio: spazio, sospensione, batteria, rete Ethernet, debug mode e documentazione ufficiale. Checklist per il primo avvio.</p>
+<p class="blog-card-meta">27 ott 2026 · 10 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/unitree-offline-sicurezza-rete-aziendale.html">
+<div class="blog-card-media"><img src="images/official/unitree-g1-ufficio.webp" alt="Unitree G1 in un ufficio, robot connesso alla rete aziendale" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Normativa · Sicurezza · Rete</span>
+<h2 class="blog-card-title">Sicurezza rete aziendale con robot Unitree: guida IT</h2>
+<p class="blog-card-excerpt">Sicurezza rete aziendale con robot Unitree: VLAN, servizi da limitare, aggiornamenti OTA, dati e cosa chiedere per il Cyber Resilience Act.</p>
+<p class="blog-card-meta">27 ott 2026 · 10 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/quadrupede-ispezioni-as2-go2-b2.html">
+<div class="blog-card-media"><img src="images/prodotti/2026/as2.webp" alt="Unitree AS2, quadrupede per ispezione industriale con protezione IP54" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Applicazioni · Quadrupedi</span>
+<h2 class="blog-card-title">Quadrupede ispezione industriale Unitree: AS2, Go2 o B2?</h2>
+<p class="blog-card-excerpt">AS2, Go2 e B2 a confronto per un quadrupede da ispezione industriale Unitree: IP, carico, autonomia, sensori, temperatura e prezzi di listino.</p>
+<p class="blog-card-meta">26 ott 2026 · 12 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/unitree-g1-problemi-comuni-soluzioni.html">
+<div class="blog-card-media"><img src="images/official/unitree-g1-01.webp" alt="Unitree G1 in piedi" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Problemi e soluzioni</span>
+<h2 class="blog-card-title">Unitree G1: problemi più comuni e come risolverli</h2>
+<p class="blog-card-excerpt">G1 che non si alza, errori motore, app che non si connette, batteria che si spegne: cause probabili, controlli da fare e quando serve assistenza.</p>
+<p class="blog-card-meta">26 ott 2026 · 8 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/unitree-as2-w-prezzo.html">
+<div class="blog-card-media"><img src="images/prodotti/as2-w.webp" alt="Unitree AS2-W, quadrupede con ruote da 7 pollici alle estremità delle zampe" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Prezzi e versioni · Quadrupedi</span>
+<h2 class="blog-card-title">Unitree AS2-W price: prezzo e cosa sa fare il quadrupede su ruote</h2>
+<p class="blog-card-excerpt">Unitree AS2-W price: prezzo su preventivo, specifiche ufficiali, differenze con AS2 e impieghi tra ispezione e ricerca. Listino AS2 da 5.400 €.</p>
+<p class="blog-card-meta">21 ott 2026 · 8 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/unitree-a2-stellar-explorer.html">
+<div class="blog-card-media"><img src="images/official/unitree-a2-01.webp" alt="Unitree A2 Stellar Explorer, quadrupede industriale IP56" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Applicazioni · Quadrupedi</span>
+<h2 class="blog-card-title">Unitree A2 Stellar Explorer: cos'è, specifiche e prezzo</h2>
+<p class="blog-card-excerpt">Unitree A2 Stellar Explorer e Stellar Hunter: cos'è, specifiche ufficiali, differenze tra A2, A2 Pro e A2-W, prezzi in Italia e applicazioni.</p>
+<p class="blog-card-meta">20 ott 2026 · 9 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/robot-umanoide-per-casa.html">
+<div class="blog-card-media"><img src="images/official/unitree-g1-ufficio.webp" alt="Robot umanoide Unitree G1 in un ambiente di lavoro" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Applicazioni</span>
+<h2 class="blog-card-title">Robot umanoide per casa: cosa esiste davvero oggi</h2>
+<p class="blog-card-excerpt">Cosa può fare oggi un robot umanoide per casa: funzioni reali di Unitree R1 e G1, limiti, prezzi dal listino e stato del preordine 1X NEO.</p>
+<p class="blog-card-meta">19 ott 2026 · 9 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/unitree-go2-edu-cosa-include.html">
+<div class="blog-card-media"><img src="images/official/unitree-go2-02.webp" alt="Unitree Go2 EDU, quadrupede con SDK per lo sviluppo software e LiDAR 4D" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Quadrupedi · Prezzi e versioni</span>
+<h2 class="blog-card-title">Unitree Go2 EDU: cosa include, versioni e prezzi</h2>
+<p class="blog-card-excerpt">Unitree Go2 EDU: dotazione, differenze tra Standard, Smart e versioni con LiDAR, prezzi IVA esclusa dal listino e sviluppo con SDK e ROS 2.</p>
+<p class="blog-card-meta">19 ott 2026 · 6 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/unitree-r1-vs-g1.html">
+<div class="blog-card-media"><img src="images/official/unitree-r1-01.webp" alt="Unitree R1, umanoide bipede compatto" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Prezzi e versioni</span>
+<h2 class="blog-card-title">Unitree R1 vs G1: quale umanoide scegliere</h2>
+<p class="blog-card-excerpt">Unitree R1 vs G1: altezza, peso, gradi di libertà, autonomia, SDK e prezzi a confronto. Quando basta il bipede economico e quando serve il G1.</p>
+<p class="blog-card-meta">19 ott 2026 · 7 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/unitree-r1-cosa-fa-prezzo.html">
+<div class="blog-card-media"><img src="images/official/unitree-r1-01.webp" alt="Unitree R1, robot umanoide bipede compatto" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Guide d&#x27;uso</span>
+<h2 class="blog-card-title">Unitree R1: cosa fa davvero e quanto costa</h2>
+<p class="blog-card-excerpt">Unitree R1 cosa fa: cammina e si programma solo in versione EDU. Prezzi Air, Basic ed EDU dal listino, limiti reali e per chi ha senso.</p>
+<p class="blog-card-meta">15 ott 2026 · 6 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/unitree-h2-plus-prezzo-specifiche.html">
+<div class="blog-card-media"><img src="images/prodotti/h2-plus.webp" alt="Unitree H2 Plus, umanoide full-size con Jetson Thor e mani Sharpa Wave" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Prezzi e versioni</span>
+<h2 class="blog-card-title">Unitree H2 Plus: prezzo, specifiche e differenze con H2</h2>
+<p class="blog-card-excerpt">Unitree H2 Plus: specifiche ufficiali, prezzo in Italia e differenze con H2 e H2 Air. Jetson Thor, mani Sharpa Wave, Isaac GR00T: disponibilità fine 2026.</p>
+<p class="blog-card-meta">14 ott 2026 · 7 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/unitree-robotics-chi-e.html">
+<div class="blog-card-media"><img src="images/official/unitree-g1-01.webp" alt="Unitree G1, l'umanoide di Unitree Robotics" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Guide d&#x27;uso</span>
+<h2 class="blog-card-title">Unitree Robotics: chi è, cosa produce e come comprare in Italia</h2>
+<p class="blog-card-excerpt">Chi è Unitree Robotics: fondazione, sede e gamma di quadrupedi e umanoidi. La quotazione in borsa 2026 e come comprare un robot in Italia.</p>
+<p class="blog-card-meta">14 ott 2026 · 5 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/cobot-cosa-sono.html">
+<div class="blog-card-media"><img src="images/manifattura/fairino-cobot.webp" alt="Cobot Fairino: braccio collaborativo a 6 assi" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Cobot e AMR</span>
+<h2 class="blog-card-title">Cobot: cosa sono, come funzionano e quanto costano</h2>
+<p class="blog-card-excerpt">Cosa sono i cobot, come funzionano (ISO 10218 e ISO/TS 15066), la differenza con i robot industriali e i prezzi Fairino da 5.448 € IVA esclusa.</p>
+<p class="blog-card-meta">14 ott 2026 · 7 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/unitree-g1-aggiornare-firmware.html">
+<div class="blog-card-media"><img src="images/prodotti/2026/g1.webp" alt="Robot umanoide Unitree G1 in piedi, vista frontale" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Guide</span>
+<h2 class="blog-card-title">Unitree G1: come fare l'aggiornamento firmware senza rischi</h2>
+<p class="blog-card-excerpt">Come aggiornare il firmware del Unitree G1 con l'app ufficiale: controlli prima di iniziare (batteria, versione, rete), errori da evitare e downgrade.</p>
+<p class="blog-card-meta">9 ott 2026 · 6 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/robot-umanoide-prezzo.html">
+<div class="blog-card-media"><img src="images/official/unitree-g1-01.webp" alt="Robot umanoide Unitree G1 in piedi" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Prezzi e versioni</span>
+<h2 class="blog-card-title">Robot umanoide: quanto costa davvero nel 2026</h2>
+<p class="blog-card-excerpt">Quanto costa un robot umanoide nel 2026? Fasce di prezzo reali dei modelli Unitree (R1, G1, G1-D, H2) dal listino pubblico, IVA esclusa.</p>
+<p class="blog-card-meta">9 ott 2026 · 7 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/cane-robot-prezzo.html">
+<div class="blog-card-media"><img src="images/official/unitree-go2-01.webp" alt="Unitree Go2 Pro, cane robot quadrupede" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Prezzi e versioni · Quadrupedi</span>
+<h2 class="blog-card-title">Cane robot: prezzi e modelli acquistabili in Italia</h2>
+<p class="blog-card-excerpt">Cane robot prezzo: quanto costa un quadrupede Unitree in Italia (Go2, AS2, A2, B2). Differenze tra uso didattico, professionale e industriale.</p>
+<p class="blog-card-meta">9 ott 2026 · 6 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/unitree-g1-quale-versione-scegliere.html">
+<div class="blog-card-media"><img src="images/prodotti/2026/g1.webp" alt="Unitree G1, robot umanoide bipede" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Umanoidi</span>
+<h2 class="blog-card-title">Unitree G1: quale versione scegliere tra Air, EDU e G1-D</h2>
+<p class="blog-card-excerpt">Air, EDU U1–U10 o G1-D: differenze reali tra le versioni del Unitree G1, prezzi pubblici in euro e quale scegliere per università, R&amp;D o PoC industriale.</p>
+<p class="blog-card-meta">1 ott 2026 · 6 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/unitree-regolamento-macchine-2027.html">
+<div class="blog-card-media"><img src="images/official/unitree-b2-montagna.webp" alt="Quadrupede industriale Unitree B2: robot soggetto al Regolamento macchine (UE) 2023/1230" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Unitree · Normativa · Sicurezza</span>
+<h2 class="blog-card-title">Robot Unitree e Regolamento macchine 2027: cosa cambia</h2>
+<p class="blog-card-excerpt">Regolamento (UE) 2023/1230 dal 20 gennaio 2027: marcatura CE, modifiche sostanziali, software e cybersicurezza per chi compra un robot Unitree.</p>
+<p class="blog-card-meta">1 ott 2026 · 9 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/palletizzazione-cobot-costi.html">
+<div class="blog-card-media"><img src="images/manifattura/fairino-fr20.webp" alt="Cobot Fairino FR20 per palletizzazione fine linea" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Manifattura e logistica</span>
+<h2 class="blog-card-title">Palletizzazione con cobot: costi, tempi e quando conviene</h2>
+<p class="blog-card-excerpt">Cosa contiene una cella di palletizzazione con cobot, come dimensionare payload e sbraccio, prezzi Fairino a listino e quando serve un robot industriale.</p>
+<p class="blog-card-meta">1 ott 2026 · 6 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/unitree-italia-guida-completa.html" id="unitree">
+<div class="blog-card-media"><img src="images/official/unitree-go2-01.webp" alt="Unitree in Italia — guida completa a modelli e prezzi" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Unitree · Italia · Pillar</span>
+<h2 class="blog-card-title">Unitree in Italia: guida completa a modelli e prezzi (2026)</h2>
+<p class="blog-card-excerpt">Hub definitivo per comprare Unitree in Italia: catalogo 101+ SKU, listino pubblico, gamma G1/H2/R1/Go2/AS2 e novità in arrivo (Go2 X, G1-D, H2-D).</p>
+<p class="blog-card-meta">15 lug 2026 · 25 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/ricerca-unitree-arxiv.html">
+<div class="blog-card-media"><img src="images/official/unitree-g1-01.webp" alt="Paper arXiv Unitree" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Ricerca · arXiv</span>
+<h2 class="blog-card-title">12 paper arXiv su Unitree da leggere prima del POC</h2>
+<p class="blog-card-excerpt">Selezione curata Go2/G1 (locomozione RL, Nav2, teleop, GR00T) con implicazioni per AS2 e H2.</p>
+<p class="blog-card-meta">30 lug 2026 · 14 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/unitree-as2-italia.html">
+<div class="blog-card-media"><img src="images/prodotti/2026/as2.webp" alt="Unitree AS2 in Italia" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Unitree · AS2</span>
+<h2 class="blog-card-title">Unitree AS2 in Italia: modelli, prezzi e ricerca</h2>
+<p class="blog-card-excerpt">Listino End-User completo + contesto da paper arXiv su locomozione Go2 e criteri vs Go2/A2.</p>
+<p class="blog-card-meta">30 lug 2026 · 12 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/unitree-h2-italia.html">
+<div class="blog-card-media"><img src="images/prodotti/h2-edu.webp" alt="Unitree H2 in Italia" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Unitree · H2</span>
+<h2 class="blog-card-title">Unitree H2 in Italia: Air, H2-D, Plus e paper G1</h2>
+<p class="blog-card-excerpt">Prezzi full-size + lezioni da arXiv (teleop, potenza, GR00T) per un POC H2 realistico.</p>
+<p class="blog-card-meta">30 lug 2026 · 12 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/unitree-g1-guida-operativa.html">
+<div class="blog-card-media"><img src="images/official/unitree-g1-01.webp" alt="Unitree G1 EDU — guida operativa" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Unitree · G1</span>
+<h2 class="blog-card-title">Unitree G1: guida completa accensione, rete e varianti EDU</h2>
+<p class="blog-card-excerpt">U1–U10, telecomando R3, calibrazione, SSH 192.168.123.164, debug mode — documentazione tradotta Abra.</p>
+<p class="blog-card-meta">13 lug 2026 · 18 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/unitree-g1-programmazione.html">
+<div class="blog-card-media"><img src="images/official/unitree-g1-01.webp" alt="Unitree G1 EDU Plus" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Unitree · Software</span>
+<h2 class="blog-card-title">Programmare il G1: rete, SDK2 e ROS2</h2>
+<p class="blog-card-excerpt">Subnet 192.168.123.x, unitree_sdk2, primi test low-level — setup che usiamo con i lab clienti.</p>
+<p class="blog-card-meta">13 lug 2026 · 7 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/umanoidi-vs-robotica-tradizionale.html" id="industria">
+<div class="blog-card-media"><img src="images/manifattura/fairino-cobot.webp" alt="Cobot Fairino vs umanoide" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Confronto · Industria</span>
+<h2 class="blog-card-title">Umanoidi vs cobot e AMR: quando ha senso cosa</h2>
+<p class="blog-card-excerpt">Non tutto va fatto con un bipede. Quando restare su Fairino/AMR e quando valutare G1 o H2.</p>
+<p class="blog-card-meta">13 lug 2026 · 7 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/confronto-umanoidi-2026.html" id="umanoidi">
+<div class="blog-card-media"><img src="images/prodotti/h2-edu.webp" alt="Unitree H2 EDU" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Umanoidi · Catalogo</span>
+<h2 class="blog-card-title">Quale umanoide Unitree scegliere nel 2026</h2>
+<p class="blog-card-excerpt">G1, R1, H2, G1-D a confronto con prezzi listino Abra e albero decisionale semplice.</p>
+<p class="blog-card-meta">13 lug 2026 · 8 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/finanziamento-robot-industria-40.html">
+<div class="blog-card-media"><img src="images/official/unitree-g1-01.webp" alt="Finanziamento robotica" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Finanziamenti</span>
+<h2 class="blog-card-title">Finanziare un robot nel 2026: iperammortamento e Sabatini</h2>
+<p class="blog-card-excerpt">Iperammortamento 2026, Nuova Sabatini, bandi e leasing: requisiti, procedura GSE e fonti ufficiali.</p>
+<p class="blog-card-meta">13 lug 2026 · 4 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/unitree-go2-vs-go2-pro.html">
+<div class="blog-card-media"><img src="images/official/unitree-go2-01.webp" alt="Unitree Go2 Pro" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Unitree · Quadrupedi</span>
+<h2 class="blog-card-title">Go2 vs Go2 Pro: quale quadrupede ti serve</h2>
+<p class="blog-card-excerpt">LiDAR, velocità, SDK: Air per demo, Pro per autonomia, EDU per lab.</p>
+<p class="blog-card-meta">13 lug 2026 · 4 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/robot-quadrupede-ispezione-industriale.html">
+<div class="blog-card-media"><img src="images/prodotti/2026/as2.webp" alt="Unitree AS2 Pro ispezione" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">Quadrupedi · Industria</span>
+<h2 class="blog-card-title">Quadrupede per ispezione: AS2, A2, B2 o Go2</h2>
+<p class="blog-card-excerpt">IP, payload sensori e integrazioni custom che montiamo in Abra.</p>
+<p class="blog-card-meta">13 lug 2026 · 5 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/poc-robot-umanoide-azienda.html">
+<div class="blog-card-media"><img src="images/official/unitree-g1-d-standard.webp" alt="PoC Unitree G1-D" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">PoC · Umanoidi</span>
+<h2 class="blog-card-title">PoC umanoide in azienda: le 5 fasi Abra</h2>
+<p class="blog-card-excerpt">Discovery, lab, pilot on-site e report go/no-go — 8–14 settimane tipiche.</p>
+<p class="blog-card-meta">13 lug 2026 · 5 min</p>
+</div>
+</a>
+
+<a class="blog-card" href="blog/ros2-unitree-guida-rapida.html">
+<div class="blog-card-media"><img src="images/official/unitree-go2-02.webp" alt="Unitree Go2 EDU ROS2" loading="lazy"/></div>
+<div class="blog-card-body">
+<span class="blog-card-tag">ROS2 · Sviluppo</span>
+<h2 class="blog-card-title">ROS2 su Unitree: da zero al primo topic</h2>
+<p class="blog-card-excerpt">Stack Humble, DDS, simulazione e deploy sicuro su modelli EDU.</p>
+<p class="blog-card-meta">13 lug 2026 · 4 min</p>
+</div>
+</a>
+
+</div>
+</section>
+
+<footer class="footer">
+<div class="container footer-grid">
+<div class="footer-brand">
+<a class="logo" href="index.html"><img alt="Abra Robotics" class="logo-img" src="images/logo.webp" width="180" height="72" decoding="async"/></a>
+<p class="footer-desc">Robotica applicata per aziende, università e istituti di ricerca. Hardware, software su misura, formazione e supporto tecnico dedicato.</p>
+</div>
+<div class="footer-nav">
+<span class="footer-heading">Prodotti</span>
+<a href="cobot.html">Cobot</a>
+<a href="amr.html">AMR</a>
+<a href="quadrupedi.html">Quadrupedi</a>
+<a href="umanoidi.html">Umanoidi</a>
+<a href="accessori.html">Accessori</a>
+<a href="catalogo.html">Catalogo completo</a>
+<a href="listino-unitree.html">Listino prezzi</a>
+</div>
+<div class="footer-nav">
+<span class="footer-heading">Servizi e risorse</span>
+<a href="assessment.html">Trova il robot giusto</a>
+<a href="software.html">Software</a>
+<a href="finanziamenti.html">Finanziamenti</a>
+<a href="manifattura-logistica.html">Manifattura e Logistica</a>
+<a href="universita-ricerca.html">Università e Ricerca</a>
+<a href="blog.html">Blog</a>
+</div>
+<div class="footer-contact">
+<span class="footer-heading">Contatti</span>
+<a href="chi-siamo.html">Chi siamo</a>
+<a href="mailto:info@abrarobotics.com">info@abrarobotics.com</a>
+<p>Viale Trieste 105<br/>30026 Portogruaro (VE)</p>
+<a class="btn btn-primary btn-sm" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ22FrpPdyPVRihi4eXPQlljTcG2toa8XF2d8W-QX-L9cKMaXqozq_YsHym56LEdTs9WsnqlTHeF" rel="noopener noreferrer" target="_blank">Prenota una chiamata</a>
+</div>
+</div>
+<div class="container footer-bottom">
+<p class="footer-copy">© 2026 Abra Robotics di Niccolò Mazzoleni. Tutti i diritti riservati. P.IVA 04800170278 — Portogruaro (VE).</p>
+<nav aria-label="Note legali" class="footer-legal">
+<a href="privacy-policy.html">Privacy Policy</a>
+<a href="cookie-policy.html">Cookie Policy</a>
+<a href="condizioni-di-vendita.html">Condizioni di vendita</a>
+<a href="politica-resi.html">Politica resi</a>
+<a href="note-legali.html">Note legali</a>
+</nav>
+</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
